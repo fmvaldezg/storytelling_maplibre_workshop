@@ -3,27 +3,19 @@ layout: default
 title: Home
 nav_order: 1
 ---
-# A Jekyll template for GIS workshops
-### WAML 2020  Preconference Workshop  
-[bit.ly/waml20git](http://bit.ly/waml20git)  
+# Storytelling with Maps - Using Maplibre
+### Fall 2024 - Mappping Series Workshops 
+<>[bit.ly/waml20git](http://bit.ly/waml20git)  
 
 ____
 
 ### Presenters
 
-Evan Thornberry <a href='https://github.com/ect123' target='_blank'><img src='content/img/GitHub-Mark-custom.svg' style='width:15px; padding:0; border:none !important;'></a>  
-Handsome Devil  
-GIS Librarian  
-University of British Columbia Library  
-[evan.thornberry@ubc.ca](mailto:evan.thornberry@ubc.ca)  
+Felipe Valdez <a href='https://library.temple.edu/people/felipe-valdez' target='_blank'><img src='https://library.temple.edu/assets/temple-logo-t-box-90cc3fa538df8cb198867442038a1dac87756f1e375393193f775e8760013fdf.svg' style='width:15px; padding:0; border:none !important;'></a>   
+GIS Specialist 
+Temple University Libraries 
+[felipe.valdez@temple.edu](mailto:felipe.valdez@temple.edu)  
 
-
-
-Phil White <a href='https://github.com/outpw' target='_blank'><img src='content/img/GitHub-Mark-custom.svg' style='width:15px; padding:0; border:none !important;'></a>  
-Tries Hard  
-Earth, Environment & Geospatial Librarian  
-University of Colorado Boulder Libraries  
-[philip.white@colorado.edu](mailto:philip.white@colorado.edu)
 
 
 - A GitHub.com account. If you don't already have a GitHub.com account, you can [create one here](https://github.com/join). Take this short video [Getting Started with GitHub](https://youtu.be/noZnOSpcjYY) if you're brand new and want to get a high-level overview of the platform.
@@ -36,7 +28,7 @@ Our goal is to introduce you to how we use GitHub.com for creating and deliverin
 
 You may not feel totally comfortable using GitHub – this is okay. As with any skill, using Jekyll and GitHub Pages takes practice. In this workshop, we want you to understand and get familiar with some of the workflows and terminology so that you are equipped to experiment on your own.  
 
-### You can view the GitHub repository for this Jekyll site at:  
+### You can view the interactive map from this demo at:  
 [https://github.com/ubc-lib-geo/gis-workshop-waml-template](https://github.com/ubc-lib-geo/gis-workshop-waml-template){:target="_blank"}  
 
 ### Schedule

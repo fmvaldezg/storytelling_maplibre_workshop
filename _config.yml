@@ -37,7 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-footer_content: <a href="https://github.com/fmvaldezg/gis-workshop-waml-template" target="_blank">View this workshop in GitHub</a>
+footer_content: <a href="https://github.com/fmvaldezg/storytelling_maplibre_workshop" target="_blank">View this workshop in GitHub</a>
 
 # Exclude from processing.
 # The following items will not be processed, by default.

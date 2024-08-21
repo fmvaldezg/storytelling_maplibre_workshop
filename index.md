@@ -13,7 +13,8 @@ ____
 
 Felipe Valdez <a href='https://library.temple.edu/people/felipe-valdez' target='_blank'><img src='https://library.temple.edu/assets/temple-logo-t-box-90cc3fa538df8cb198867442038a1dac87756f1e375393193f775e8760013fdf.svg' style='width:15px; padding:0; border:none !important;'></a>
 
-GIS Specialist 
+GIS Specialist.
+
 Temple University Libraries 
 [felipe.valdez@temple.edu](mailto:felipe.valdez@temple.edu)  
 

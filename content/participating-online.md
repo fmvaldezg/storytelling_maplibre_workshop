@@ -12,8 +12,9 @@ The Zoom toolbar provides several ways to be part of the conversation:
 
 ![Zoom Toolbar](img/zoom_toolbar.png)
 
-## Participants window
-The _Participants_ window lists everyone in the session. Click the icons at the bottom of the window to communicate with the instructors.
+## Interact using the React Button
+
+The _React_ button shows ways you can interact with everyone in the room. You can raise your hand, answer yes/no questions, suggest adjusting the pace or, react with an emoji. Click the icons to communicate with the instructors.
 
 ![Menu at bottom of participants window](img/participants_window_menu.png)
 
@@ -28,7 +29,7 @@ The _Chat_ window is a good place to report problems with your audio connection.
 In some cases instructors may invite you to share your screen. Raise your hand to indicate that you're ready to share. When called upon click _Share screen_, select a window to display, and click _Share_.
 
 ## Contribute to the Whiteboard
-The _Whiteboard_ is a collaborative space that everyone can annotate with drawings and text. When the whiteboard is shared click _View options_ and select _Annotate_.
+The _Whiteboard_ is a collaborative space that everyone can annotate with drawings and text. You can create a _New Whiteboard_ or join an existing one.
 
 ![Menu with Annotate option](img/open_annotate_toolbar.png)
 

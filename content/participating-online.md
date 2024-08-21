@@ -10,13 +10,13 @@ Microphones are muted by default to improve audio quality and recording is disab
 
 The Zoom toolbar provides several ways to be part of the conversation:
 
-![Zoom Toolbar](img/zoom_toolbar.png)
+<img src="img/zoom_toolbar.png" width="600" alt="Zoom Toolbar">
 
 ## Interact using the React Button
 
 The _React_ button shows ways you can interact with everyone in the room. You can raise your hand, answer yes/no questions, suggest adjusting the pace or, react with an emoji. Click the icons to communicate with the instructors.
 
-<img src="img/participants_window_menu.png" width="100">![Menu at bottom of participants window](img/participants_window_menu.png)
+<img src="img/participants_window_menu.png" width="200" alt="React menu">
 
 Clicking an icon makes it appear next to your name in the participants list. Use this to **answer yes/no** questions or to **raise your hand** when instructors invite you to ask a question, comment, or share your screen.
 
@@ -31,8 +31,8 @@ In some cases instructors may invite you to share your screen. Raise your hand t
 ## Contribute to the Whiteboard
 The _Whiteboard_ is a collaborative space that everyone can annotate with drawings and text. You can create a _New Whiteboard_ or join an existing one.
 
-![Menu with Annotate option](img/open_annotate_toolbar.png)
+<img src="img/open_annotate_toolbar.png" width="150" alt="Menu with Annotate option">
 
 This opens the annotation toolbar. Drawings and text you add to the screen will be visible to everyone in the session or breakout room.
 
-![The annotation toolbar](img/annotate_toolbar.png)
+<img src="img/annotate_toolbar.png" height="350" alt="The annotation toolbar">

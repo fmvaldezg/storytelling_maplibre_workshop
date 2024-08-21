@@ -16,7 +16,7 @@ The Zoom toolbar provides several ways to be part of the conversation:
 
 The _React_ button shows ways you can interact with everyone in the room. You can raise your hand, answer yes/no questions, suggest adjusting the pace or, react with an emoji. Click the icons to communicate with the instructors.
 
-![Menu at bottom of participants window](img/participants_window_menu.png)
+<img src="img/participants_window_menu.png" width="100">![Menu at bottom of participants window](img/participants_window_menu.png)
 
 Clicking an icon makes it appear next to your name in the participants list. Use this to **answer yes/no** questions or to **raise your hand** when instructors invite you to ask a question, comment, or share your screen.
 

@@ -21,7 +21,7 @@ Temple University Libraries
 
 
 - A GitHub.com account. If you don't already have a GitHub.com account, you can [create one here](https://github.com/join). Take this short video [Getting Started with GitHub](https://youtu.be/noZnOSpcjYY) if you're brand new and want to get a high-level overview of the platform.
-- Comfortable working with code/syntax.
+- A MapTiler account. To create one go to [maptiler.com](https://cloud.maptiler.com/auth/widget?next=https://data.maptiler.com/my-extracts/?_gl%3D1*aq73hk*_ga*MzczMjQ2ODc0LjE3MjQ4ODAzNzI.*_ga_K4SXYBF4HT*MTcyNDg4MDM3MS4xLjEuMTcyNDg4MDQwNy4yNC4wLjA).
 {: .prereq}
 
 ### Goal of this workshop

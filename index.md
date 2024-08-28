@@ -26,9 +26,12 @@ Temple University Libraries
 
 ### Goal of this workshop
 
-Our goal is to introduce you to how we use GitHub.com for creating and delivering GIS workshops online, so that you can consider using them in your own work. There will be a hands-on section where we will fork ("copy") an existing workshop repo to your own GitHub account, publish the repo with GitHub Pages, and to make some edits.
+Our goal is to show you how to create your own interactive storytelling applications with maps and multimedia, using open source tools. We will show some examples of stories and get hands-on with how to create your own interactive applications and share them on the web. 
 
-You may not feel totally comfortable using GitHub – this is okay. As with any skill, using Jekyll and GitHub Pages takes practice. In this workshop, we want you to understand and get familiar with some of the workflows and terminology so that you are equipped to experiment on your own.  
+This tutorial is designed so that you will be able to create an interactive story without any coding knowledge, however, if this is your first time generating code it may take you some time to get familiar with these types of interfaces and files, although it won't be complicated. 
+
+If you want to familiarize yourself with the use of code for this type of activities, we recommend you to check the additional resources section. 
+
 
 ### You can view the interactive map from this demo at:  
 [https://github.com/ubc-lib-geo/gis-workshop-waml-template](https://github.com/ubc-lib-geo/gis-workshop-waml-template){:target="_blank"}  

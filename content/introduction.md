@@ -12,3 +12,11 @@ Maps have always been a vital tool for storytelling. They don't just provide con
 [Nuestro Territorio es Nuestra Vida](https://lab.digital-democracy.org/mapa-sinangoe/)
 
 <img src="img/example1.png" width="600" alt="Zoom Toolbar"><a src="https://lab.digital-democracy.org/mapa-sinangoe/">
+
+[Ten Conflicts to Watch in 2022](https://conflicts2022.crisisgroup.org/)
+
+<img src="img/example2.png" width="600" alt="Zoom Toolbar"><a src="https://conflicts2022.crisisgroup.org/">
+
+[Polar Star Inn and Seipel Hut (Carl's Cabin)](https://map.huttrip.com/)
+
+<img src="img/example3.png" width="600" alt="Zoom Toolbar"><a src="https://map.huttrip.com/">

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Fork This Workshop
+title: Fork The Storytelling Template
 parent: Hands On
 nav_order: 1
 ---
-# Fork this workshop template
-In this workshop we're going to duplicate this same workshop to your own GitHub account, then make some edits together. Can tinker and reuse this template anytime on your own account.
+# Fork the storytelling template
+In this workshop we're going to duplicate the storytelling template created by [Digital Democracy](https://www.digital-democracy.org/) to your own GitHub account, then make some edits together. Can tinker and reuse this template anytime on your own account.
 
-### *1*{: .circle .circle-blue} Go to [this workshop's GitHub repository](https://github.com/ubc-lib-geo/gis-workshop-waml-template){:target="_blank"}
+### *1*{: .circle .circle-blue} Go to [Digital Democracy Interactive Storytelling with Maplibre repository](https://github.com/digidem/maplibre-storymap){:target="_blank"}
 
 
 ### *2*{: .circle .circle-blue} Click on the option to Fork the repository

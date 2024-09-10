@@ -34,7 +34,7 @@ If you want to familiarize yourself with the use of code for this type of activi
 
 
 ### You can view the interactive map from this demo at:  
-[https://github.com/ubc-lib-geo/gis-workshop-waml-template](https://github.com/ubc-lib-geo/gis-workshop-waml-template){:target="_blank"}  
+[A tour of Temple University Campuses](https://felipevaldez.com/maplibre-storymap_demoTU/){:target="_blank"}  
 
 ### Schedule
 

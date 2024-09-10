@@ -15,28 +15,35 @@ You'll see an option to Fork at the top right of your screen.
 
 ![Fork location](../img/fork-location.png)
 
-GitHub should pause for a moment while it copies the files from this repo to yours. When it's finished, you'll see a note that the repo has been "forked from [ubc-lib-geo/gis-workshop-waml-template](https://github.com/ubc-lib-geo/gis-workshop-waml-template)" in the top left.
+GitHub should pause for a moment while it copies the files from this repo to yours. When it's finished, you'll see a note that the repo has been "forked from [digidem/maplibre-storymap](https://github.com/digidem/maplibre-storymap)" in the top left.
+
+```  
+Alternatively, if you are using GitHub Desktop, simply copy the repository URL https://github.com/digidem/maplibre-storymap.git and paste it in the 'Clone a repository' window in the app, or download the ZIP file of the repository and add it to your GitHub Desktop app.
+{: .note}
+```
 
 You should also see your new repository which contains the following files and directories:
 ```
 .
-├── Rakefile
-├── _config.yml
-├── _includes
-├── _layouts
-├── _sass
-├── _site
-├── assets
-├── bin
-├── content
-├── index.md
+├── demo
+├── dist
+├── images
+├── map
+├── .gitignore
+├── LICENSE
 ├── README.md
-└── lib
+├── build.js
+├── config.js.example
+├── index.html
+├── index.js
+├── package-lock.json
+├── package.json
+└── sources.js
 ```
-In this workshop we're only going to be looking at a couple of these including the `_config.yml` file, the `README.txt` file, and the files inside the `content` folder.
+In this workshop we're only going to be looking at a couple of these including the `config.js` file, the `index.html` file, and the files inside the `images` and `map` folders.
 {: .note}
 
-### *3*{: .circle .circle-blue} Edit your _config.yml
+### *3*{: .circle .circle-blue} Edit your config.js
 We will need to publish this repository as a "GitHub Page", so that it's live at **[your GitHub username].github.io**. Right now it's configured to appear at **ubc-lib-geo.github.io**. Before we publish, we'll need to make some edits to our main site configuration file, '_config.yml'.
 
 Step 1

@@ -13,7 +13,7 @@ In this workshop we're going to duplicate the storytelling template created by [
 ### *2*{: .circle .circle-blue} Click on the option to Fork the repository
 You'll see an option to Fork at the top right of your screen.   
 
-![Fork location](./content/img/fork-location.png)
+![Fork location](img/fork-location.png)
 
 GitHub should pause for a moment while it copies the files from this repo to yours. When it's finished, you'll see a note that the repo has been "forked from [digidem/maplibre-storymap](https://github.com/digidem/maplibre-storymap)" in the top left.
 

@@ -17,10 +17,9 @@ You'll see an option to Fork at the top right of your screen.
 
 GitHub should pause for a moment while it copies the files from this repo to yours. When it's finished, you'll see a note that the repo has been "forked from [digidem/maplibre-storymap](https://github.com/digidem/maplibre-storymap)" in the top left.
 
-```  
 Alternatively, if you are using GitHub Desktop, simply copy the repository URL https://github.com/digidem/maplibre-storymap.git and paste it in the 'Clone a repository' window in the app, or download the ZIP file of the repository and add it to your GitHub Desktop app.
 {: .note}
-```
+
 
 You should also see your new repository which contains the following files and directories:
 ```

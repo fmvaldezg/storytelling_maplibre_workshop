@@ -1,8 +1,16 @@
 ---
 layout: default
-title: Markdown Practice
+title: Pre-requisites
 nav_order: 4
 ---
+
+For this tutorial, you will need to complete (or have already) the following:
+
+*1*{: .circle .circle-blue} A 'GitHub' account
+*2*{: .circle .circle-blue} 'GitHub Desktop' installed in your computer
+*3*{: .circle .circle-blue} 'VS Code' or any other code editor or text editor installed in your computer
+*4*{: .circle .circle-blue} A 'Maptiler' account
+
 # Markdown: What is it?
 
 Markdown is a very simple markup language for formatting plain text. You may have seen it or used it in discussion forums (think Reddit) to style text in certain ways – like in **bold** or *italics* or ***both***. It's also often used in GitHub for assembling nicely looking README files, but it's also used for the content that makes up this site. GitHub Pages (and Jekyll) reads Markdown files (usually with the file extension `.md` or `.markdown`) and converts them to valid HTML.

@@ -16,6 +16,9 @@ For this tutorial, you will need to complete (or have already) the following:
 
 Follow the instructions in the sections below to complete these pre-requisites.
 
+1. TOC
+{:toc}
+
 ## *1*{: .circle .circle-blue} Creating a `GitHub` account
 
 If you want to learn more about Git and GitHub, we recomend the following [tutorial](https://ubc-library-rc.github.io/intro-git/). 
@@ -39,6 +42,11 @@ You will be asked a few questions.
 When prompted, be sure to select `Continue for free` on the type of account.
 
 ![screenshot of the type selection](/img/gitfree.png)
+
+Step 4
+{: .label .label-step}
+
+You will receive an email with an activation code. Input the code when asked to in the GitHub webpage.
 
 You are now ready to create your first repository.
 

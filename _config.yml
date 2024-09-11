@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is a hands-on tutorial on how to build interactive story maps in the web using GitHub pages along with MapLibre and the Digital Democracy storytelling template.
 baseurl: "/storytelling_maplibre_workshop" # the subpath of your site, e.g. /blog
 url: "https://fmvaldezg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+search_enabled: true
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

@@ -14,40 +14,39 @@ For this tutorial, you will need to complete (or have already) the following:
 
 *4*{: .circle .circle-blue} A `Maptiler` account
 
-# Markdown: What is it?
+Follow the instructions in the sections below to complete these pre-requisites.
 
-Markdown is a very simple markup language for formatting plain text. You may have seen it or used it in discussion forums (think Reddit) to style text in certain ways – like in **bold** or *italics* or ***both***. It's also often used in GitHub for assembling nicely looking README files, but it's also used for the content that makes up this site. GitHub Pages (and Jekyll) reads Markdown files (usually with the file extension `.md` or `.markdown`) and converts them to valid HTML.
+## *1*{: .circle .circle-blue} Creating a `GitHub` account
 
-If you're old-school and prefer writing in HTML, you can still do that too. You can also combine HTML with your Markdown to add things like `<iframe>` and custom scripts in the same Markdown document.
-{: .note}
+If you want to learn more about Git and GitHub, we recomend the following [tutorial](https://ubc-library-rc.github.io/intro-git/). 
 
-Markdown syntax is fairly straightforward and somewhat easy to remember. It uses common characters like asterisks, dashes, and the number symbol (hashtag? pound?) mixed with spaces to stylize text. For instance text surrounded by two asterisks makes the text italicized.
+Step 1
+{: .label .label-step}
 
-`*Hello!*` = *Hello!*
+Go to [github.com/signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 
-We can also make the text bold.
+Step 2
+{: .label .label-step}
 
-`**HOWDY**` = **HOWDY**
+Write down your `email` address, a `password` and a `username` for your new account. Then click on `Continue`.
 
-This is just scraping the surface of what capable with Markdown, as you can see from GitHub user [obebm503](https://github.com/obedm503)'s [Markdown Kitchen Sink](https://github.com/obedm503/markdown-kitchen-sink). For those of you who use HTML, you can think of Markdown as a super simplified version of that – you can add images, links, tables, quotes, and other things with very simple Markdown syntax.
+![screenshot of the sign up page](/img/gitsign.png)
 
-Let's try out an online editor to practice a couple of common Markdown markups.
+Step 3
+{: .label .label-step}
 
-### *1*{: .circle .circle-blue} Go to [markdownlivepreview.com](https://markdownlivepreview.com/){:target="_blank"}
+You will be asked a few questions.
+When prompted, be sure to select `Continue for free` on the type of account.
 
-Clicking on the Markdown editor link will take you to web page with document displayed in two windows. On the left is the plain text Markdown, and on the right is the styled version rendered online. You can edit the text on the left, and changes will appear on the right.
+![screenshot of the type selection](/img/gitfree.png)
 
-### *2*{: .circle .circle-blue} Change the title of the document
+You are now ready to create your first repository.
 
-The first line of this document is a [heading](https://www.w3.org/WAI/tutorials/page-structure/headings/) – H1 to be specific. How do I know this? Because there is 1 "number sign" and a space before the rest of the text. Any line of text after a `# ` will be rendered as H1.
+## *2*{: .circle .circle-blue} Download and install `GitHub Desktop`
 
-On the left, change `# Markdown syntax guide` to `# [your name]'s new document`
 
-### *3*{: .circle .circle-blue} Add a link
 
-Adding links to your documents is very easy. All you need is your preferred link text and the URL. The Markdown syntax is:
-`[your preferred text](the URL)`
+## *3*{: .circle .circle-blue} Download and install `VS Code`
 
-Add this link to the Perry-Castañeda Library Map Collection somewhere in the document:
 
-`[Perry-Castañeda Library Map Collection](http://legacy.lib.utexas.edu/maps/)`
+## *4*{: .circle .circle-blue} Creating a `MapTiler` account

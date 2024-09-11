@@ -63,5 +63,5 @@ You can also use this in headers, lists and other markdown suported elements, e.
 * *5*{: .circle .circle-purple} `.circle-purple`
 
 ## *2*{: .circle .circle-red} Number in h2
-
+    
 ### *10*{: .circle .circle-yellow} Number in h3

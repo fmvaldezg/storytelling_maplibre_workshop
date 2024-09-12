@@ -126,3 +126,38 @@ The first time you open `Visual Studio Code`, you will see a message from your s
 
 ## *4*{: .circle .circle-blue} Creating a `MapTiler` account
 
+MapTiler is a software platform for building digital maps. 
+MapTiler maintains the OpenSource project [OpenMapTiles](https://openmaptiles.org/) that consists of a set of tools allowing everyone to create their own vector map tiles from OpenStreetMap data for hosting, self-hosting, or offline use.
+In this tutorial we will use MapTiler's free plan to access their hosted vector tiles and use the OpenMapTiles style.
+
+Step 1
+{: .label .label-step}
+
+On your browser, go to [MapTiler.com](https://www.maptiler.com/) home page and click on `Create a free account`.
+
+![screenshot of Maptiler home page](/img/mpdown1.png)
+
+Step 2
+{: .label .label-step}
+
+Sign in using your email address or your Google account if you have one.
+Type your name and a password for your account. Then click on `Save` to continue.
+
+![screenshot of Maptiler home page](/img/mpdown2.png)
+
+Step 3
+{: .label .label-step}
+
+You will receive an email to verify your account. Click on the link the email to be redirected to your `MapTiler` account.
+{: .warn }
+
+![screenshot of Maptiler home page](/img/mpdown3.png)
+
+Now you can sign in using your email and the password you created in the previous step.
+
+Step 4
+{: .label .label-step}
+
+You are now ready to start creating and using Maptiles and map styles in MapTiler
+
+![screenshot of Maptiler home page](/img/mpdown4.png)

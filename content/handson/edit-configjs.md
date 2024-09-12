@@ -14,14 +14,21 @@ While on `GitHub Desktop`, click on the option to `Open in Visual Studio Code`
 
 ![Open on Visual Studio Code](../img/config0.png)  
 
-This will open up a page that just shows your `README.md` file.
+This will open `Visual Studio Code`.
 
-### *2*{: .circle .circle-blue} Now double click the pencil icon to edit this markdown file.  
+### *2*{: .circle .circle-blue} Rename the file.  
 
+You are going to see a list with all the files and folders on your repository. 
 
-![Click Edit](../img/readme2.png)    
+![Open on Visual Studio Code](../img/config1.png)  
 
-Now you will see simple editing interface.
+Right click on the file `config.js.template` and select the `Rename` option.
+
+![Open on Visual Studio Code](../img/config2.png)  
+
+Change the name of the file to `config.js`, without the word template at the end.
+  
+
 
 ### *3*{: .circle .circle-blue} Make some edits to your `README.md` file.  
 This is easy, just start typing in this editing window.

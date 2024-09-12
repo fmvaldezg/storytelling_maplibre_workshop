@@ -6,7 +6,7 @@ nav_order: 4
 
 For this tutorial, you will need to complete (or have already) the following:
 
-.TOC
+1.TOC
 {:toc}
 
 Follow the instructions in the sections below to complete these pre-requisites.

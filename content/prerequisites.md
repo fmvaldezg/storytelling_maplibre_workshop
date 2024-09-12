@@ -40,6 +40,7 @@ Step 4
 {: .label .label-step}
 
 You will receive an email with an activation code. Input the code when asked to in the GitHub webpage.
+{: .warn}
 
 You are now ready to create your first repository.
 

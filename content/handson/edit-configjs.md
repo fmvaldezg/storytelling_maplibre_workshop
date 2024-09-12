@@ -27,20 +27,25 @@ Right click on the file `config.js.template` and select the `Rename` option.
 ![Open on Visual Studio Code](../img/config2.png)  
 
 Change the name of the file to `config.js`, without the word template at the end.
-  
 
+### *3*{: .circle .circle-blue} Make some edits to your `config.js` file.  
 
-### *3*{: .circle .circle-blue} Make some edits to your `README.md` file.  
-This is easy, just start typing in this editing window.
+Click on the file you just renamed. Its content will be displayed in the central panel on GitHub Desktop.
 
-![Edit your README](../img/readme3.png)
+The first 17 lines of this file contain the main configurations for your new sotrymap. 
 
-### *4*{: .circle .circle-blue} When you're done editing, scroll down and enter a commit   message, then click `Commit changes`.  
+![Edit your README](../img/config3.png)
 
+Step 1
+{: .label .label-step}
 
-![Commit changes](../img/readme4.png)
+Give your map a title by replacing the text after `title:`
 
-### All done! Now head back to your repo's home page to view the updated `README`.  
+Input
+{: .label .label-green }
+```
+title: 'My first StoryMap'
+```
 
-
-![View readme](../img/readme5.png)
+Be aware that al these properties are build by a pair of values. Values other than boolean (true,flase) should be between ``. 
+{: .warn}

@@ -10,14 +10,16 @@ In this workshop we're going to duplicate the storytelling template created by [
 ### *1*{: .circle .circle-blue} Go to [Digital Democracy Interactive Storytelling with Maplibre repository](https://github.com/digidem/maplibre-storymap){:target="_blank"}
 
 
-### *2*{: .circle .circle-blue} Click on the option to Fork the repository
-You'll see an option to Fork at the top right of your screen.   
+### *2*{: .circle .circle-blue} Click on the option to open the repository in GitHub Desktop
+Under the `Code` button, you will see an option to `Open with GitHub Desktop`.   
 
-![Fork location](../img/fork-location.png)
+![Screeshot of the option to open in GitHub Desktop](../img/fork-location.png)
 
-GitHub should pause for a moment while it copies the files from this repo to yours. When it's finished, you'll see a note that the repo has been "forked from [digidem/maplibre-storymap](https://github.com/digidem/maplibre-storymap)" in the top left.
+Confirm that you want to open it by clicking on `Open GitHub Desktop.app` in the message that pops up.
 
-Alternatively, if you are using GitHub Desktop, simply copy the repository URL https://github.com/digidem/maplibre-storymap.git and paste it in the 'Clone a repository' window in the app, or download the ZIP file of the repository and add it to your GitHub Desktop app.
+![Confirmation message](../img/fork-message.png)
+
+Alternatively, if you are using GitHub on the web, simply fork the repository to your account and continue from there.
 {: .note}
 
 

@@ -1,16 +1,18 @@
 ---
 layout: default
-title: Edit Your README
+title: Edit Your config.js file
 parent: Hands On
 nav_order: 2
 ---
-# Edit Your README
-First we're going to make a few quick edits to your new repository's README file.  
+# Edit Your config.js
+First we're going to make a few quick edits to your new repository's config.js file. This file contains the story main content and the map controls.
 
-### *1*{: .circle .circle-blue} In your repository, double-click on `README.md`.  
+### *1*{: .circle .circle-blue} Open your repository files in `Visual Studio Code`.
+
+While on `GitHub Desktop`, click on the option to `Open in Visual Studio Code`
 
 
-![Click on README](../img/readme1.png)  
+![Open on Visual Studio Code](../img/config0.png)  
 
 This will open up a page that just shows your `README.md` file.
 

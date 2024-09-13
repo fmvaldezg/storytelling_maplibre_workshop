@@ -83,3 +83,27 @@ Input
 ```
 Most of this properties allow HTML formated text. This means you can add different styles, links and other features. If you want to learn more about HTML follow this [link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 {: .note}
+
+### *More*{: .circle .circle-blue} Additional properties and their functionality.
+
+The rest of the properties in this section allow you to change some other aspects of the story map. we will cover the `style` property in the next section. The other properties are described below.
+
+| Property | Function
+| --- | ---
+| `style:` | This is the MapLibre style to use for the app. You can set this to any MapLibre style hosted online or locally, but by default it is set to look for a style in the map/ directory.
+| `showMarkers:` | This controls whether markers are shown at the centerpoint of each chapter. If true, the map will display a default blue, inverted-teardrop icon.
+| `markerColor:` | If showMarkers is true, this property will override the default light blue marker color.
+| `inset:` | Shows an inset mini-map. Will be disabled is legend is set to true.
+| `legend:` | Shows a box at the bottom right in which you can add HTML content for each chapter, serving as a legend. Will be disabled is inset is set to true.
+| `theme:` | Two basic themes (light and dark) are available.
+
+Optional properties
+
+| Property | Function
+| --- | ---
+| `use3dTerrain` | Enables 3D terrain. You will need to provide your own terrain tiles.
+| `useCustomLayers:` | Enables adding custom sources and layers as defined in `sources.js`.
+| `bookmarks:` | Enables adding bookmark links in the header and footer for each chapter. Bookmarks will be added for any chapter that has a title.
+| `chapterReturn:` | To enable a "Return to Top" link at the bottom of each chapter.
+| `logo:` | Add a logo image to the header of your story.
+| `mobileview:` | Displays a helpful note to rotate the device when viewing the story map on a mobile. This is HTML content and can be modified in `config.js`.

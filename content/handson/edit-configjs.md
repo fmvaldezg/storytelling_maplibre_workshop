@@ -11,7 +11,6 @@ First we're going to make a few quick edits to your new repository's config.js f
 
 While on `GitHub Desktop`, click on the option to `Open in Visual Studio Code`
 
-
 ![Open on Visual Studio Code](../img/config0.png)  
 
 This will open `Visual Studio Code`.
@@ -33,6 +32,7 @@ Change the name of the file to `config.js`, without the word template at the end
 Click on the file you just renamed. Its content will be displayed in the central panel on GitHub Desktop.
 
 The first 17 lines of this file contain the main configurations for your new sotrymap. 
+We are going to cover some of them to get your story map started. 
 
 ![Edit your README](../img/config3.png)
 
@@ -44,8 +44,21 @@ Give your map a title by replacing the text after `title:`
 Input
 {: .label .label-green }
 ```
-title: 'My first StoryMap'
+12  title: 'My first StoryMap'
 ```
 
 Be aware that al these properties are build by a pair of values. Values other than boolean (true,flase) should be between ``. 
 {: .warn}
+
+Step 2
+{: .label .label-step}
+
+Insert a `subtitle` for your story map. Type any text you want to be in the subtitle. Remember that it should be between ``.
+
+Input
+{: .label .label-green }
+```
+14  subtitle: 'This is the most amazing story map ever made!'
+```
+
+

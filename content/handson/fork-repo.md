@@ -30,4 +30,7 @@ If you have `Visual Study Code` installed, you should see the text `Open in Visu
 {: .warn}
 
 2. View the files of your repository in Finder.
+
 3. Open the repository page on GitHub in your browser.
+
+![Confirmation message](../img/fork-options.png)

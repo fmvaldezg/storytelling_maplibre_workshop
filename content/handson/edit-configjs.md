@@ -60,5 +60,26 @@ Input
 ```
 14  subtitle: 'This is the most amazing story map ever made!'
 ```
+Step 3
+{: .label .label-step}
 
+Put your name as the author of the story map by changing the text of the byline property.
 
+Input
+{: .label .label-green }
+```
+15  byline: 'Felipe Valdez'
+```
+
+Step 4
+{: .label .label-step}
+
+Add aditional information to your story map in the `footer` property. This is a spot you can use to attribute the data or mention any organizations involved in the making of the map. Also, it is a good practice to keep the MapLibre Storytelling and the link to the project as it is after `<br>`.
+
+Input
+{: .label .label-green }
+```
+17  footer: 'Source: Temple Unievrsity Libraries<br> Created using <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> template.',
+```
+Most of this properties allow HTML formated text. This means you can add different styles, links and other features. If you want to learn more about HTML follow this [link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
+{: .note}

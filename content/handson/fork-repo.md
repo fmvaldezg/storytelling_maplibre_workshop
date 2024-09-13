@@ -24,10 +24,11 @@ Alternatively, if you are using GitHub on the web, simply fork the repository to
 
 
 `GitHub Desktop` should open in your computer and you should see a window with the infromation of the forked repository, including a panel listing the changes (it will be empty since this is the first time you open it) and three options to start working on your reposity:
-1. Open the repository in your external editor.
 
 If you have `Visual Study Code` installed, you should see the text `Open in Visual Studio Code` in the action button. If you don't have it but you have a different editor (like RStudio, XCode or Atom), then you should see that option. If you need to set `Visual Studio Code` as the default editor for your GitHub Desktop, then follo the instructions [here](https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor-in-github-desktop#configuring-a-custom-editor).
 {: .warn}
+
+1. Open the repository in your external editor.
 
 2. View the files of your repository in Finder.
 

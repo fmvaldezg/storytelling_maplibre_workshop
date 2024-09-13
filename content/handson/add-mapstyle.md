@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Add a New Page
+title: Add a MapStyle to your map
 parent: Hands On
 nav_order: 3
 ---

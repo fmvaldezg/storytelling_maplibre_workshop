@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Add Some Text
+title: Preview the story map
 parent: Hands On
 nav_order: 5
 ---

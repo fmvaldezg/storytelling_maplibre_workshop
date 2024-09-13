@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Change Navigation
+title: Publish your repository
 parent: Hands On
 nav_order: 6
 ---

@@ -4,55 +4,34 @@ title: Add a MapStyle to your map
 parent: Hands On
 nav_order: 3
 ---
-# Add a New Page
+# Add a Map Style
 
-Now that you have your workshop repository live and ready to edit, you might want to add a new page. GitHub.com allows us to add a new file.
+Webmaps are displayed using a set of rules that treat every item on the map in a specific way to render them using the colors, icons and shapes you see in your screen. This rules are stored in a file that can live in your computer or can be accessed via URL.
 
-### *1*{: .circle .circle-blue} Nagivate to your `content` folder
-Just click on the title of the folder in GitHub. That will take you to a new page where you can see all of the content that makes up the site.
+We will be using the OpenMapStyles from [MapTiler](https://openmaptiles.org/). If you do not have a MapTiler account, check the pre-requistes section to create a free one. 
 
-We created this folder to store all of our pages, images, data, etc. – our own preference for keeping things relatively tidy. But a side-effect of additional folder levels is that it elongates the URL of pages inside them.
-{: .note}
+Follow this steps to add a map style to your story map.
 
-### *2*{: .circle .circle-blue} Add a file to this folder
-You can add files by clicking the **Add file** button, and selecting **Create new file** from the dropdown.
+### *1*{: .circle .circle-blue} Sign in to you `MapTiler` account.
 
-![Add file](../img/add-file.png)
+On your web browser, go to [this link](https://cloud.maptiler.com/auth/widget?next=https://cloud.maptiler.com/maps/).
+Enter you username and password.
 
-### *3*{: .circle .circle-blue} Make a new Markdown file
-We can add any type of text-based file we want, but since our goal here is to create a new page for our site, let's make it a Markdown file.
+![Screenshot of MapTiler sign in page](../img/style0.png)  
 
-Step 1
-{: .label .label-step}
-Name your new file
-{: .step}
-Name your file `favorite-map.md`
+### *2*{: .circle .circle-blue} Select the map style you want to use.
 
-![File name](../img/file-name.png)
+On the MapTiler Maps screen you will see a list of  pre made open styles.
 
-Step 2
-{: .label .label-step}
-Add your Front Matter
-{: .step}
-[Front Matter](https://jekyllrb.com/docs/front-matter/) is needed to convert this file to a new web page. It's used by Jekyll to add style and other settings to your page. We'll get to front matter more later...
+Click on `DataViz` if you want to follow this tutorial, or any other style you prefer.
 
-Add this to the body of the file, using lines 1 to 5:
-```
----
-layout: default
-title: Your New Page's Title
-nav_order: 11
----
-```
-You should have something that looks like this:
+![Screenshot of MapTiler sign in page](../img/style1.png) 
 
-![Front matter](../img/front-matter.png)
+You can create you own styles using MapTiler OpenMapTyles by clicking on the `New map` button. You can select which layers to display and how.
+{: .note }
 
-### *4*{: .circle .circle-blue} Commit your new file
-Now we'll add a new "commit" the new file – this is Git for adding a description of the changes you made, then saving to the repository.
+### *3*{: .circle .circle-blue} Copy the vector style URL
 
-You should always be as concise and descriptive as possible when adding a commit message. It's very easy to add inadequate commit messages, like "added some content" or "made a small change", but it's good practice to make commit messages meaningful. However, adding a file is pretty simple, so for this exercise add a commit message that is something like:
 
-![Commit message](../img/commit-message.png)
 
-Then, press the green button to commit your file!
+![Screenshot of MapTiler sign in page](../img/style2.png)  

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Insert an Image
+title: Add chapter data
 parent: Hands On
 nav_order: 4
 ---

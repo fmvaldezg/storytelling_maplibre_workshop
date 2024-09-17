@@ -56,6 +56,40 @@ Input
 ```
 ![screenshot of the chapter title property](../img/chapters3.png)
 
+### *2*{: .circle .circle-blue} Adding an image to your chapter.
+
+Step 1
+{: .label .label-step}
+
+Give the image you are going to use a simple but easy to identify name. For example `img_chapter1.png`.
+
+Step 2
+{: .label .label-step}
+
+1. On your system browser, navigate to the `maplibre-storymap` repository folder.
+
+2. Inside this folder you will see another folder named `images`.
+
+3. Save your image `img-chapter1.png` into this folder.
+
+![screenshot of the repository images folder](../img/chapters4.png)
+
+Step 3
+{: .label .label-step}
+
+Go back to the `config.js` file on `Visual Studio Code` and add the following:
+
+Input
+{: .label .label-green }
+```
+24  image: './images/img-chapter1.png'
+```
+![screenshot of the config.js file](../img/chapters5.png)
+
+### *3*{: .circle .circle-blue} Setting the location of the chapter in the map.
+
+### *4*{: .circle .circle-blue} Adding more chapters to your story map.
+
 | Property | Function
 | --- | ---
 | `id:` | A slug-style ID for the chapter. This is read by the JavaScript driving the app and is assigned as an HTML `id` for the `div` element containing the rest of the story. A best-practice format would be to use kebab case, like `my-story-chapter-1`.

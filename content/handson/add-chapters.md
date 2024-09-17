@@ -8,10 +8,37 @@ nav_order: 4
 
 Now that you have the basic configuration of your storymap, it is time to add data to your chapters.
 Chapters contain the contents of your story. Each of them is a box with text and mutimedia that will scroll on top of your basemap.
+
 You will need to add and set some details in the `config.js` file to create the chapters of your story.
 Starting on line 18 of the `config.js` file, you will see the chapters and its properties.
+
 At the bottom of this page you have a detail on the function of each property of the chapters in the `config.js` file.
-We will go through the most important in the following steps.
+We will go through the basic properties in the following steps.
+
+### *1*{: .circle .circle-blue} Setting up your first chapter.
+
+Step 1
+{: .label .label-step}
+
+Add an `id` to your fist chapter. Just type any text that will identify your firts chapter.
+
+Input
+{: .label .label-green }
+```
+20  id: 'my-first-chapter'
+```
+Remember to use dashes to separate words and lowercase letters for the chpater id. 
+{: .warn}
+
+![screenshot of the chapter id](../img/chapters1.png)
+
+Step 2
+{: .label .label-step}
+
+
+
+
+
 
 | Property | Function
 | --- | ---

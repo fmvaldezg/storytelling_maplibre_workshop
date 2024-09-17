@@ -32,6 +32,23 @@ You can create you own styles using MapTiler OpenMapTyles by clicking on the `Ne
 
 ### *3*{: .circle .circle-blue} Copy the vector style URL
 
+Copy the style URl. You can use the `Copy link` button.
 
+Be sure to use the `vector style` that is located under the 'Use vector style' title.
+{: .warn}
 
-![Screenshot of MapTiler sign in page](../img/style2.png)  
+![Screenshot of MapTiler sign in page](../img/style2.png)
+
+### *4*{: .circle .circle-blue} Paste the style url in the config.js file
+
+Go back to the `config.js` you have open in `Visual Studio Code` and paste the URL you just copied in the `style:` property.
+
+Input
+{: .label .label-green }
+```
+2  style: 'https://api.maptiler.com/maps/dataviz/style.json?key={your_own_key}'
+```
+![animated image showing the copy and paste of the sytle url](../img/style3.gif)
+
+The style can be input using a URL, like in this demo, or using a `.json` file. If you create your own style and want to use a json file, you have to save that file in the `map` folder on the repository and point the style property to it using `style: '\map\style.json'`.
+{: .note }

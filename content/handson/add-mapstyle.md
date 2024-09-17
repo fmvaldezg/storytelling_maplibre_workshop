@@ -50,5 +50,5 @@ Input
 ```
 ![screenshot showing the copy and paste of the sytle url](../img/style3.png)
 
-The style can be defined using a URL, like in this demo, or using a `.json` file. If you create your own style and want to use a json file, you have to save that file in the `map` folder on the repository and point the style property to it using `style: '\map\style.json'`. Customized styles can be created and saved as json files in aplications like [https://maputnik.github.io/](https://maputnik.github.io/)
+The style can be defined using a URL, like in this demo, or using a `.json` file. If you create your own style and want to use a json file, you have to save that file in the `map` folder on the repository and point the style property to it using `style: '\map\style.json'`. Customized styles can be created and saved as json files in aplications like [Maputnik](https://maputnik.github.io/) or [Mapbox Studio](https://www.mapbox.com/mapbox-studio).
 {: .note }

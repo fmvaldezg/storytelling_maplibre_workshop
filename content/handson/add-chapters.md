@@ -35,7 +35,7 @@ Remember to use dashes to separate words and lowercase letters for the chpater i
 Step 2
 {: .label .label-step}
 
-Add a title to your chapter. On line 23, add a text to be your chapter title.
+Add a `title` to your chapter. On line 23, add a text to be your chapter title.
 
 Input
 {: .label .label-green }
@@ -47,7 +47,7 @@ Input
 Step 3
 {: .label .label-step}
 
-Add a description to your chapter. This section will contain the main text of this chapetr. On line 29, add all the text for this chapter.
+Add a `description` to your chapter. This section will contain the main text of this chapetr. On line 29, add all the text for this chapter.
 
 Input
 {: .label .label-green }
@@ -87,6 +87,53 @@ Input
 ![screenshot of the config.js file](../img/chapters5.png)
 
 ### *3*{: .circle .circle-blue} Setting the location of the chapter in the map.
+
+Another feature of storymaps is the ability to center the basemap on a specific point to higlight the story you are telling. In this demo, we are telling a story about the city of Philadelphia, we are going to locate the map so that it displays an overview of the city with the centerpoint on City Hall. 
+
+The map view is controlled by the properties under `location:` from line 31 to 34 in the `confi.js` file. The first two options, `center` and `zoom` being the most important as the set the coordinates where the map is centered and how far in or out is is zoomed in. To help you decide this properties values we are going to use the [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97) web app.
+
+Step 1
+{: .label .label-step}
+
+On your internet browser, navigate to the [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97) web app.
+
+You are going to see a map and a window with some numeric values for `center (array)`, `center (object)`, `zoom`, `bearing`, `pitch` and others on the left side of the screen. Notice a circle marking the center of the map.
+
+Navigate the map using the `Navigation controls` or the `Search bar` on the top right corner of the screen, untill you see the map as you want it to be displayed in your chapter. 
+
+![screenshot of the Location Helper web app](../img/chapters6.png)
+
+In this demo, we typed on the search bar `Philadelphia, Pennsylvania` and the resulting map looks good for the purpose of the first chapter.
+
+![screenshot of the Location Helper web app](../img/chapters7.png)
+
+Step 2
+{: .label .label-step}
+
+Copy the values on the `center (array)` peoperty of the `Location Helper` web app and paste it in the `center:` property on line 31 of the `config.js` file you have opened in Visual Studio Code.
+
+Input
+{: .label .label-green }
+```
+31  center: [-75.15911, 39.97307],
+```
+Note that the coordinates are within [ ] symbols and separated by a comma. 
+{: .warn}
+
+![screenshot of the Location Helper web app](../img/chapters8.png)
+
+Step 3
+{: .label .label-step}
+
+Copy the values on the `zoom` peoperty of the `Location Helper` web app and paste it in the `zoom:` property on line 32 of the `config.js` file you have opened in Visual Studio Code.
+
+Input
+{: .label .label-green }
+```
+32  zoom: 10.89,
+```
+
+![screenshot of the Location Helper web app](../img/chapters9.png)
 
 ### *4*{: .circle .circle-blue} Adding more chapters to your story map.
 

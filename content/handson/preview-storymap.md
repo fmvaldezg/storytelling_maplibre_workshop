@@ -4,67 +4,66 @@ title: Preview the story map
 parent: Hands On
 nav_order: 5
 ---
-# Add Some Text
-Let's add some text to your page! You are welcome to experiment here or borrow some of the example text below. *1*{: .circle .circle-blue} Copy/Paste text to your page, then *2*{: .circle .circle-blue} commit your changes. *3*{: .circle .circle-blue} Count to 30 and refresh your page.
+# Preview your storymap
 
-### Lorem Ipsum from [lipsum.com](https://www.lipsum.com/)
+Once you have set and added the basics to your story map, it is a good practice to preview it before deploying it as a webpage. 
 
-```
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ipsum tempus, ornare lorem nec, efficitur ante. Nullam in nisl sed mi vehicula ultricies in a nisi. Quisque in elit id neque placerat vestibulum porttitor tempor magna. Aliquam vitae ultricies nibh. Donec in tellus auctor, pellentesque ante eu, efficitur libero. Praesent sagittis nunc nec posuere semper. Nulla facilisi. Maecenas eget aliquet augue.
+To do so, we are going to use the `Visual Studio Code` live server functionality. This will deploy the story map locally in your computer. 
 
-Vivamus non nisi ut velit dictum interdum eget vel risus. Duis blandit iaculis dolor pulvinar hendrerit. Nulla porttitor sodales dui, in tristique nulla vehicula et. Suspendisse nec tellus non sapien varius blandit. Etiam lectus odio, dictum ut feugiat ac, egestas vel justo. Mauris a pretium eros, sed bibendum odio. Pellentesque posuere, neque nec sodales hendrerit, magna purus rutrum ex, sed volutpat leo elit sed purus. Aenean vel orci a massa rhoncus ullamcorper a sit amet sapien. Pellentesque pulvinar vehicula arcu, non tempus turpis ornare sit amet. Mauris lobortis a neque semper gravida. Cras in tempus quam.
-```
+Follow the steps below to preview your story map.
 
-### Lorem Markdownum from [Jasper Van der Jeugt](https://jaspervdj.be/lorem-markdownum/)
+### *1*{: .circle .circle-blue} Commit your changes to `GitHub`.
 
-```
-# Dixit et serta Iuno dixit se honoris
+One of the functions of Git as a version control system is to take snapshots of the changes you make to your files.
 
-## Non manibus ortus
+A `commit` is a snapshot of your project at that point in time. 
 
-Lorem markdownum et ad ille; nunc saepe aegre coronae, et. Accipio Semeles quae
-favore?
+To `commit` your changes:
 
-    win_tiger.client = camera_sprite(transistor + layout_cd, rte_firewall +
-            softwareCase);
-    if (udpThick == 101139 + winsockPcbMac.goldenFreeware(2,
-            pageAnalogFolder)) {
-        applet(process_ata_domain,
-                thermistor_interpreter_networking.endRefreshRefresh(11786, -5,
-                screenshot));
-    }
-    var ccJpeg = xp + 4 + irc + wais.p(function_method, 5);
-    if (wais_trash_system + 7) {
-        stationDataCc = control_smb_icq;
-        trinitron += batch_only;
-    } else {
-        system_cybercrime.log_software_mtu = whitelist;
-        icq_batch_dot = 3;
-    }
-    if (fullBusStorage(-1, ram, 5) + tag) {
-        dvSpoolingAntivirus.mbpsMediaFormula(file + activex, biosUncAlu);
-        unit_website += pingOlap / 2;
-    }
+Step 1
+{: .label .label-step}
 
-Id neci spatiosa acervos contraria et veluti proceres veniens retractat
-aspexisse montani hi inpune sit tanto. Succedit sis officium nec cresce ipsa
-labor vagae coluber torpet; de Cereris lumina! *Voca vel*, o in nam una amplexu
-pleno loquendo [percutiens](http://esthora.net/parentemhabet.php) inmissusque
-dicere, nostro. Pede requiris.
-```
-### Fillerama from [fillerama.io](http://fillerama.io/)
-```
-# I'm Santa Claus!
+Go to `GitHub Desktop app`.
 
-And I'm his friend Jesus. Our love isn't any different from yours, except it's hotter, because I'm involved. I can explain. It's very valuable. Eeeee! Now say "nuclear wessels"!
+You are going to see all the files you have changed listed in the panel at the left side, and all the changes you have made in those files in the panel at the center. If you added something to the file it will be highlited in green and if you deleted something in red.
 
-That's a popular name today. Little "e", big "B"? Is that a cooking show? You, a bobsleder!? That I'd like to see! Shut up and take my money! __No!__ *Don't jump!* For example, if you killed your grandfather, you'd cease to exist!
+Review the changes you have made.
 
-## And remember, don't do anything that affects anything, unless it turns out you were supposed to, in which case, for the love of God, don't not do it!
+![screenshot of GitHub Desktop](../img/preview1.png)
 
-Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Oh, but you can. But you may have to metaphorically make a deal with the devil. And by "devil", I mean Robot Devil. And by "metaphorically", I mean get your coat.
+Step 2
+{: .label .label-step}
 
-1. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense.
-2. Oh, how I wish I could believe or understand that! There's only one reasonable course of action now: kill Flexo!
-3. With gusto.
-```
+On the lower left panel, type a summary for the commit, and optionally a description. It is a good practice to maintain a detailed log of changes made, specially if more than one person is working in the project.
+
+Then click `Commit to main`.
+
+![screenshot of commit](../img/preview2.png)
+
+Step 3
+{: .label .label-step}
+
+After commiting the changes, `GitHub Dektop` will display the main window of the repository and enable the option to `Publish repository`. A copy of your repository is now abailable in GitHub cloud. 
+
+Go ahead and publish your repository by clicking on `Publish repository`. 
+
+![screenshot of publishing](../img/preview3.png)
+
+The first time you do this, you will be asked to set a name for your repository and an optional description. Then click `Publish Repository`.
+
+![screenshot of publishing](../img/preview4.png)
+
+### *1*{: .circle .circle-blue} Preview your storymap locally.
+
+Now that you have published your repository to GitHub cloud, go back to `Visual Studio Code`.
+
+To visualize a preview of your storymap click on the `Go Live` button located in the bar at the lower right corner.
+
+[screenshot of publishing](../img/preview5.png)
+
+A new windows will open in your default internet browser. You will see a preview of your storymap.
+
+Now you can add or modify your `config.js` file and see the changes live on your local computer. To do so, simply save the changes you made in `Visual Studio Code` (press ctrl + s) and refresh the web browser window.
+
+This map is a preview only. It is still living in your system. To publish it as a webpage to be shared and visualized by anyone, follow the instruction in the next section of this tutorial.
+{: .note }

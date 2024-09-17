@@ -59,7 +59,7 @@ Now that you have published your repository to GitHub cloud, go back to `Visual 
 
 To visualize a preview of your storymap click on the `Go Live` button located in the bar at the lower right corner.
 
-[screenshot of go live button](../img/preview5.png)
+![screenshot of go live button](../img/preview5.png)
 
 A new windows will open in your default internet browser. You will see a preview of your storymap.
 
@@ -68,4 +68,4 @@ Now you can add or modify your `config.js` file and see the changes live on your
 This map is a preview only. It is still living in your system. To publish it as a webpage to be shared and visualized by anyone, follow the instruction in the next section of this tutorial.
 {: .note }
 
-[screenshot of the resulting preview](../img/preview6.png)
+![screenshot of the resulting preview](../img/preview6.png)

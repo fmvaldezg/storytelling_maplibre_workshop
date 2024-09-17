@@ -35,10 +35,26 @@ Remember to use dashes to separate words and lowercase letters for the chpater i
 Step 2
 {: .label .label-step}
 
+Add a title to your chapter. On line 23, add a text to be your chapter title.
 
+Input
+{: .label .label-green }
+```
+23  title: 'Chapter 1'
+```
+![screenshot of the chapter title property](../img/chapters2.png)
 
+Step 3
+{: .label .label-step}
 
+Add a description to your chapter. This section will contain the main text of this chapetr. On line 29, add all the text for this chapter.
 
+Input
+{: .label .label-green }
+```
+29  description: 'This is the greatest story in the world. It takes place in the city of Philadelphia'
+```
+![screenshot of the chapter title property](../img/chapters3.png)
 
 | Property | Function
 | --- | ---

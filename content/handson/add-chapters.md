@@ -120,7 +120,7 @@ Input
 Note that the coordinates are within [ ] symbols and separated by a comma. 
 {: .warn}
 
-![screenshot of the Location Helper web app](../img/chapters8.png)
+![screenshot of center coordinates](../img/chapters8.png)
 
 Step 3
 {: .label .label-step}
@@ -133,9 +133,52 @@ Input
 32  zoom: 10.89,
 ```
 
-![screenshot of the Location Helper web app](../img/chapters9.png)
+![screenshot of the zoom level](../img/chapters9.png)
 
 ### *4*{: .circle .circle-blue} Adding more chapters to your story map.
+
+The Digital Democracy template has two chapters added to the map. 
+
+A chapter has the following structure:
+
+```
+{
+            id: 'chapter-id',
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter title',
+            image: './images/name.png',
+            caption: 'Source image caption',
+            website: '<a href="" target="_blank">Website</a>',
+            author: 'Digital Storyteller',
+            legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
+            description: 'Your chapter content',
+            location: {
+                center: [-75.15911, 39.97307],
+                zoom: 10.89,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+```
+To add new chapters to your storymap, simply `copy` this text and paste it right after the `}` symbol that closes the previous chapter. Be sure to include a `,` after the symbol and paste the text before the `]` that closes the chapters section on the code.
+
+![screenshot of the place to paste the code](../img/chapters10.png)
+
+Add as many chapters as you like. 
+
+Don't forget to add th data and specifications needed in each chapter. In the next section of this tutorial you will learn how to preview your storymap.
+
+Go ahead and play around changing some chapter settings like `aligment` and `rotateAnimantion`.
+{: .note }
+
 
 | Property | Function
 | --- | ---

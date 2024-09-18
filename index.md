@@ -48,5 +48,5 @@ If you want to familiarize yourself with the use of code for this type of activi
 
 ### Workshop Slides
 
-<object data="{.slides/storytellingwithmaps.pdf" width="1000" height="1000" type="application/pdf"></object>   
+<object data="{{ site.url }}{{ site.baseurl }}/content/slides/Algebra_I_Reference_Sheet.pdf" width="1000" height="1000" type="application/pdf"></object>
 *Click on the slides then press the F key for full screen*

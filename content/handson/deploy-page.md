@@ -42,18 +42,38 @@ Scroll down to the bottom of the page and click on `Change visibility` and then 
 
 ![Open on GitHub screenshot](../img/deploy4.png)
 
+Confirm that you want to make the repository public.
+
+![Open on GitHub screenshot](../img/deploy5.png)
+
+You might be asked to enter your account password to confirm.
+{: .warn }
+
 Step 4
 {: .label .label-step}
 
 On the repository Settings, click on the `Pages` button on the left panel options.
 
-![Open on GitHub screenshot](../img/deploy4.png)
+![Open on GitHub screenshot](../img/deploy6.png)
 
 Step 5
 {: .label .label-step}
 
-If you did not before, you will have to make your repository `public` in order to use GitHub pages.
+On the Pages settings, click on the dropdown menu under the title `Branch` and select the `main` bramch option.
 
-Simply click on the `Upgrade` button. Your repository will now be visible to everyone on GitHub.
+![Open on GitHub screenshot](../img/deploy7.png)
 
-![Open on GitHub screenshot](../img/deploy5.png)
+Then click on `Save`. A message like the one below will appear on the screen.
+
+![Open on GitHub screenshot](../img/deploy8.png)
+
+Step 6
+{: .label .label-step}
+
+Wait a couple some seconds and the refresh the page.
+
+A new section will appear on the `Pages` settings window with the details of your deployed page.
+
+Click on the `Visit site` button to open the story map on a new browser window.
+
+![Open on GitHub screenshot](../img/deploy9.png)

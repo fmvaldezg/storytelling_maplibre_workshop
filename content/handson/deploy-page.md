@@ -77,3 +77,8 @@ A new section will appear on the `Pages` settings window with the details of you
 Click on the `Visit site` button to open the story map on a new browser window.
 
 ![Open on GitHub screenshot](../img/deploy9.png)
+
+Everytime you change something on your `config.js` file or add anything to your repository, `GitHub pages` will built the rendering files and deploy the new version of your map. The only thing you have to do is `commit` your changes and `push` the changes to the cloud if you are using `GitHub desktop`.
+{: .warn }
+
+![Open on GitHub screenshot](../img/deploy10.png)

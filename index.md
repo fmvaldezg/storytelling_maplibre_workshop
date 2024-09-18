@@ -42,7 +42,7 @@ If you want to familiarize yourself with the use of code for this type of activi
 | --- | ---
 | 0:00 | Introductions
 | 0:05 | [Philly Community Wireless story map](https://phillycommunitywireless.org/map/)
-| 0:25 | [Demystifying GitHub](content/slides/waml_github20.html){:target="_blank"} (presentation)
-| 0:50 | Hands on demo
-| 1:00 | Forking the workshop template (hands on)
+| 0:25 | Hands on demo
+| 0:50 | Questions
+| 1:00 | End
 

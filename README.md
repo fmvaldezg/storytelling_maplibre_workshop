@@ -1,7 +1,6 @@
 # StoryTelling with Maps - MapLibre Workshop - Fall 2024
 
-This is the reposritory for the Storytelling with maps using MapLibre Workshop of Fall 2024.
-
+This is the repository for the Storytelling with maps using MapLibre Workshop of Fall 2024.
 
 
 This GitHub repository holds a template for a Jekyll site hosted on GitHub pages. You can find the public facing side of the template [here](https://ubc-lib-geo.github.io/gis-workshop-waml-template/).

@@ -5,7 +5,7 @@ nav_order: 1
 ---
 # Storytelling with Maps - Using Maplibre
 ### Fall 2024 - Mappping Series Workshops 
-[bit.ly/waml20git](http://bit.ly/waml20git)  
+[https://bit.ly/gis-workshops](https://bit.ly/gis-workshops)  
 
 ____
 

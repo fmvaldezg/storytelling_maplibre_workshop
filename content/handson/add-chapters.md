@@ -4,6 +4,9 @@ title: Add chapter data
 parent: Hands On
 nav_order: 4
 ---
+- TOC
+{:toc}
+
 # Add chapters
 
 Now that you have the basic configuration of your storymap, it is time to add data to your chapters.

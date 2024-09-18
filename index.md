@@ -48,5 +48,5 @@ If you want to familiarize yourself with the use of code for this type of activi
 
 ### Workshop Slides
 
-<iframe width="625" height="352" frameborder="0" marginheight="0" marginwidth="0" src="content/slides/slides"></iframe>    
+<iframe width="625" height="352" frameborder="0" marginheight="0" marginwidth="0" src="content/slides/"></iframe>    
 *Click on the slides then press the F key for full screen*

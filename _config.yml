@@ -33,7 +33,7 @@ back_to_top_text: "Back to top"
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
-# theme: "just-the-docs"
+theme: "just-the-docs"
 color_scheme: light
 plugins:
   - jekyll-feed

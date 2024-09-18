@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Next Steps
-nav_order: 8
+nav_order: 6
 ---
 # Next steps
 ## Cloning and working locally

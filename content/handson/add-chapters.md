@@ -4,11 +4,8 @@ title: Add chapter data
 parent: Hands On
 nav_order: 4
 ---
-- TOC
-{:toc}
 
 # Add chapters
-{: .no_toc }
 
 Now that you have the basic configuration of your storymap, it is time to add data to your chapters.
 Chapters contain the contents of your story. Each of them is a box with text and mutimedia that will scroll on top of your basemap.

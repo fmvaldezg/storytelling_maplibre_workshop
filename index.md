@@ -11,14 +11,13 @@ ____
 
 ### Presenters
 
-Felipe Valdez <a href='https://library.temple.edu/people/felipe-valdez' target='_blank'><img src='https://library.temple.edu/assets/temple-logo-t-box-90cc3fa538df8cb198867442038a1dac87756f1e375393193f775e8760013fdf.svg' style='width:15px; padding:0; border:none !important;'></a>
+Felipe Valdez <a href='https://library.temple.edu/people/felipe-valdez' target='_blank'><img src='https://library.temple.edu/assets/temple-logo-t-box-90cc3fa538df8cb198867442038a1dac87756f1e375393193f775e8760013fdf.svg' style='width:15px; padding:0;border:none !important;'></a>
 
 GIS Specialist
 
-Temple University Libraries 
+Temple University Libraries
+
 [felipe.valdez@temple.edu](mailto:felipe.valdez@temple.edu)  
-
-
 
 - A GitHub.com account. If you don't already have a GitHub.com account, you can [create one here](https://github.com/join). Take this short video [Getting Started with GitHub](https://youtu.be/noZnOSpcjYY) if you're brand new and want to get a high-level overview of the platform.
 - A MapTiler account. To create one go to [maptiler.com](https://cloud.maptiler.com/auth/widget?next=https://data.maptiler.com/my-extracts/?_gl%3D1*aq73hk*_ga*MzczMjQ2ODc0LjE3MjQ4ODAzNzI.*_ga_K4SXYBF4HT*MTcyNDg4MDM3MS4xLjEuMTcyNDg4MDQwNy4yNC4wLjA).
@@ -44,5 +43,5 @@ If you want to familiarize yourself with the use of code for this type of activi
 | 0:05 | [Philly Community Wireless story map](https://phillycommunitywireless.org/map/)
 | 0:25 | [Demystifying GitHub](content/slides/waml_github20.html){:target="_blank"} (presentation)
 | 0:50 | Hands on demo
-| 1:00 | Questions
+| 1:00 | Forking the workshop template (hands on)
 

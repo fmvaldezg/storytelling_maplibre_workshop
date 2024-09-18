@@ -12,13 +12,13 @@ ____
 ### Presenters
 
 Felipe Valdez <a href='https://library.temple.edu/people/felipe-valdez' target='_blank'><img src='https://library.temple.edu/assets/temple-logo-t-box-90cc3fa538df8cb198867442038a1dac87756f1e375393193f775e8760013fdf.svg' style='width:15px; padding:0;border:none !important;'></a>
-<br>GIS Specialist</br>
-<br>Temple University Libraries</br>
-<br>[felipe.valdez@temple.edu](mailto:felipe.valdez@temple.edu)</br>
+<br>GIS Specialist
+<br>Temple University Libraries
+<br>[felipe.valdez@temple.edu](mailto:felipe.valdez@temple.edu)
 
 Alex Wermer-Colan
-<br>Academic and Research Director - Loretta C. Duckworth Scholars Studio</br>
-<br>Temple Unibersity Libraries</br>
+<br>Academic and Research Director - Loretta C. Duckworth Scholars Studio
+<br>Temple Unibersity Libraries
 
 - A GitHub.com account. If you don't already have a GitHub.com account, you can [create one here](https://github.com/join). Take this short video [Getting Started with GitHub](https://youtu.be/noZnOSpcjYY) if you're brand new and want to get a high-level overview of the platform.
 - A MapTiler account. To create one go to [maptiler.com](https://cloud.maptiler.com/auth/widget?next=https://data.maptiler.com/my-extracts/?_gl%3D1*aq73hk*_ga*MzczMjQ2ODc0LjE3MjQ4ODAzNzI.*_ga_K4SXYBF4HT*MTcyNDg4MDM3MS4xLjEuMTcyNDg4MDQwNy4yNC4wLjA).

@@ -1,8 +1,6 @@
 ---
 layout: default
-title: UI Features
 nav_order: 6
-hidden: true
 ---
 # UI features
 

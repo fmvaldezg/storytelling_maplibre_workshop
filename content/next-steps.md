@@ -2,6 +2,7 @@
 layout: default
 title: Next Steps
 nav_order: 6
+hidden: true
 ---
 # Next steps
 ## Cloning and working locally

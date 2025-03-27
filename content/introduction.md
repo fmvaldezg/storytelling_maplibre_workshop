@@ -9,6 +9,10 @@ Maps have always been a vital tool for storytelling. They don't just provide con
 
 # Check some story maps examples here
 
+[The Evolution of Fletcher Street's Horse Stables. A Legacy of Philadelphia's Black Riders: Past and Present](https://fletcherststorymap.com/)
+
+<img src="img/Untitled.gif" width="600" alt="Zoom Toolbar"><a src="https://fletcherststorymap.com/">
+
 [Nuestro Territorio es Nuestra Vida](https://lab.digital-democracy.org/mapa-sinangoe/)
 
 <img src="img/example1.png" width="600" alt="Zoom Toolbar"><a src="https://lab.digital-democracy.org/mapa-sinangoe/">

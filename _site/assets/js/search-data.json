@@ -1,134 +1,356 @@
 {"0": {
-    "doc": "Agregar capítulos",
-    "title": "Agregar capítulos",
-    "content": "Ahora que tienes la configuración básica de tu mapa narrativo, es hora de agregar datos a tus capítulos. Los capítulos contienen el contenido de tu historia. Cada uno es un recuadro con texto y multimedia que se desplazará sobre tu mapa base. Necesitarás agregar y configurar algunos detalles en el archivo config.js para crear los capítulos de tu historia. A partir de la línea 18 del archivo config.js, verás los capítulos y sus propiedades. Al final de esta página tienes un detalle sobre la función de cada propiedad de los capítulos en el archivo config.js. Repasaremos las propiedades básicas en los siguientes pasos. 1 Configurando tu primer capítulo. Paso 1 . Agrega un id a tu primer capítulo. Simplemente escribe cualquier texto que identifique tu primer capítulo. Entrada . 20 id: 'mi-primer-capitulo' . Recuerda usar guiones para separar palabras y letras minúsculas para el id del capítulo. Paso 2 . Agrega un title a tu capítulo. En la línea 23, agrega un texto para que sea el título de tu capítulo. Entrada . 23 title: 'Capítulo 1' . Paso 3 . Agrega una description a tu capítulo. Esta sección contendrá el texto principal de este capítulo. En la línea 29, agrega todo el texto para este capítulo. Entrada . 29 description: 'Esta es la mejor historia del mundo. Tiene lugar en la ciudad de Filadelfia' . 2 Agregando una imagen a tu capítulo. Paso 1 . Dale a la imagen que vas a usar un nombre simple pero fácil de identificar. Por ejemplo img_capitulo1.png. Paso 2 . | En el navegador de tu sistema, navega hasta la carpeta del repositorio maplibre-storymap. | Dentro de esta carpeta verás otra carpeta llamada images. | Guarda tu imagen img-capitulo1.png en esta carpeta. | . Paso 3 . Regresa al archivo config.js en Visual Studio Code y agrega lo siguiente: . Entrada . 24 image: './images/img-capitulo1.png' . 3 Configurando la ubicación del capítulo en el mapa. Otra característica de los mapas narrativos es la capacidad de centrar el mapa base en un punto específico para destacar la historia que estás contando. En esta demostración, estamos contando una historia sobre la ciudad de Filadelfia, vamos a ubicar el mapa para que muestre una vista general de la ciudad con el punto central en el Ayuntamiento. La vista del mapa está controlada por las propiedades bajo location: desde la línea 31 hasta la 34 en el archivo config.js. Las dos primeras opciones, center y zoom son las más importantes ya que establecen las coordenadas donde se centra el mapa y cuán alejado o acercado está. Para ayudarte a decidir los valores de estas propiedades, vamos a usar la aplicación web Location Helper. Paso 1 . En tu navegador de internet, navega hasta la aplicación web Location Helper. Verás un mapa y una ventana con algunos valores numéricos para center (array), center (object), zoom, bearing, pitch y otros en el lado izquierdo de la pantalla. Observa un círculo que marca el centro del mapa. Navega por el mapa usando los Controles de navegación o la Barra de búsqueda en la esquina superior derecha de la pantalla, hasta que veas el mapa como quieres que se muestre en tu capítulo. En esta demostración, escribimos en la barra de búsqueda Philadelphia, Pennsylvania y el mapa resultante se ve bien para el propósito del primer capítulo. Paso 2 . Copia los valores en la propiedad center (array) de la aplicación web Location Helper y pégalos en la propiedad center: en la línea 31 del archivo config.js que tienes abierto en Visual Studio Code. Entrada . 31 center: [-75.15911, 39.97307], . Ten en cuenta que las coordenadas están dentro de los símbolos [ ] y separadas por una coma. Paso 3 . Copia los valores en la propiedad zoom de la aplicación web Location Helper y pégalos en la propiedad zoom: en la línea 32 del archivo config.js que tienes abierto en Visual Studio Code. Entrada . 32 zoom: 10.89, . 4 Agregando más capítulos a tu mapa narrativo. La plantilla de Digital Democracy tiene dos capítulos agregados al mapa. Un capítulo tiene la siguiente estructura: . { id: 'id-del-capitulo', alignment: 'left', hidden: false, title: 'Título del capítulo', image: './images/nombre.png', caption: 'Leyenda de la imagen fuente', website: '&lt;a href=\"\" target=\"_blank\"&gt;Sitio web&lt;/a&gt;', author: 'Narrador Digital', legend: '&lt;span style=\"font-size: 0.85em;\"&gt;&lt;em&gt;Contenido de la leyenda&lt;/em&gt;&lt;/span&gt;', description: 'El contenido de tu capítulo', location: { center: [-75.15911, 39.97307], zoom: 10.89, pitch: 0, bearing: 0 }, mapAnimation: 'flyTo', rotateAnimation: false, spinGlobe: false, mapInteractive: true, callback: '', onChapterEnter: [], onChapterExit: [] }, . Para agregar nuevos capítulos a tu mapa narrativo, simplemente copia este texto y pégalo justo después del símbolo } que cierra el capítulo anterior. Asegúrate de incluir una , después del símbolo y pegar el texto antes del ] que cierra la sección de capítulos en el código. Agrega tantos capítulos como quieras. No olvides agregar los datos y especificaciones necesarios en cada capítulo. En la siguiente sección de este tutorial aprenderás cómo previsualizar tu mapa narrativo. Adelante, juega cambiando algunas configuraciones del capítulo como alignment y rotateAnimation. | Propiedad | Función | . | id: | Un ID en estilo slug para el capítulo. Esto es leído por JavaScript que impulsa la aplicación y se asigna como un id HTML para el elemento div que contiene el resto de la historia. Un formato de buenas prácticas sería usar kebab case, como mi-historia-capitulo-1. | . | alignment: | Define dónde debe aparecer el texto de la historia sobre el mapa. Las opciones son center, left, right y full. | . | hidden: | Establece la visibilidad del capítulo como oculta cuando es true. El capítulo seguirá activando una transición de mapa y capa. | . | title: | El título de la sección, mostrado en un elemento h3. | . | image: | La ruta a una imagen para mostrar en esta sección. | . | caption: | Agrega un pie de foto para la imagen. | . | author: | Agrega un autor para mostrar en la parte inferior del capítulo. | . | website: | Agrega un sitio web para mostrar en la parte inferior del capítulo. | . | legend: | Agrega un cuadro de leyenda HTML para este capítulo. legend también debe estar habilitado en la configuración anterior. | . | description: | El contenido principal de la historia para la sección. Esto debe estar alineado con lo que el lector está viendo en el mapa. En la versión básica, este campo se renderizará como HTML. Se pueden incluir imágenes, enlaces y otros elementos como HTML. | . | location: | Detalles sobre la visualización del mapa y la vista de la cámara. center: Coordenadas centrales del mapa, como longitud, latitud. zoom: Nivel de zoom del mapa. pitch: Ángulo de la vista del mapa. 0 es recto hacia abajo, y 60 está muy inclinado. bearing: Grados de rotación en sentido horario desde el Norte (0). Los valores negativos representan rotación en sentido antihorario. | . | mapAnimation: | Define el tipo de animación para la transición entre ubicaciones. Esta propiedad admite animaciones flyTo, easeTo y jumpTo. Si no se especifica, por defecto es flyTo. | . | rotateAnimation: | Inicia una animación de rotación lenta al final de la transición del mapa cuando se establece en true. El mapa rotará 90 grados en 24 segundos. | . | mapInteractive: | Cuando se establece en true, configura este capítulo para que sea interactivo, permitiendo al usuario desplazarse y hacer zoom en el mapa, y agrega controles de navegación. | . | callback: | Acepta el nombre de una función JavaScript y ejecuta la función. Usa esto si tienes código personalizado que quieres ejecutar para un capítulo, como activar o desactivar una leyenda, agregar datos de una solicitud API o mostrar un gráfico interactivo. | . | onChapterEnter: | Capas para ser mostradas/ocultadas/silenciadas cuando la sección se vuelve activa. layer: Nombre de la capa como se asigna en el estilo MapLibre. opacity: La opacidad para mostrar la capa. 0 es completamente transparente, 1 es completamente opaco. duration: La duración de la transición de opacidad, numérica, en milisegundos. El valor predeterminado es 300. Este es un parámetro opcional y puede omitirse. | . | onChapterExit: | Igual que onChapterEnter excepto que se activa cuando la sección se vuelve inactiva. | . ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/add-chapters.html",
-    "relUrl": "/content/handson/add-chapters.html"
+    "doc": "Acknowledgements",
+    "title": "Acknowledgements",
+    "content": "This template uses Just The Docs Jekyll theme. Heavily influenced and inspired by the Stanford Geospatial Center, which is one of the O.G. GitHub contributors for GIS workshops and tutorials. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/acknowledgements.html",
+    "relUrl": "/content/acknowledgements.html"
   },"1": {
-    "doc": "Agregar un Estilo de Mapa a tu mapa",
-    "title": "Agregar un Estilo de Mapa",
-    "content": "Los mapas web se muestran utilizando un conjunto de reglas que tratan cada elemento del mapa de una manera específica para renderizarlos usando los colores, iconos y formas que ves en tu pantalla. Estas reglas se almacenan en un archivo que puede estar en tu computadora o puede ser accedido a través de una URL. Utilizaremos los OpenMapStyles de MapTiler. Si no tienes una cuenta de MapTiler, consulta la sección de prerrequisitos para crear una cuenta gratuita. Sigue estos pasos para agregar un estilo de mapa a tu mapa narrativo. 1 Inicia sesión en tu cuenta de MapTiler. En tu navegador web, ve a este enlace. Ingresa tu nombre de usuario y contraseña. 2 Selecciona el estilo de mapa que quieres usar. En la pantalla de MapTiler Maps verás una lista de estilos abiertos predefinidos. Haz clic en DataViz si quieres seguir este tutorial, o cualquier otro estilo que prefieras. Puedes crear tus propios estilos usando MapTiler OpenMapTyles haciendo clic en el botón New map. Puedes seleccionar qué capas mostrar y cómo. 3 Copia la URL del estilo vectorial . Copia la URL del estilo. Puedes usar el botón Copy link. Asegúrate de usar el vector style que se encuentra bajo el título ‘Use vector style’. 4 Pega la URL del estilo en el archivo config.js . Regresa al archivo config.js que tienes abierto en Visual Studio Code y pega la URL que acabas de copiar en la propiedad style:. Input . 2 style: 'https://api.maptiler.com/maps/dataviz/style.json?key={tu_propia_clave}' . El estilo puede definirse usando una URL, como en esta demostración, o usando un archivo .json. Si creas tu propio estilo y quieres usar un archivo json, debes guardar ese archivo en la carpeta map en el repositorio y apuntar la propiedad style a él usando style: '\\map\\style.json'. Los estilos personalizados pueden crearse y guardarse como archivos json en aplicaciones como Maputnik o Mapbox Studio. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/add-mapstyle.html#agregar-un-estilo-de-mapa",
-    "relUrl": "/content/handson/add-mapstyle.html#agregar-un-estilo-de-mapa"
+    "doc": "Acknowledgements",
+    "title": "Other GitHub users who indirectly contributed to this workshop",
+    "content": ". | marquesarthur created some cool step-by-step styling | dohliam provided us some good language throughout the workshop | UBC Library Research Commons for inspiring the theme-based workshop approach | . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/acknowledgements.html#other-github-users-who-indirectly-contributed-to-this-workshop",
+    "relUrl": "/content/acknowledgements.html#other-github-users-who-indirectly-contributed-to-this-workshop"
   },"2": {
-    "doc": "Agregar un Estilo de Mapa a tu mapa",
-    "title": "Agregar un Estilo de Mapa a tu mapa",
-    "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/add-mapstyle.html",
-    "relUrl": "/content/handson/add-mapstyle.html"
+    "doc": "Add Some Text",
+    "title": "Add Some Text",
+    "content": "Let’s add some text to your page! You are welcome to experiment here or borrow some of the example text below. 1 Copy/Paste text to your page, then 2 commit your changes. 3 Count to 30 and refresh your page. Lorem Ipsum from lipsum.com . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ipsum tempus, ornare lorem nec, efficitur ante. Nullam in nisl sed mi vehicula ultricies in a nisi. Quisque in elit id neque placerat vestibulum porttitor tempor magna. Aliquam vitae ultricies nibh. Donec in tellus auctor, pellentesque ante eu, efficitur libero. Praesent sagittis nunc nec posuere semper. Nulla facilisi. Maecenas eget aliquet augue. Vivamus non nisi ut velit dictum interdum eget vel risus. Duis blandit iaculis dolor pulvinar hendrerit. Nulla porttitor sodales dui, in tristique nulla vehicula et. Suspendisse nec tellus non sapien varius blandit. Etiam lectus odio, dictum ut feugiat ac, egestas vel justo. Mauris a pretium eros, sed bibendum odio. Pellentesque posuere, neque nec sodales hendrerit, magna purus rutrum ex, sed volutpat leo elit sed purus. Aenean vel orci a massa rhoncus ullamcorper a sit amet sapien. Pellentesque pulvinar vehicula arcu, non tempus turpis ornare sit amet. Mauris lobortis a neque semper gravida. Cras in tempus quam. Lorem Markdownum from Jasper Van der Jeugt . # Dixit et serta Iuno dixit se honoris ## Non manibus ortus Lorem markdownum et ad ille; nunc saepe aegre coronae, et. Accipio Semeles quae favore? win_tiger.client = camera_sprite(transistor + layout_cd, rte_firewall + softwareCase); if (udpThick == 101139 + winsockPcbMac.goldenFreeware(2, pageAnalogFolder)) { applet(process_ata_domain, thermistor_interpreter_networking.endRefreshRefresh(11786, -5, screenshot)); } var ccJpeg = xp + 4 + irc + wais.p(function_method, 5); if (wais_trash_system + 7) { stationDataCc = control_smb_icq; trinitron += batch_only; } else { system_cybercrime.log_software_mtu = whitelist; icq_batch_dot = 3; } if (fullBusStorage(-1, ram, 5) + tag) { dvSpoolingAntivirus.mbpsMediaFormula(file + activex, biosUncAlu); unit_website += pingOlap / 2; } Id neci spatiosa acervos contraria et veluti proceres veniens retractat aspexisse montani hi inpune sit tanto. Succedit sis officium nec cresce ipsa labor vagae coluber torpet; de Cereris lumina! *Voca vel*, o in nam una amplexu pleno loquendo [percutiens](http://esthora.net/parentemhabet.php) inmissusque dicere, nostro. Pede requiris. Fillerama from fillerama.io . # I'm Santa Claus! And I'm his friend Jesus. Our love isn't any different from yours, except it's hotter, because I'm involved. I can explain. It's very valuable. Eeeee! Now say \"nuclear wessels\"! That's a popular name today. Little \"e\", big \"B\"? Is that a cooking show? You, a bobsleder!? That I'd like to see! Shut up and take my money! __No!__ *Don't jump!* For example, if you killed your grandfather, you'd cease to exist! ## And remember, don't do anything that affects anything, unless it turns out you were supposed to, in which case, for the love of God, don't not do it! Bender, this is Fry's decision… and he made it wrong. So it's time for us to interfere in his life. Oh, but you can. But you may have to metaphorically make a deal with the devil. And by \"devil\", I mean Robot Devil. And by \"metaphorically\", I mean get your coat. 1. I just want to talk. It has nothing to do with mating. Fry, that doesn't make sense. 2. Oh, how I wish I could believe or understand that! There's only one reasonable course of action now: kill Flexo! 3. With gusto. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/add-text.html",
+    "relUrl": "/content/handson/add-text.html"
   },"3": {
-    "doc": "Implementar mapa en la web",
-    "title": "Implementar tu mapa narrativo como página web",
-    "content": "Ahora que tu mapa narrativo está terminado, es hora de implementarlo como una página web. Para eso utilizaremos GitHub Pages. GitHub Pages es un servicio de alojamiento de sitios estáticos que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente procesa los archivos a través de un proceso de construcción, y publica un sitio web. Para publicar tu mapa como una página web, sigue estos pasos: . Paso 1 . Ve a la nube de GitHub e inicia sesión en tu cuenta. Puedes hacer clic en el botón View on GitHub en tu aplicación GitHub Desktop para abrir el repositorio en tu navegador. Paso 2 . En tu repositorio, haz clic en el botón Settings en la barra de menú superior. Paso 3 . Si no lo hiciste antes, tendrás que hacer tu repositorio público para poder usar GitHub Pages. Simplemente haz clic en el botón General en el panel de la izquierda. Desplázate hasta la parte inferior de la página y haz clic en Change visibility y luego en Change to public. Confirma que deseas hacer público el repositorio. Es posible que se te pida que ingreses la contraseña de tu cuenta para confirmar. Paso 4 . En la Configuración del repositorio, haz clic en el botón Pages en las opciones del panel izquierdo. Paso 5 . En la configuración de Pages, haz clic en el menú desplegable bajo el título Branch y selecciona la opción de rama main. Luego haz clic en Save. Un mensaje como el que se muestra a continuación aparecerá en la pantalla. Paso 6 . Espera unos segundos y luego actualiza la página. Una nueva sección aparecerá en la ventana de configuración de Pages con los detalles de tu página implementada. Haz clic en el botón Visit site para abrir el mapa narrativo en una nueva ventana del navegador. Cada vez que cambies algo en tu archivo config.js o agregues algo a tu repositorio, GitHub Pages construirá los archivos de renderizado e implementará la nueva versión de tu mapa. Lo único que tienes que hacer es commit tus cambios y push los cambios a la nube si estás usando GitHub Desktop. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/deploy-page.html#implementar-tu-mapa-narrativo-como-p%C3%A1gina-web",
-    "relUrl": "/content/handson/deploy-page.html#implementar-tu-mapa-narrativo-como-página-web"
+    "doc": "ArcGIS Online",
+    "title": "Embedding ArcGIS Online Content",
+    "content": "Here’s how to add content from ArcGIS online into a Markdown file . Basic Map . We’ll start with a basic map. Once you’ve saved any map in ArcGIS Online, you can get it’s embed code by clicking Share. Because you can add HTML directly to Markdown, just paste the code provided by AGOL directly into the Markdown file: . &lt;style&gt;.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}&lt;/style&gt;&lt;div class=\"embed-container\"&gt;&lt;iframe width=\"500\" height=\"400\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" title=\"CU Aerial Photo Collection (final)\" src=\"//ucboulder.maps.arcgis.com/apps/Embed/index.html?webmap=68fe25f1df2149878fa88e15a4044d52&amp;extent=-108.1261,38.2881,-101.4079,41.3297&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;disable_scroll=true&amp;theme=light\"&gt;&lt;/iframe&gt;&lt;/div&gt; . Embedding an ArcGIS Web App . ArcGIS Online doesn’t always provide embed code for Web Apps, but no matter! Just use the same embed code from above but replace everything after src= and before &lt;/iframe&gt; with the url for the Web App: . &lt;style&gt;.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}&lt;/style&gt;&lt;div class=\"embed-container\"&gt;&lt;iframe width=\"500\" height=\"400\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" title=\"CU Aerial Photo Collection (final)\" src=\"https://ucboulder.maps.arcgis.com/apps/webappviewer/index.html?id=7ef03caa3cd848139ce0e9176da9b7e8\"&gt;&lt;/iframe&gt;&lt;/div&gt; . Note: this could take some formatting tweaks to get right! . Embedding a StoryMap . Want to embed a Story Map? Same exact procedure. Replace everything after src= and before &lt;/iframe&gt; with the url for the Story Map: . &lt;style&gt;.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}&lt;/style&gt;&lt;div class=\"embed-container\"&gt;&lt;iframe width=\"500\" height=\"400\" frameborder=\"0\" scrolling=\"yes\" marginheight=\"0\" marginwidth=\"0\" title=\"CU Aerial Photo Collection (final)\" src=\"https://storymaps.arcgis.com/stories/3c38d9c4e2844e25a020eb6bade919b9\"&gt;&lt;/iframe&gt;&lt;/div&gt; . *Note: if you want to enable scrolling, you’ll need to set the following: scrolling=\"yes\". This is in the iframe code. Presto! . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/agol-embed.html#embedding-arcgis-online-content",
+    "relUrl": "/content/examples/agol-embed.html#embedding-arcgis-online-content"
   },"4": {
-    "doc": "Implementar mapa en la web",
-    "title": "Implementar mapa en la web",
+    "doc": "ArcGIS Online",
+    "title": "ArcGIS Online",
     "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/deploy-page.html",
-    "relUrl": "/content/handson/deploy-page.html"
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/agol-embed.html",
+    "relUrl": "/content/examples/agol-embed.html"
   },"5": {
-    "doc": "Editar el archivo config.js",
-    "title": "Editar el archivo config.js",
-    "content": "Primero vamos a hacer algunas ediciones rápidas al archivo config.js de tu nuevo repositorio. Este archivo contiene el contenido principal de la historia y los controles del mapa. 1 Abre los archivos de tu repositorio en Visual Studio Code. Mientras estás en GitHub Desktop, haz clic en la opción Open in Visual Studio Code . Esto abrirá Visual Studio Code. 2 Renombra el archivo. Verás una lista con todos los archivos y carpetas en tu repositorio. Haz clic derecho en el archivo config.js.template y selecciona la opción Rename. Cambia el nombre del archivo a config.js, sin la palabra template al final. 3 Haz algunas ediciones a tu archivo config.js. Haz clic en el archivo que acabas de renombrar. Su contenido se mostrará en el panel central de GitHub Desktop. Las primeras 17 líneas de este archivo contienen las configuraciones principales para tu nuevo mapa narrativo. Vamos a cubrir algunas de ellas para iniciar tu mapa de historia. Paso 1 . Dale un título a tu mapa reemplazando el texto después de title: . Input . 12 title: 'Mi primer Mapa Narrativo' . Ten en cuenta que todas estas propiedades están construidas por un par de valores. Los valores que no sean booleanos (true, false) deben estar entre ``. Paso 2 . Inserta un subtitle para tu mapa narrativo. Escribe cualquier texto que quieras que aparezca en el subtítulo. Recuerda que debe estar entre ``. Input . 14 subtitle: '¡Este es el mapa narrativo más increíble jamás creado!' . Paso 3 . Pon tu nombre como autor del mapa narrativo cambiando el texto de la propiedad byline. Input . 15 byline: 'Felipe Valdez' . Paso 4 . Añade información adicional a tu mapa narrativo en la propiedad footer. Este es un lugar que puedes usar para atribuir los datos o mencionar cualquier organización involucrada en la creación del mapa. Además, es una buena práctica mantener el MapLibre Storytelling y el enlace al proyecto tal como está después de &lt;br&gt;. Input . 17 footer: 'Fuente: Bibliotecas de la Universidad Temple&lt;br&gt; Creado usando la plantilla &lt;a href=\"https://github.com/digidem/maplibre-storymap\" target=\"_blank\"&gt;MapLibre Storytelling&lt;/a&gt;.', . La mayoría de estas propiedades permiten texto con formato HTML. Esto significa que puedes añadir diferentes estilos, enlaces y otras características. Si quieres aprender más sobre HTML sigue este enlace. + Propiedades adicionales y su funcionalidad. El resto de las propiedades en esta sección te permiten cambiar otros aspectos del mapa narrativo. Cubriremos la propiedad style en la siguiente sección. Las otras propiedades se describen a continuación. | Propiedad | Función | . | style: | Este es el estilo de MapLibre que se utilizará para la aplicación. Puedes configurarlo a cualquier estilo de MapLibre alojado en línea o localmente, pero por defecto está configurado para buscar un estilo en el directorio map/. | . | showMarkers: | Esto controla si se muestran marcadores en el punto central de cada capítulo. Si es true, el mapa mostrará un icono azul predeterminado en forma de lágrima invertida. | . | markerColor: | Si showMarkers es true, esta propiedad anulará el color azul claro predeterminado del marcador. | . | inset: | Muestra un mini-mapa insertado. Se desactivará si legend está configurado como true. | . | legend: | Muestra una caja en la parte inferior derecha en la que puedes añadir contenido HTML para cada capítulo, sirviendo como leyenda. Se desactivará si inset está configurado como true. | . | theme: | Hay dos temas básicos disponibles (light y dark). | . Propiedades opcionales . | Propiedad | Función | . | use3dTerrain | Habilita el terreno 3D. Necesitarás proporcionar tus propios mosaicos de terreno. | . | useCustomLayers: | Permite añadir fuentes y capas personalizadas según lo definido en sources.js. | . | bookmarks: | Permite añadir enlaces de marcadores en el encabezado y pie de página para cada capítulo. Se añadirán marcadores para cualquier capítulo que tenga un título. | . | chapterReturn: | Para habilitar un enlace “Volver al principio” al final de cada capítulo. | . | logo: | Añade una imagen de logo al encabezado de tu historia. | . | mobileview: | Muestra una nota útil para rotar el dispositivo cuando se visualiza el mapa narrativo en un móvil. Este es contenido HTML y puede ser modificado en config.js. | . Fuente: MapLibre Storytelling - Digital Democracy. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/edit-configjs.html",
-    "relUrl": "/content/handson/edit-configjs.html"
+    "doc": "Digital Collections",
+    "title": "Embedding from your digital collections",
+    "content": "When adding an item from a digital collection, the best option is to look for an embed code option for the item you would like to add to your markdown page. __ . From Luna: . Use the embed link built into Luna. Tip: maximize the image first then use the embed code to avoid side bars/menus. &lt;iframe id=\"widgetPreview\" frameBorder=\"0\" width=\"900px\" height=\"450px\" border=\"0px\" style=\"border:0px solid white\" src=\"https://cudl.colorado.edu/luna/servlet/workspace/handleMediaPlayer?lunaMediaId=CUB~13~13~27~151317&amp;embedded=true&amp;cic=CUB%7E13%7E13&amp;widgetFormat=javascript&amp;widgetType=workspace&amp;controls=1&amp;nsip=1\" &gt;&lt;/iframe&gt; . Here is an example from Stanford’s digital repository: . For this example, I visited this map of Bodega Bay, CA, clicked the Share button, chose Embed, and copied and pasted the embed code directly into my markdown document. &lt;iframe src=\"https://embed.stanford.edu/iframe?url=https://purl.stanford.edu/jn190kd7795\" title=\"Image viewer\" width=\"800\" height=\"600\" allowfullscreen frameborder=\"0\" /&gt; . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/digital-collections.html#embedding-from-your-digital-collections",
+    "relUrl": "/content/examples/digital-collections.html#embedding-from-your-digital-collections"
   },"6": {
-    "doc": "Clonar La Plantilla de Narración",
-    "title": "Clonar la plantilla de narración",
-    "content": "En este taller vamos a duplicar la plantilla de narración creada por Digital Democracy a tu propia cuenta de GitHub, y luego haremos algunas ediciones juntos. Puedes modificar y reutilizar esta plantilla en cualquier momento desde tu propia cuenta. 1 Ve al repositorio Interactive Storytelling with MapLibre . 2 Haz clic en la opción para abrir el repositorio en GitHub Desktop . Bajo el botón Code, verás una opción para Open with GitHub Desktop (Abrir con GitHub Desktop). Confirma que deseas abrirlo haciendo clic en Open GitHub Desktop.app en el mensaje que aparece. Alternativamente, si estás usando GitHub en la web, simplemente bifurca el repositorio a tu cuenta y continúa desde allí. GitHub Desktop debería abrirse en tu computadora y deberías ver una ventana con la información del repositorio bifurcado, incluyendo un panel que lista los cambios (estará vacío ya que es la primera vez que lo abres) y tres opciones para comenzar a trabajar en tu repositorio: . Si tienes Visual Study Code instalado, deberías ver el texto Open in Visual Studio Code (Abrir en Visual Studio Code) en el botón de acción. Si no lo tienes pero tienes un editor diferente (como RStudio, XCode o Atom), entonces deberías ver esa opción. Si necesitas configurar Visual Studio Code como el editor predeterminado para tu GitHub Desktop, entonces sigue las instrucciones aquí. | Abrir el repositorio en tu editor externo. | Ver los archivos de tu repositorio en el Finder. | Abrir la página del repositorio en GitHub en tu navegador. | . ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/fork-repo.html#clonar-la-plantilla-de-narraci%C3%B3n",
-    "relUrl": "/content/handson/fork-repo.html#clonar-la-plantilla-de-narración"
+    "doc": "Digital Collections",
+    "title": "Digital Collections",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/digital-collections.html",
+    "relUrl": "/content/examples/digital-collections.html"
   },"7": {
-    "doc": "Clonar La Plantilla de Narración",
-    "title": "Clonar La Plantilla de Narración",
-    "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/fork-repo.html",
-    "relUrl": "/content/handson/fork-repo.html"
+    "doc": "Data Downloads",
+    "title": "Data downloads",
+    "content": "GitHub.com allows you to upload data files to your repositories. While the platform works best with text-based files, you can still upload .zipped Shapefiles or images and store them too. Just be aware that GitHub recommends keeping your repos less than 1GB in total file size. Since our beloved .geojson is text-based, it renders really well in the GitHub UI – like this geojson of UBC’s buildings. However, if you want someone to download the file in your workshop, you’ll need to provide a link. Best practice is to transfer your data files as one (or a minimal) zipped package of content. This way you can preserve a directory structure and avoid losing any auxiliary files. The downside is that GitHub won’t render them in the browser (╯°□°)╯︵ ┻━┻ . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/download-data.html#data-downloads",
+    "relUrl": "/content/examples/download-data.html#data-downloads"
   },"8": {
-    "doc": "Práctica",
-    "title": "Actividad Práctica",
-    "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/hands-on.html#actividad-pr%C3%A1ctica",
-    "relUrl": "/content/hands-on.html#actividad-práctica"
+    "doc": "Data Downloads",
+    "title": "Linking your data for download",
+    "content": "To be able to link your data, you’ll just need the path from the page you’re providing the link to the file itself. This . [Download Data](../data/us-national-parks.geojson) . Will provide a link like this: . Download Data . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/download-data.html#linking-your-data-for-download",
+    "relUrl": "/content/examples/download-data.html#linking-your-data-for-download"
   },"9": {
-    "doc": "Práctica",
-    "title": "Práctica",
-    "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/hands-on.html",
-    "relUrl": "/content/hands-on.html"
+    "doc": "Data Downloads",
+    "title": "Adding a button",
+    "content": "Maybe you want that link to look more apparent?? Well, why not try a button! . [Download Data](../data/us-national-parks.geojson){: .btn .btn-blue } . Looks like: . Download Data . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/download-data.html#adding-a-button",
+    "relUrl": "/content/examples/download-data.html#adding-a-button"
   },"10": {
-    "doc": "Inicio",
-    "title": "Storytelling con Mapas - Usando Maplibre",
-    "content": ". Autor . Felipe Valdez Especialista en Sistemas de Información Geográfica Temple University Libraries www.felipevaldez.com . | Una cuenta de GitHub.com. Si aún no tienes una cuenta de GitHub.com, puedes crearla aquí. Mira este breve video Comenzando con GitHub si eres principiante y quieres tener una visión general de la plataforma. | Una cuenta de MapTiler. Para crear una, ve a maptiler.com. | . Objetivo de este taller . Nuestro objetivo es mostrarte cómo crear tus propias aplicaciones interactivas de storytelling con mapas y multimedia, utilizando herramientas de código abierto. Mostraremos algunos ejemplos de historias y te enseñaremos de manera práctica cómo crear tus propias aplicaciones interactivas y compartirlas en la web. Este tutorial está diseñado para que puedas crear una historia interactiva sin conocimientos de programación, sin embargo, si es tu primera vez generando código, puede que necesites algo de tiempo para familiarizarte con estos tipos de interfaces y archivos, aunque no será complicado. Si deseas familiarizarte con el uso de código para este tipo de actividades, te recomendamos consultar la sección de recursos adicionales. Puedes ver el mapa interactivo de esta demostración en: . Un recorrido por los Campus de la Universidad Temple . Programa . | Hora | Contenido | . | 0:00 | Presentaciones | . | 0:05 | Mapa narrativo de Philly Community Wireless | . | 0:25 | Demostración práctica | . | 0:50 | Preguntas | . | 1:00 | Fin | . ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/#storytelling-con-mapas---usando-maplibre",
-    "relUrl": "/#storytelling-con-mapas---usando-maplibre"
+    "doc": "Data Downloads",
+    "title": "Adding a .pdf",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/download-data.html#adding-a-pdf",
+    "relUrl": "/content/examples/download-data.html#adding-a-pdf"
   },"11": {
-    "doc": "Inicio",
-    "title": "Inicio",
+    "doc": "Data Downloads",
+    "title": "Data Downloads",
     "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/",
-    "relUrl": "/"
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/download-data.html",
+    "relUrl": "/content/examples/download-data.html"
   },"12": {
-    "doc": "Introducción",
-    "title": "¿Por qué usar mapas para contar historias?",
-    "content": "Los mapas siempre han sido una herramienta vital para la narración de historias. No solo proporcionan contexto para las narrativas que contamos; también sirven como formas visualmente atractivas de presentar información a audiencias diversas. Las tecnologías modernas han mejorado estos mapas, añadiendo el poder del análisis espacial mientras ofrecen la capacidad de generar y compartir datos en tiempo real y de manera colaborativa. Esto significa que quienes ven el mapa también pueden participar en su creación, transformándolos de meros observadores a participantes activos en la historia que el mapa cuenta. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/introduction.html#por-qu%C3%A9-usar-mapas-para-contar-historias",
-    "relUrl": "/content/introduction.html#por-qué-usar-mapas-para-contar-historias"
+    "doc": "Edit Your README",
+    "title": "Edit Your README",
+    "content": "First we’re going to make a few quick edits to your new repository’s README file. 1 In your repository, double-click on README.md. This will open up a page that just shows your README.md file. 2 Now double click the pencil icon to edit this markdown file. Now you will see simple editing interface. 3 Make some edits to your README.md file. This is easy, just start typing in this editing window. 4 When you’re done editing, scroll down and enter a commit message, then click Commit changes. All done! Now head back to your repo’s home page to view the updated README. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/edit-readme.html",
+    "relUrl": "/content/handson/edit-readme.html"
   },"13": {
-    "doc": "Introducción",
-    "title": "Consulta algunos ejemplos de mapas narrativos aquí",
-    "content": "La Evolución de los Establos de Caballos de Fletcher Street. Un Legado de los Jinetes Negros de Filadelfia: Pasado y Presente . Nuestro Territorio es Nuestra Vida . Diez Conflictos a Vigilar en 2022 . Polar Star Inn y Seipel Hut (Cabaña de Carl) . ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/introduction.html#consulta-algunos-ejemplos-de-mapas-narrativos-aqu%C3%AD",
-    "relUrl": "/content/introduction.html#consulta-algunos-ejemplos-de-mapas-narrativos-aquí"
+    "doc": "Example Pages",
+    "title": "Example pages",
+    "content": "We’ve assembled some example pages that show some ways to display information that might be used in GIS workshops. The table of contents is below. Example full workshops . If you’d like to see some examples of full GIS workshops using a similarly based theme here are some examples from UBC Library: . Understanding Spatial Data: Map Projections . Intro to ArcGIS Online and StoryMaps . Spatial Network Analysis with QGIS . Intro to Spatial Data Analysis with R . Geocoding and Web Mapping with Python . Geospatial Analysis and Visualization with Python . Web mapping with LeafletJS . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples.html#example-pages",
+    "relUrl": "/content/examples.html#example-pages"
   },"14": {
-    "doc": "Introducción",
-    "title": "Introducción",
+    "doc": "Example Pages",
+    "title": "Example Pages",
     "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/introduction.html",
-    "relUrl": "/content/introduction.html"
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples.html",
+    "relUrl": "/content/examples.html"
   },"15": {
-    "doc": "Prerrequisitos",
-    "title": "Prerrequisitos",
-    "content": "Para este tutorial, necesitarás completar (o tener) lo siguiente: . | 1 Crear una cuenta de GitHub | 2 Descargar e instalar GitHub Desktop | 3 Descargar e instalar VS Code | 4 Crear una cuenta de MapTiler | . Sigue las instrucciones en las secciones a continuación para completar estos prerrequisitos. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/prerequisites.html",
-    "relUrl": "/content/prerequisites.html"
+    "doc": "Fork This Workshop",
+    "title": "Fork this workshop template",
+    "content": "In this workshop we’re going to duplicate this same workshop to your own GitHub account, then make some edits together. Can tinker and reuse this template anytime on your own account. 1 Go to this workshop’s GitHub repository . 2 Click on the option to Fork the repository . You’ll see an option to Fork at the top right of your screen. GitHub should pause for a moment while it copies the files from this repo to yours. When it’s finished, you’ll see a note that the repo has been “forked from ubc-lib-geo/gis-workshop-waml-template” in the top left. You should also see your new repository which contains the following files and directories: . ├── Rakefile ├── _config.yml ├── _includes ├── _layouts ├── _sass ├── _site ├── assets ├── bin ├── content ├── index.md ├── README.md └── lib . In this workshop we’re only going to be looking at a couple of these including the _config.yml file, the README.txt file, and the files inside the content folder. 3 Edit your _config.yml . We will need to publish this repository as a “GitHub Page”, so that it’s live at [your GitHub username].github.io. Right now it’s configured to appear at ubc-lib-geo.github.io. Before we publish, we’ll need to make some edits to our main site configuration file, ‘_config.yml’. Step 1 . Click on the _config.yml file in your list of files . Step 2 . Select the edit file tool on the top left . Step 3 . Scroll down to line 28 and add your base hostname . You will want to make sure https://ubc-lib-geo.github.io is changed to https://[YOUR GITHUB USERNAME].github.io . Step 4 . Next, go to line 40 and update the footer. In line 40, you’ll want to replace ubc-lib-geo with your own username. The result should look like this: footer_content: &lt;a href=\"https://github.com/your_username/gis-workshop-waml-template\" target=\"_blank\"&gt;View this workshop in GitHub&lt;/a&gt; . Step 5 . Add a commit message and save . Add something brief to your commit message – you can literally recycle the provided “Updated _config.yml” language – then press Commit changes. 4 Go to your repository’s Settings menu . We’re almost ready to publish our workshop site! We can do that in our site’s Settings which is found by clicking the top right tab. 5 Publish your workshop site . Scroll down to the settings for GitHub Pages (almost to the bottom (Danger Zone!)). Under Source select your only branch (either main or master). Your site will take a moment (up to a couple of minutes) to build and propagate, but should soon be available at https://[YOUR GITHUB USERNAME].github.io/gis-workshop-waml-template/ . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/fork-repo.html#fork-this-workshop-template",
+    "relUrl": "/content/handson/fork-repo.html#fork-this-workshop-template"
   },"16": {
-    "doc": "Prerrequisitos",
-    "title": "1 Crear una cuenta de GitHub",
-    "content": "Si quieres aprender más sobre Git y GitHub, recomendamos el siguiente tutorial. Paso 1 . Ve a github.com/signup . Paso 2 . Escribe tu correo electrónico, una contraseña y un nombre de usuario para tu nueva cuenta. Luego haz clic en Continue. Paso 3 . Se te harán algunas preguntas. Cuando se te solicite, asegúrate de seleccionar Continue for free en el tipo de cuenta. Paso 4 . Recibirás un correo electrónico con un código de activación. Introduce el código cuando se te solicite en la página web de GitHub. Ahora estás listo para crear tu primer repositorio. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/prerequisites.html#1-crear-una-cuenta-de-github",
-    "relUrl": "/content/prerequisites.html#1-crear-una-cuenta-de-github"
-  },"17": {
-    "doc": "Prerrequisitos",
-    "title": "2 Descargar e instalar GitHub Desktop",
-    "content": "GitHub Desktop es una aplicación gratuita y de código abierto que te ayuda a trabajar con archivos alojados en GitHub u otros servicios de alojamiento Git. Si quieres aprender más sobre esta aplicación, ve aquí. Dependiendo del sistema operativo (SO) de tu computadora, los siguientes pasos pueden parecer un poco diferentes. En este taller usamos MacOS, pero se puede hacer en cualquier SO. Paso 1 . Inicia sesión en tu cuenta de GitHub, sigue este enlace a la página de descargas y haz clic en el botón Download now. Paso 2 . Una vez descargado, encontrarás un nuevo archivo .zip en tu carpeta de Descargas. Simplemente puedes hacer doble clic en él (o clic derecho y descomprimir archivo). Paso 3 . Verás el icono de GitHub Desktop junto al archivo descargado. Solo arrastra el icono y suéltalo en tu carpeta de Aplicaciones. Paso 4 . Haz doble clic en el icono de GitHub Desktop para abrir la aplicación. La primera vez que abras GitHub Desktop, verás un mensaje de tu sistema pidiendo permiso para abrir la aplicación. Simplemente haz clic en Abrir. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/prerequisites.html#2-descargar-e-instalar-github-desktop",
-    "relUrl": "/content/prerequisites.html#2-descargar-e-instalar-github-desktop"
-  },"18": {
-    "doc": "Prerrequisitos",
-    "title": "3 Descargar e instalar VS Code",
-    "content": "Paso 1 . En tu navegador de internet, ve a la página de descargas de code.visualstudio.com y haz clic en el botón Download en la esquina superior derecha. Paso 2 . Selecciona el instalador apropiado para el sistema operativo de tu computadora. En este caso estamos usando MacOS. El botón de descarga en la pantalla principal debería dirigirte a la versión correcta para tu equipo. Paso 3 . Una vez descargado, encontrarás un nuevo archivo .zip en tu carpeta de Descargas. Simplemente puedes hacer doble clic en él (o clic derecho y descomprimir archivo). Paso 4 . Verás el icono de Visual Studio Code junto al archivo descargado. Solo arrastra el icono y suéltalo en tu carpeta de Aplicaciones. Paso 5 . Haz doble clic en el icono de Visual Studio Code para abrir la aplicación. La primera vez que abras Visual Studio Code, verás un mensaje de tu sistema pidiendo permiso para abrir la aplicación. Simplemente haz clic en Abrir. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/prerequisites.html#3-descargar-e-instalar-vs-code",
-    "relUrl": "/content/prerequisites.html#3-descargar-e-instalar-vs-code"
-  },"19": {
-    "doc": "Prerrequisitos",
-    "title": "4 Crear una cuenta de MapTiler",
-    "content": "MapTiler es una plataforma de software para construir mapas digitales. MapTiler mantiene el proyecto de código abierto OpenMapTiles que consiste en un conjunto de herramientas que permiten a todos crear sus propios mosaicos de mapas vectoriales a partir de datos de OpenStreetMap para alojamiento, auto-alojamiento o uso sin conexión. En este tutorial usaremos el plan gratuito de MapTiler para acceder a sus mosaicos vectoriales alojados y usar el estilo OpenMapTiles. Paso 1 . En tu navegador, ve a la página principal de MapTiler.com y haz clic en Create a free account. Paso 2 . Inicia sesión usando tu dirección de correo electrónico o tu cuenta de Google si tienes una. Escribe tu nombre y una contraseña para tu cuenta. Luego haz clic en Save para continuar. Paso 3 . Recibirás un correo electrónico para verificar tu cuenta. Haz clic en el enlace del correo electrónico para ser redirigido a tu cuenta de MapTiler. Ahora puedes iniciar sesión usando tu correo electrónico y la contraseña que creaste en el paso anterior. Paso 4 . Ahora estás listo para comenzar a crear y usar Maptiles y estilos de mapas en MapTiler . ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/prerequisites.html#4-crear-una-cuenta-de-maptiler",
-    "relUrl": "/content/prerequisites.html#4-crear-una-cuenta-de-maptiler"
-  },"20": {
-    "doc": "Vista previa del mapa",
-    "title": "Vista previa de tu mapa",
-    "content": "Una vez que hayas configurado y agregado los elementos básicos a tu mapa narrativo, es una buena práctica previsualizarlo antes de implementarlo como una página web. Para hacerlo, vamos a utilizar la funcionalidad de servidor en vivo de Visual Studio Code. Esto implementará el mapa narrativo localmente en tu computadora. Sigue los pasos a continuación para previsualizar tu mapa narrativo. 1 Confirma tus cambios en GitHub. Una de las funciones de Git como sistema de control de versiones es tomar instantáneas de los cambios que haces en tus archivos. Un commit es una instantánea de tu proyecto en ese momento. Para hacer commit de tus cambios: . Paso 1 . Ve a la aplicación GitHub Desktop. Verás todos los archivos que has cambiado listados en el panel del lado izquierdo, y todos los cambios que has hecho en esos archivos en el panel del centro. Si agregaste algo al archivo, estará resaltado en verde y si eliminaste algo, en rojo. Revisa los cambios que has realizado. Paso 2 . En el panel inferior izquierdo, escribe un resumen para el commit y, opcionalmente, una descripción. Es una buena práctica mantener un registro detallado de los cambios realizados, especialmente si más de una persona está trabajando en el proyecto. Luego haz clic en Commit to main. Paso 3 . Después de confirmar los cambios, GitHub Desktop mostrará la ventana principal del repositorio y habilitará la opción para Publish repository. Una copia de tu repositorio ahora está disponible en la nube de GitHub. Adelante, publica tu repositorio haciendo clic en Publish repository. La primera vez que hagas esto, se te pedirá que establezcas un nombre para tu repositorio y una descripción opcional. Luego haz clic en Publish Repository. 2 Vista previa de tu mapa narrativo localmente. Ahora que has publicado tu repositorio en la nube de GitHub, regresa a Visual Studio Code. Para visualizar una vista previa de tu mapa narrativo, haz clic en el botón Go Live ubicado en la barra en la esquina inferior derecha. Se abrirá una nueva ventana en tu navegador de internet predeterminado. Verás una vista previa de tu mapa narrativo. Ahora puedes agregar o modificar tu archivo config.js y ver los cambios en vivo en tu computadora local. Para hacerlo, simplemente guarda los cambios que realizaste en Visual Studio Code (presiona ctrl + s) y actualiza la ventana del navegador web. Este mapa es solo una vista previa. Todavía está viviendo en tu sistema. Para publicarlo como una página web para ser compartida y visualizada por cualquier persona, sigue las instrucciones en la siguiente sección de este tutorial. ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/preview-storymap.html#vista-previa-de-tu-mapa",
-    "relUrl": "/content/handson/preview-storymap.html#vista-previa-de-tu-mapa"
-  },"21": {
-    "doc": "Vista previa del mapa",
-    "title": "Vista previa del mapa",
+    "doc": "Fork This Workshop",
+    "title": "Fork This Workshop",
     "content": " ",
-    "url": "https://fmvaldezg.codeberg.page//storytelling_maplibre_workshop_es/content/handson/preview-storymap.html",
-    "relUrl": "/content/handson/preview-storymap.html"
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/fork-repo.html",
+    "relUrl": "/content/handson/fork-repo.html"
+  },"17": {
+    "doc": "Glossary",
+    "title": "Glossary",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/glossary.html",
+    "relUrl": "/content/glossary.html"
+  },"18": {
+    "doc": "Glossary",
+    "title": "General:",
+    "content": "Command line – (or Terminal) An interface for entering textual commands on your computer. On Mac OS, this is known as the Terminal and is found in the Applications/Utilities directory. On Windows, this is known as the Command Prompt and can be found under Start&gt;Windows System. Git Bash is also a popular command line interface. Git – Git is a version control software. Many people use Git from the command line, but there is also a desktop GUI interface. Git Repository – A Git repository is essentially an instance of Git version control running in a file directory on your computer. You create a Git repository on your computer by either cloning a repository from GitHub, or by initializing a new repository in a directory (folder) on your computer. On your own computer, this is called a “local repository.” On GitHub, this is referred to as a “remote repository.” See Git Basics. GitHub – (or GitHub.com) GitHub is a free(mium) website for hosting remote Git repositories. It is primarily used for code. GitHub facilitates collaboration by providing access control, task management, bug tracking, and more for all of it’s project repositories. GitHub Pages – GitHub Pages is a built-in function of GitHub that converts a repository into a website. Pages is a very simple method for creating static webpages. Main/Master – The primary repository for a project on GitHub. Formerly named “master”, this was updated to “main” October 1 2020. (Many repositories will still use “master” until updated by their owners.) . Fork – A fork is a remote copy of a GitHub repository. Forking a repository permits others to make changes to a project without modifying the main/master branch of the project. Once forked and modified, changes can be merged with the main/master by way of a Pull Request. Pull Request – A method for suggesting changes to content stored in a GitHub repository. Someone wishing to make a change to a repository can fork the main repository, modify a file(s), and submit a pull request that will be reviewed by the main repository’s owner. If accepted, the changes will be merged with the main repository. Jekyll – Jekyll is a static site generator used for creating a variety of online content. GitHub Pages relies on Jekyll behind the scenes. The site you’re looking at right now was created using Jekyll. Markdown – Markdown is a super-simple markup language. Markdown is popular for creating documentation and readme files. When used in tandem with Jekyll templates, it can be used to generate static web pages. This page was created in Markdown. Ruby – Ruby is an open-source programming language, and is used as a framework for Jekyll. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/glossary.html#general",
+    "relUrl": "/content/glossary.html#general"
+  },"19": {
+    "doc": "Glossary",
+    "title": "Git Commands:",
+    "content": "Use these on your local terminal. Note that these are just a few of the most common basic commands. See Git documentation. Init (command) - git init. Use init to initiate a new repository within a directory (folder) on your computer. Add (command) – git add myfile.txt. Add is the first step in adding a new file or a modified file into a Git repository. The Add command adds new/modified files to a staging area. Commit (command) – git commit -m \"I made some edits\". Commit is the second step in adding a new/modified file to the Git repository. Commit moves new/modified files from the staging area to the repository. You must include a message following the -m flag. Be sure to make your commit message descriptive in case you need it later. Clone (command) – git clone https://github.com/user/repo-name Make a copy of a remote repository from GitHub.com on your local computer. This is one method of creating a connection between a local and remote repository that you can use to push or pull changes. Pull (command) – git pull origin master Use this to pull updates from the remote repository down to your local copy. Push (command) – git push origin master Use this to push updates made to your local repository to the remote repository. Status (command) – git status Check if you have any un-added/committed changes to your local repository. Log (command) – git log See past commit history including comments and hash ID of each commit. q to exit Log interface. Use git log --oneline for a condensed log. Revert (command) – git revert [hash id] Use this to revert to an earlier commit. Use the Log command to find previous commits’ hash IDs. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/glossary.html#git-commands",
+    "relUrl": "/content/glossary.html#git-commands"
+  },"20": {
+    "doc": "Hands On",
+    "title": "Hands On Activities",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/hands-on.html#hands-on-activities",
+    "relUrl": "/content/hands-on.html#hands-on-activities"
+  },"21": {
+    "doc": "Hands On",
+    "title": "Hands On",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/hands-on.html",
+    "relUrl": "/content/hands-on.html"
+  },"22": {
+    "doc": "Images",
+    "title": "Adding images to your page",
+    "content": "Adding an image is super easy! Here are a few methods . View the source Markdown for this page . Add an image from the web: . Start an in-line link with an exclamation point then place the alt text in the brackets followed by the image link in the parentheses: . ![WAML Logo](http://www.waml.org/groundwork-master/images/wamllogo200_15.jpg) . You can also add images “reference style.” This is handy if you don’t want to clutter up your Markdown. You can just place the references at the bottom of the page. It goes like this: . ![Point Sublime][Sublime] [Sublime]: http://www.waml.org/groundwork-master/images/grndcnyn.jpg . Nice job! . Add an image from your directory: . You can also add images from a file directory. If you’re using GitHub Pages, that means you would want a folder where your content or images live in your GitHub repository. The syntax is the same, except replace the link with the path to the image: . ![Steezy WAML Logo](../img/WAML_sticker_stylized_serif.png) . Sweet! . Add a different format: . Want to put a gif in there? No problem! . ![Surfer Boy](https://media.giphy.com/media/dJUtqIcqeyMvK/giphy.gif) . “gif” is pronounced with a hard “g” . Link an image: . To link an image, you just need to embed the image syntax within the syntax for a hyperlink: . Here’s a regular link: . [WAML Conference 2020](http://www.waml.org/conf) . WAML Conference 2020 . Here’s a linked image: . [![WAML Logo](http://www.waml.org/groundwork-master/images/wamllogo200_15.jpg)](http://www.waml.org/conf) . Click Me! . So easy, right?! . Need to get extra fancy? . You can also add html directly to Markdown. Say you wanted to change the size of an image, for example. &lt;img src='../img/WAML_sticker_stylized_serif.png' width='250' alt='WAML sticker'&gt; . Aren’t you so fancy!! . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/images.html#adding-images-to-your-page",
+    "relUrl": "/content/examples/images.html#adding-images-to-your-page"
+  },"23": {
+    "doc": "Images",
+    "title": "Images",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/images.html",
+    "relUrl": "/content/examples/images.html"
+  },"24": {
+    "doc": "Home",
+    "title": "A Jekyll template for GIS workshops",
+    "content": "WAML 2020 Preconference Workshop . Presenters . Evan Thornberry GIS Librarian University of British Columbia Library evan.thornberry@ubc.ca . Phil White Earth, Environment &amp; Geospatial Librarian University of Colorado Boulder Libraries philip.white@colorado.edu . | A GitHub.com account. If you don’t already have a GitHub.com account, you can create one here. Take this short video Getting Started with GitHub if you’re brand new and want to get a high-level overview of the platform. | Comfortable working with code/syntax. | . Goal of this workshop . Our goal is to introduce you to how we use GitHub.com for creating and delivering GIS workshops online, so that you can consider using them in your own work. There will be a hands-on section where we will fork (“copy”) an existing workshop repo to your own GitHub account, publish the repo with GitHub Pages, and to make some edits. You may not feel totally comfortable using GitHub – this is okay. As with any skill, using Jekyll and GitHub Pages takes practice. In this workshop, we want you to understand and get familiar with some of the workflows and terminology so that you are equipped to experiment on your own. You can view the GitHub repository for this Jekyll site at: . https://github.com/ubc-lib-geo/gis-workshop-waml-template . Schedule . | Time | Content | . | 0:00 | Introductions | . | 0:05 | Land acknowledgement | . | 0:10 | Demystifying GitHub (presentation) | . | 0:50 | Break | . | 1:00 | Forking the workshop template (hands on) | . | 1:10 | A look under the hood (hands on) | . | 1:20 | Create your first page (hands on) | . | 1:30 | Add text &amp; images to a page (hands on) | . | 1:50 | Navigation (hands on) | . | 2:00 | Example Pages | . | 2:10 | Next Steps | . | 2:15 | Wrap Up/ Q&amp;A | . Actual schedule may vary depending on group needs . Workshop Slides . Click on the slides then press the F key for full screen . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/#a-jekyll-template-for-gis-workshops",
+    "relUrl": "/#a-jekyll-template-for-gis-workshops"
+  },"25": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/",
+    "relUrl": "/"
+  },"26": {
+    "doc": "Insert an Image",
+    "title": "Insert an Image",
+    "content": "You’ll no doubt want to at some point add an image to any site you make. Let’s add an image to our new page to see how it works. The basic Markdown syntax for adding an image is: . ![image alt text](path or URL to your image) . Alt text briefly describes your image, and impacts your site’s accessibility a search-ability. Always add short alt-text descriptions to your images. Your image path or URL must be included as well. If you’re using a, URL it must be to the image file endpoint. Since we already have an image file we want to use in our content/img folder, let’s go ahead and add it using a relative path. 1 Determine your relative path . You should see the path to your new page favorite-map.md at the top of your page, which looks something like this: . We want to add an image on this page showing a map. The image file for that map is in our content/img/ folder. The path to that file is: . gis-workshop-waml-template/content/img/fav-map.png . The relative path from our .md page file to the .png image is: img/fav-map.png . This is like saying the fav-map.png file is located in the img folder, in the current folder . 2 Add your link . Edit your fav-map.md file by clicking on the edit file button: . In the text area below your front matter, paste the following link text: . ![My favorite map](img/fav-map.png) . 2 Commit your changes . Step 1 . Add a short message like “added an image” . Step 2 . Click on the green “commit changes button. Now, count to 30, then refresh your browser to see the changes to your site. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/insert-image.html",
+    "relUrl": "/content/handson/insert-image.html"
+  },"27": {
+    "doc": "Land Acknowledgement",
+    "title": "Land acknowledgement",
+    "content": "Before beginning the workshop, we’d like to acknowledge the indigenous lands where we are located. Phil is located on the territories of the Núu-agha-tʉvʉ-pʉ̱ (Ute), Cheyenne, Arapahoe, and Očhéthi Šakówiŋ (Sioux) peoples. 48 contemporary tribal nations are historically tied to the lands that make up Colorado. Evan is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam), səl̓ilwətaɁɬ təməxʷ (Tsleil-Waututh), Stz’uminus, S’ólh Téméxw (Stó:lō), Skwxwú7mesh-ulh Temíx̱w (Squamish), and Coast Salish peoples. Since all of you are spread around the continent, let’s take a moment to explore native-land.ca so that you can visualize the indigenous territories, languages, and treaties in your area. We feel it is especially important for those of us who work with spatial and geographic information to understand the diverse histories of the lands we find ourselves. We ask that as you participate in WAML 2020, take a moment now and then to think about indigenous histories, territories, and knowledge systems in the context of of GIS, map-making, governance, and other topics that come up in conference sessions and discussions. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/land-acknowledgement.html#land-acknowledgement",
+    "relUrl": "/content/land-acknowledgement.html#land-acknowledgement"
+  },"28": {
+    "doc": "Land Acknowledgement",
+    "title": "Land Acknowledgement",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/land-acknowledgement.html",
+    "relUrl": "/content/land-acknowledgement.html"
+  },"29": {
+    "doc": "Markdown Practice",
+    "title": "Markdown: What is it?",
+    "content": "Markdown is a very simple markup language for formatting plain text. You may have seen it or used it in discussion forums (think Reddit) to style text in certain ways – like in bold or italics or both. It’s also often used in GitHub for assembling nicely looking README files, but it’s also used for the content that makes up this site. GitHub Pages (and Jekyll) reads Markdown files (usually with the file extension .md or .markdown) and converts them to valid HTML. If you’re old-school and prefer writing in HTML, you can still do that too. You can also combine HTML with your Markdown to add things like &lt;iframe&gt; and custom scripts in the same Markdown document. Markdown syntax is fairly straightforward and somewhat easy to remember. It uses common characters like asterisks, dashes, and the number symbol (hashtag? pound?) mixed with spaces to stylize text. For instance text surrounded by two asterisks makes the text italicized. *Hello!* = Hello! . We can also make the text bold. **HOWDY** = HOWDY . This is just scraping the surface of what capable with Markdown, as you can see from GitHub user obebm503’s Markdown Kitchen Sink. For those of you who use HTML, you can think of Markdown as a super simplified version of that – you can add images, links, tables, quotes, and other things with very simple Markdown syntax. Let’s try out an online editor to practice a couple of common Markdown markups. 1 Go to markdownlivepreview.com . Clicking on the Markdown editor link will take you to web page with document displayed in two windows. On the left is the plain text Markdown, and on the right is the styled version rendered online. You can edit the text on the left, and changes will appear on the right. 2 Change the title of the document . The first line of this document is a heading – H1 to be specific. How do I know this? Because there is 1 “number sign” and a space before the rest of the text. Any line of text after a # will be rendered as H1. On the left, change # Markdown syntax guide to # [your name]'s new document . 3 Add a link . Adding links to your documents is very easy. All you need is your preferred link text and the URL. The Markdown syntax is: [your preferred text](the URL) . Add this link to the Perry-Castañeda Library Map Collection somewhere in the document: . [Perry-Castañeda Library Map Collection](http://legacy.lib.utexas.edu/maps/) . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/markdown.html#markdown-what-is-it",
+    "relUrl": "/content/markdown.html#markdown-what-is-it"
+  },"30": {
+    "doc": "Markdown Practice",
+    "title": "Markdown Practice",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/markdown.html",
+    "relUrl": "/content/markdown.html"
+  },"31": {
+    "doc": "Change Navigation",
+    "title": "Change the Navigation Order",
+    "content": "You’ve noticed that this page is all the way at the bottom of the navigation menu. Let’s change that so the page is just below the land acknowledgements. The navigation structure and functionality is inherent of the Just the Docs theme. Full documentation can be found here. Your page’s Front Matter includes a parameter for nav_order. As you might assume, the value after this parameter determines where it falls in the navigation order. Right now our page’s Front Matter looks like this: . --- layout: default title: Your New Page's Title nav_order: 11 --- . 1 Change your nav_order to 2.5 . Our navigation order is already set, so you might think that inserting one page it will require you to +1 to the nav_order of all of the files that come after it. But, since Just the Docs allows us to use floating point values, we can add a decimals to the nav_order value and insert pages at .5 increments. This is probably not the best practice since it may get confusing later on if you choose to insert many additional pages and need to keep track of your significant figures. But the workshop instructors like to live in the moment and so it’s what we’re doing for this hands-on session. 2 Change your page title . The Front Matter also includes a value for the page title. The page title is used for what shows up in the navigation, among other things. Let’s change the default title to: . Favorite Map . Now you should commit your changes, count to 30, then refresh your browser to see the changes. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/navigation.html#change-the-navigation-order",
+    "relUrl": "/content/handson/navigation.html#change-the-navigation-order"
+  },"32": {
+    "doc": "Change Navigation",
+    "title": "Change Navigation",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/navigation.html",
+    "relUrl": "/content/handson/navigation.html"
+  },"33": {
+    "doc": "Add a New Page",
+    "title": "Add a New Page",
+    "content": "Now that you have your workshop repository live and ready to edit, you might want to add a new page. GitHub.com allows us to add a new file. 1 Nagivate to your content folder . Just click on the title of the folder in GitHub. That will take you to a new page where you can see all of the content that makes up the site. We created this folder to store all of our pages, images, data, etc. – our own preference for keeping things relatively tidy. But a side-effect of additional folder levels is that it elongates the URL of pages inside them. 2 Add a file to this folder . You can add files by clicking the Add file button, and selecting Create new file from the dropdown. 3 Make a new Markdown file . We can add any type of text-based file we want, but since our goal here is to create a new page for our site, let’s make it a Markdown file. Step 1 . Name your new file . Name your file favorite-map.md . Step 2 . Add your Front Matter . Front Matter is needed to convert this file to a new web page. It’s used by Jekyll to add style and other settings to your page. We’ll get to front matter more later… . Add this to the body of the file, using lines 1 to 5: . --- layout: default title: Your New Page's Title nav_order: 11 --- . You should have something that looks like this: . 4 Commit your new file . Now we’ll add a new “commit” the new file – this is Git for adding a description of the changes you made, then saving to the repository. You should always be as concise and descriptive as possible when adding a commit message. It’s very easy to add inadequate commit messages, like “added some content” or “made a small change”, but it’s good practice to make commit messages meaningful. However, adding a file is pretty simple, so for this exercise add a commit message that is something like: . Then, press the green button to commit your file! . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/handson/new-page.html",
+    "relUrl": "/content/handson/new-page.html"
+  },"34": {
+    "doc": "Next Steps",
+    "title": "Next steps",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html#next-steps",
+    "relUrl": "/content/next-steps.html#next-steps"
+  },"35": {
+    "doc": "Next Steps",
+    "title": "Cloning and working locally",
+    "content": "Working locally has many benefits, including more flexibility to break and fix things before the changes are live. This will require a Unix shell and Git installed on your computer. | For Mac, you can use the default shell app Terminal, and install Git using these instructions. | For Windows, you can install Git for Windows. | . If you want to download this whole workshop and work locally, git clone the repo using these directions from Git Guides. To serve this site on a local server, you will need to set up Jekyll on your local machine. Instructions for Windows and Mac can be found using the Jekyll installation docs. You’ll also need a good source-code editor for editing your files, and a Unix shell for communicating with GitHub. We recommend Atom.io, Sublime Text, or Notepad++. If you’d like to take some beginner-level short workshops to get you up to speed, you can take these from UBC Library’s Research Commons: . | Intro to Git and GitHub | Intro to the Unix Shell | Intro to Jekyll | . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html#cloning-and-working-locally",
+    "relUrl": "/content/next-steps.html#cloning-and-working-locally"
+  },"36": {
+    "doc": "Next Steps",
+    "title": "Using a different theme",
+    "content": "While this workshop is based on the Just the Docs Jekyll theme, you can choose other themes when publishing other project or workshop sites. Themes influence the ‘look and feel’ of the content you create, most of which are hugely customizable. The easiest way to choose a theme is by using the default Theme Chooser in GitHub. There are also many other themes to choose from which exist on GitHub or elsewhere. For example here are lists from free themes from jekyllthemes.io and from jekyllthemes.org. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html#using-a-different-theme",
+    "relUrl": "/content/next-steps.html#using-a-different-theme"
+  },"37": {
+    "doc": "Next Steps",
+    "title": "Deleting a GitHub repository",
+    "content": "If you want to delete the this forked workshop repository from your own Github account, you can do that using these instructions – our feelings wont be hurt! . This is a public repository, so your fork cannot be deleted by us (the origin repository). Likewise, you deleting your own fork will not affect ours. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html#deleting-a-github-repository",
+    "relUrl": "/content/next-steps.html#deleting-a-github-repository"
+  },"38": {
+    "doc": "Next Steps",
+    "title": "Adding a custom domain to your site",
+    "content": "If you want to use GitHub pages to host a project or personal site with a custom domain, you can do that using these instructions. Note that your particular domain registrant will have specific instructions for changing your Domain Name Server records on their platform. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html#adding-a-custom-domain-to-your-site",
+    "relUrl": "/content/next-steps.html#adding-a-custom-domain-to-your-site"
+  },"39": {
+    "doc": "Next Steps",
+    "title": "Next Steps",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/next-steps.html",
+    "relUrl": "/content/next-steps.html"
+  },"40": {
+    "doc": "Web Maps",
+    "title": "Adding an OpenIndexMap web map",
+    "content": "You add web maps of just about any kind to your site, however it does require some extra files and customization. As a basic example, let’s demonstrate a web map powered by Leaflet.js which displays an index map in the OpenIndexMap (OIM) content format standard. In this case we’ve created 2 extra files called oim-index.js and oim-map.html – which are located in your sites content/data/: . ├── content │   ├── data │   │   ├── oim-index.js │   │   ├── oim-map.html │   │   └── ... oim-index.js . The oim-index.js file is a JavaScript file containing only one variable - the .geoJson-structured information for your (OIM) index map. In this case we’re using an index for a series of maps showing the forest cover of British Columbia in the 1950s, but you can swap .geoJson text for any OIM index you have. Your index map must have OIM standard fields or it wont work. oim-map.html . The oim-map.html file is your map document, which displays at full size. Here’s a direct link. We can also add a “window” to that map on any Markdown document by using an &lt;iframe&gt;. For instance this: &lt;iframe src=\"../data/oim-map.html\" height=\"500\"&gt;&lt;/iframe&gt; . Will give you this: . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/openindexmap.html#adding-an-openindexmap-web-map",
+    "relUrl": "/content/examples/openindexmap.html#adding-an-openindexmap-web-map"
+  },"41": {
+    "doc": "Web Maps",
+    "title": "Web Maps",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/openindexmap.html",
+    "relUrl": "/content/examples/openindexmap.html"
+  },"42": {
+    "doc": "Participating Online",
+    "title": "Participating online",
+    "content": "Active participation enlivens the session with other voices and perspectives. We encourage you to engage with instructors and with each other. Microphones are muted by default to improve audio quality and recording is disabled to preserve participant privacy. The Zoom toolbar provides several ways to be part of the conversation: . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html#participating-online",
+    "relUrl": "/content/participating-online.html#participating-online"
+  },"43": {
+    "doc": "Participating Online",
+    "title": "Participants window",
+    "content": "The Participants window lists everyone in the session. Click the icons at the bottom of the window to communicate with the instructors. Clicking an icon makes it appear next to your name in the participants list. Use this to answer yes/no questions or to raise your hand when instructors invite you to ask a question, comment, or share your screen. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html#participants-window",
+    "relUrl": "/content/participating-online.html#participants-window"
+  },"44": {
+    "doc": "Participating Online",
+    "title": "Chat window",
+    "content": "Use the Chat window to comment or ask a question at any time. Instructors will do their best to respond, sometimes waiting for a break in the lesson to do so. The Chat window is a good place to report problems with your audio connection. Instructors may also use it to share links to material mentioned in the session. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html#chat-window",
+    "relUrl": "/content/participating-online.html#chat-window"
+  },"45": {
+    "doc": "Participating Online",
+    "title": "Share your screen",
+    "content": "In some cases instructors may invite you to share your screen. Raise your hand to indicate that you’re ready to share. When called upon click Share screen, select a window to display, and click Share. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html#share-your-screen",
+    "relUrl": "/content/participating-online.html#share-your-screen"
+  },"46": {
+    "doc": "Participating Online",
+    "title": "Contribute to the Whiteboard",
+    "content": "The Whiteboard is a collaborative space that everyone can annotate with drawings and text. When the whiteboard is shared click View options and select Annotate. This opens the annotation toolbar. Drawings and text you add to the screen will be visible to everyone in the session or breakout room. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html#contribute-to-the-whiteboard",
+    "relUrl": "/content/participating-online.html#contribute-to-the-whiteboard"
+  },"47": {
+    "doc": "Participating Online",
+    "title": "Participating Online",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/participating-online.html",
+    "relUrl": "/content/participating-online.html"
+  },"48": {
+    "doc": "Adding Slides",
+    "title": "Adding presentation slides",
+    "content": "Adding slides to markdown page could not be easier! . Use an iframe and paste the URL to your slides after src= and before &lt;/iframe&gt; . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/slides.html#adding-presentation-slides",
+    "relUrl": "/content/examples/slides.html#adding-presentation-slides"
+  },"49": {
+    "doc": "Adding Slides",
+    "title": "Reveal.js slides",
+    "content": "Are you hosting Reveal.js slides on your GitHub Pages? Just paste the link into an iframe! . &lt;iframe width=\"720\" height=\"480\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" src=\"https://ubc-lib-geo.github.io/gis-workshop-waml-template/content/slides/waml_github20\"&gt;&lt;/iframe&gt; . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/slides.html#revealjs-slides",
+    "relUrl": "/content/examples/slides.html#revealjs-slides"
+  },"50": {
+    "doc": "Adding Slides",
+    "title": "Google slides",
+    "content": "In Google Slides, go to File, Publish to Web, Embed and publish your slides. Copy the embed code then paste the code into your Markdown file: . &lt;iframe src=\"https://docs.google.com/presentation/d/e/2PACX-1vT5hKsfivsyGgfRjsl0nKCHasqOuuZ3Rdoqm_OwVwPAWEo8HYDwx4RHy8LlZgYi1MSELhhUwh8ID3vZ/embed?start=false&amp;loop=false&amp;delayms=3000\" frameborder=\"0\" width=\"720\" height=\"480\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"&gt;&lt;/iframe&gt; . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/slides.html#google-slides",
+    "relUrl": "/content/examples/slides.html#google-slides"
+  },"51": {
+    "doc": "Adding Slides",
+    "title": "PowerPoint",
+    "content": "Start by uploading a PowerPoint file to an Office 365 account… then give up. It’s extremely painful—just don’t. ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/slides.html#powerpoint",
+    "relUrl": "/content/examples/slides.html#powerpoint"
+  },"52": {
+    "doc": "Adding Slides",
+    "title": "Adding Slides",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/slides.html",
+    "relUrl": "/content/examples/slides.html"
+  },"53": {
+    "doc": "Step-by-Step Instruction",
+    "title": "Step-by-step instruction",
+    "content": "Step-by-step instructions . Step 1 {: .label .label-step} Do this thing {: .step} Step 2 {: .label .label-step} Do this other thing {: .step} . Step 1 . Do this thing . Step 2 . Do this other thing . Circled numbers . This syntax… . *1*{: .circle .circle-blue} Number in normal text . …will look like this: . 1 Number in normal text . You can also use this in headers, lists and other markdown suported elements, e.g., . * *1*{: .circle .circle-blue} `.circle-blue` * *2*{: .circle .circle-red} `.circle-red` * *3*{: .circle .circle-yellow} `.circle-yellow` * *4*{: .circle .circle-green} `.circle-green` * *5*{: .circle .circle-purple} `.circle-purple` ## *2*{: .circle .circle-red} Number in h2 ### *10*{: .circle .circle-yellow} Number in h3 . …will look like this: . | 1 .circle-blue | 2 .circle-red | 3 .circle-yellow | 4 .circle-green | 5 .circle-purple | . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/step-by-step.html#step-by-step-instruction",
+    "relUrl": "/content/examples/step-by-step.html#step-by-step-instruction"
+  },"54": {
+    "doc": "Step-by-Step Instruction",
+    "title": "2 Number in h2",
+    "content": "10 Number in h3 . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/step-by-step.html#2-number-in-h2",
+    "relUrl": "/content/examples/step-by-step.html#2-number-in-h2"
+  },"55": {
+    "doc": "Step-by-Step Instruction",
+    "title": "Step-by-Step Instruction",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/examples/step-by-step.html",
+    "relUrl": "/content/examples/step-by-step.html"
+  },"56": {
+    "doc": "UI Features",
+    "title": "UI features",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/ui-features.html#ui-features",
+    "relUrl": "/content/ui-features.html#ui-features"
+  },"57": {
+    "doc": "UI Features",
+    "title": "Selected text formatting options",
+    "content": "Below are selected formatting options that may be useful in in RC worskhop sites. Notes . Use this syntax… . Wash your hands frequently {: .note} . … to include a note that will look like this on the workshop website: . Wash your hands frequently . Warning . Don't step on the snails! {: .warn} . Don’t step on the snails! . Danger . Snails armed and dangerous {: .danger} . Snails armed and dangerous . Prerequisites. This synax… . - Basic slug identification - Comfortable in the woods {: .prereq} . …will look like this: . Something else here . | Basic slug identification | Comfortable in the woods | . Terminal input. Use this formatting to indicate that the participant should input text into the terminal or command line. This… . Input {: .label .label-green } ``` $ git status ``` . … will appear like this in the workshop website: . Input . $ git status . Terminal output. Shows the output resulting from an action. This syntax… . Output {: .label .label-yellow } ``` On branch master Your branch is up-to-date with 'origin/master'. nothing to commit, working tree clean ``` . …looks like this on the site: . Output . On branch master Your branch is up-to-date with 'origin/master'. nothing to commit, working tree clean . Dropdowns . You can use dropdowns to hide answers to questions. For example: . Who was the first U.S. president? George Washington. To create hidden content in a dropdown use this: . &lt;details&gt; &lt;summary&gt;This is the dropdown title&lt;/summary&gt; &lt;br&gt; This is the hidden dropdown content. &lt;/details&gt; . If you want it open by default: . &lt;details open&gt; &lt;summary&gt;This is the dropdown title&lt;/summary&gt; &lt;br&gt; This is the dropdown content that you can hide if you want to. &lt;/details&gt; . ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/ui-features.html#selected-text-formatting-options",
+    "relUrl": "/content/ui-features.html#selected-text-formatting-options"
+  },"58": {
+    "doc": "UI Features",
+    "title": "UI Features",
+    "content": " ",
+    "url": "http://localhost:4000/gis-workshop-waml-template/content/ui-features.html",
+    "relUrl": "/content/ui-features.html"
   }
 }

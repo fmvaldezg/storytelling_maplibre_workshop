@@ -1,163 +1,163 @@
 ---
 layout: default
 title: Pre-requisites
-nav_order: 4
+nav_order: 3
 ---
-# Prerrequisitos
+# Pre-requisites
 {: .no_toc }
 
-Para este tutorial, necesitarás completar (o tener) lo siguiente:
+For this tutorial, you will need to complete (or have already) the following:
 - TOC
 {:toc}
 
-Sigue las instrucciones en las secciones a continuación para completar estos prerrequisitos.
+Follow the instructions in the sections below to complete these pre-requisites.
 
-## *1*{: .circle .circle-blue} Crear una cuenta de `GitHub`
+## *1*{: .circle .circle-blue} Creating a `GitHub` account
 
-Si quieres aprender más sobre Git y GitHub, recomendamos el siguiente [tutorial](https://ubc-library-rc.github.io/intro-git/). 
+If you want to learn more about Git and GitHub, we recomend the following [tutorial](https://ubc-library-rc.github.io/intro-git/). 
 
-Paso 1
+Step 1
 {: .label .label-step}
 
-Ve a [github.com/signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+Go to [github.com/signup](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
 
-Paso 2
+Step 2
 {: .label .label-step}
 
-Escribe tu `correo electrónico`, una `contraseña` y un `nombre de usuario` para tu nueva cuenta. Luego haz clic en `Continue`.
+Write down your `email` address, a `password` and a `username` for your new account. Then click on `Continue`.
 
-![captura de pantalla de la página de registro](./img/gitsign.png)
+![screenshot of the sign up page](/img/gitsign.png)
 
-Paso 3
+Step 3
 {: .label .label-step}
 
-Se te harán algunas preguntas.
-Cuando se te solicite, asegúrate de seleccionar `Continue for free` en el tipo de cuenta.
+You will be asked a few questions.
+When prompted, be sure to select `Continue for free` on the type of account.
 
-![captura de pantalla de la selección de tipo](./img/gitfree.png)
+![screenshot of the type selection](/img/gitfree.png)
 
-Paso 4
+Step 4
 {: .label .label-step}
 
-Recibirás un correo electrónico con un código de activación. Introduce el código cuando se te solicite en la página web de GitHub.
+You will receive an email with an activation code. Input the code when asked to in the GitHub webpage.
 {: .warn}
 
-Ahora estás listo para crear tu primer repositorio.
+You are now ready to create your first repository.
 
-## *2*{: .circle .circle-blue} Descargar e instalar `GitHub Desktop`
+## *2*{: .circle .circle-blue} Download and install `GitHub Desktop`
 
-GitHub Desktop es una aplicación gratuita y de código abierto que te ayuda a trabajar con archivos alojados en GitHub u otros servicios de alojamiento Git.
-Si quieres aprender más sobre esta aplicación, ve [aquí](https://docs.github.com/en/desktop/overview/about-github-desktop).
+GitHub Desktop is a free, open source application that helps you to work with files hosted on GitHub or other Git hosting services.
+If you want to learn more about this application go [here](https://docs.github.com/en/desktop/overview/about-github-desktop).
 
-Dependiendo del sistema operativo (SO) de tu computadora, los siguientes pasos pueden parecer un poco diferentes. En este taller usamos MacOS, pero se puede hacer en cualquier SO. 
+Depending on your computer operating system (OS), the following steps might seem a little different. In this workshop we used a MacOS but it can be done in any OS. 
 {: .warn}
 
-Paso 1
+Step 1
 {: .label .label-step}
 
-Inicia sesión en tu cuenta de `GitHub`, sigue [este enlace](https://github.com/apps/desktop/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs) a la página de descargas y haz clic en el botón `Download now`.
+Signed in to yor `GitHub` account, follow [this link](https://github.com/apps/desktop/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs) to the downloads page and click on the `Download now` button.
 
-![captura de pantalla de la página de descargas de GitHub Desktop](./img/gitdown1.png)
+![screenshot of the downloads page GitHub Desktop](/img/gitdown1.png)
 
-Paso 2
+Step 2
 {: .label .label-step}
 
-Una vez descargado, encontrarás un nuevo archivo `.zip` en tu carpeta de `Descargas`. 
-Simplemente puedes hacer doble clic en él (o clic derecho y descomprimir archivo).
+Once downloaded, you will find a new `.zip` file on your `Downloads` folder. 
+You can simply double-click on it (or right click and uncompress file).
 
-![captura de pantalla del archivo zip siendo descomprimido](./img/gitdown2.png)
+![screenshot of the zip file being uncompressed](/img/gitdown2.png)
 
-Paso 3
+Step 3
 {: .label .label-step}
 
-Verás el icono de `GitHub Desktop` junto al archivo descargado. Solo arrastra el icono y suéltalo en tu carpeta de `Aplicaciones`.
+You will see the `GitHub Desktop` icon next to the downloaded file. Just drag the icon and drop it in your `Applications` folder.
 
-![imagen animada mostrando el icono siendo arrastrado y soltado](./img/gitdown3.gif)
+![animated image showing the icon being draged and dropped](/img/gitdown3.gif)
 
-Paso 4
+Step 4
 {: .label .label-step}
 
-Haz doble clic en el icono de `GitHub Desktop` para abrir la aplicación.
+Double click on the `GitHub Desktop` icon to open the app.
 
-La primera vez que abras `GitHub Desktop`, verás un mensaje de tu sistema pidiendo permiso para abrir la aplicación. Simplemente haz clic en `Abrir`.
+The first time you open `GitHub Desktop`, you will see a message from your system asking permission to open the application. Just click on `Open`.
 
-## *3*{: .circle .circle-blue} Descargar e instalar `VS Code`
+## *3*{: .circle .circle-blue} Download and install `VS Code`
 
-Paso 1
+Step 1
 {: .label .label-step}
 
-En tu navegador de internet, ve a la página de descargas de [code.visualstudio.com](https://code.visualstudio.com/) y haz clic en el botón `Download` en la esquina superior derecha.
+In your internet browser, go to [code.visualstudio.com](https://code.visualstudio.com/) downloads page and click on the `Download` button on the top right corner.
 
-![captura de pantalla de la página de descargas de VS Code](./img/vscodedown1.png)
+![screenshot of the downloads page VS Code](/img/vscodedown1.png)
 
-Paso 2
+Step 2
 {: .label .label-step}
 
-Selecciona el instalador apropiado para el sistema operativo de tu computadora. En este caso estamos usando MacOS.
+Select the appropriate installer for your computer operating system. In this case we re using a MacOS.
 
-![captura de pantalla de las opciones en la página de descargas de VS Code](./img/vscodedown2.png)
+![screenshot of the options on the downloads page VS Code](/img/vscodedown2.png)
 
-El botón de descarga en la pantalla principal debería dirigirte a la versión correcta para tu equipo.
+The download button on the main screen should point you to the correct version for your equipment.
 {: .warn }
 
-Paso 3
+Step 3
 {: .label .label-step}
 
-Una vez descargado, encontrarás un nuevo archivo `.zip` en tu carpeta de `Descargas`. 
-Simplemente puedes hacer doble clic en él (o clic derecho y descomprimir archivo).
+Once downloaded, you will find a new `.zip` file on your `Downloads` folder. 
+You can simply double-click on it (or right click and uncompress file).
 
-![captura de pantalla del archivo zip siendo descomprimido](./img/vscodedown3.png)
+![screenshot of the zip file being uncompressed](/img/vscodedown3.png)
 
-Paso 4
+Step 4
 {: .label .label-step}
 
-Verás el icono de `Visual Studio Code` junto al archivo descargado. Solo arrastra el icono y suéltalo en tu carpeta de `Aplicaciones`.
+You will see the `Visual Stusio Code` icon next to the downloaded file. Just drag the icon and drop it in your `Applications` folder.
 
-![imagen animada mostrando el icono siendo arrastrado y soltado](./img/vscodedown4.gif)
+![animated image showing the icon being draged and dropped](/img/vscodedown4.gif)
 
-Paso 5
+Step 5
 {: .label .label-step}
 
-Haz doble clic en el icono de `Visual Studio Code` para abrir la aplicación.
+Double click on the `Visual Studio Code` icon to open the app.
 
-La primera vez que abras `Visual Studio Code`, verás un mensaje de tu sistema pidiendo permiso para abrir la aplicación. Simplemente haz clic en `Abrir`.
+The first time you open `Visual Studio Code`, you will see a message from your system asking permission to open the application. Just click on `Open`.
 
-![captura de pantalla del mensaje de advertencia](./img/vscodedown5.png)
+![screenshot of warning message](/img/vscodedown5.png)
 
-## *4*{: .circle .circle-blue} Crear una cuenta de `MapTiler`
+## *4*{: .circle .circle-blue} Creating a `MapTiler` account
 
-MapTiler es una plataforma de software para construir mapas digitales. 
-MapTiler mantiene el proyecto de código abierto [OpenMapTiles](https://openmaptiles.org/) que consiste en un conjunto de herramientas que permiten a todos crear sus propios mosaicos de mapas vectoriales a partir de datos de OpenStreetMap para alojamiento, auto-alojamiento o uso sin conexión.
-En este tutorial usaremos el plan gratuito de MapTiler para acceder a sus mosaicos vectoriales alojados y usar el estilo OpenMapTiles.
+MapTiler is a software platform for building digital maps. 
+MapTiler maintains the OpenSource project [OpenMapTiles](https://openmaptiles.org/) that consists of a set of tools allowing everyone to create their own vector map tiles from OpenStreetMap data for hosting, self-hosting, or offline use.
+In this tutorial we will use MapTiler's free plan to access their hosted vector tiles and use the OpenMapTiles style.
 
-Paso 1
+Step 1
 {: .label .label-step}
 
-En tu navegador, ve a la página principal de [MapTiler.com](https://www.maptiler.com/) y haz clic en `Create a free account`.
+On your browser, go to [MapTiler.com](https://www.maptiler.com/) home page and click on `Create a free account`.
 
-![captura de pantalla de la página principal de Maptiler](./img/mpdown1.png)
+![screenshot of Maptiler home page](/img/mpdown1.png)
 
-Paso 2
+Step 2
 {: .label .label-step}
 
-Inicia sesión usando tu dirección de correo electrónico o tu cuenta de Google si tienes una.
-Escribe tu nombre y una contraseña para tu cuenta. Luego haz clic en `Save` para continuar.
+Sign in using your email address or your Google account if you have one.
+Type your name and a password for your account. Then click on `Save` to continue.
 
-![captura de pantalla de la página principal de Maptiler](./img/mpdown2.png)
+![screenshot of Maptiler home page](/img/mpdown2.png)
 
-Paso 3
+Step 3
 {: .label .label-step}
 
-Recibirás un correo electrónico para verificar tu cuenta. Haz clic en el enlace del correo electrónico para ser redirigido a tu cuenta de `MapTiler`.
+You will receive an email to verify your account. Click on the link the email to be redirected to your `MapTiler` account.
 {: .warn }
 
-![captura de pantalla de la página principal de Maptiler](./img/mpdown3.png)
+![screenshot of Maptiler home page](/img/mpdown3.png)
 
-Ahora puedes iniciar sesión usando tu correo electrónico y la contraseña que creaste en el paso anterior.
+Now you can sign in using your email and the password you created in the previous step.
 
-Paso 4
+Step 4
 {: .label .label-step}
 
-Ahora estás listo para comenzar a crear y usar Maptiles y estilos de mapas en MapTiler
+You are now ready to start creating and using Maptiles and map styles in MapTiler
 
-![captura de pantalla de la página principal de Maptiler](./img/mpdown4.png)
+![screenshot of Maptiler home page](/img/mpdown4.png)

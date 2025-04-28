@@ -1,84 +1,84 @@
 ---
 layout: default
-title: Implementar mapa en la web
-parent: Práctica
+title: Deploy story map
+parent: Hands On
 nav_order: 6
 ---
 
-## Implementar tu mapa narrativo como página web
+## Deploy your story map as a web page
 
-Ahora que tu mapa narrativo está terminado, es hora de implementarlo como una página web. Para eso utilizaremos `GitHub Pages`.
+Now that your story map is finished, it is time to deploy it as a web page. For that we will use `GitHub pages`.
 
-[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) es un servicio de alojamiento de sitios estáticos que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente procesa los archivos a través de un proceso de construcción, y publica un sitio web.
+[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
 
-Para publicar tu mapa como una página web, sigue estos pasos:
+To publish your map as a web page follow this steps:
 
-Paso 1
+Step 1
 {: .label .label-step}
 
-Ve a la nube de `GitHub` e inicia sesión en tu cuenta.
+Go to `GitHub` cloud and sign in to your account.
 
-Puedes hacer clic en el botón `View on GitHub` en tu aplicación `GitHub Desktop` para abrir el repositorio en tu navegador.
+You can click on the `View on GitHub` button on your `GitHub Desktop app` to open the repository on your browser.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy1.png) 
+![Open on GitHub screenshot](../img/deploy1.png) 
 
-Paso 2
+Step 2
 {: .label .label-step}
 
-En tu repositorio, haz clic en el botón `Settings` en la barra de menú superior.
+On your repository, click on the `Settings` button on the top menu bar.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy2.png)
+![Open on GitHub screenshot](../img/deploy2.png)
 
-Paso 3
+Step 3
 {: .label .label-step}
 
-Si no lo hiciste antes, tendrás que hacer tu repositorio `público` para poder usar GitHub Pages.
+If you did not before, you will have to make your repository `public` in order to use GitHub pages.
 
-Simplemente haz clic en el botón `General` en el panel de la izquierda.
+Simply click on the `General` button on the panel on the left. 
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy3.png)
+![Open on GitHub screenshot](../img/deploy3.png)
 
-Desplázate hasta la parte inferior de la página y haz clic en `Change visibility` y luego en `Change to public`.
+Scroll down to the bottom of the page and click on `Change visibility` and then on `Change to public`.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy4.png)
+![Open on GitHub screenshot](../img/deploy4.png)
 
-Confirma que deseas hacer público el repositorio.
+Confirm that you want to make the repository public.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy5.png)
+![Open on GitHub screenshot](../img/deploy5.png)
 
-Es posible que se te pida que ingreses la contraseña de tu cuenta para confirmar.
+You might be asked to enter your account password to confirm.
 {: .warn }
 
-Paso 4
+Step 4
 {: .label .label-step}
 
-En la Configuración del repositorio, haz clic en el botón `Pages` en las opciones del panel izquierdo.
+On the repository Settings, click on the `Pages` button on the left panel options.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy6.png)
+![Open on GitHub screenshot](../img/deploy6.png)
 
-Paso 5
+Step 5
 {: .label .label-step}
 
-En la configuración de Pages, haz clic en el menú desplegable bajo el título `Branch` y selecciona la opción de rama `main`.
+On the Pages settings, click on the dropdown menu under the title `Branch` and select the `main` bramch option.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy7.png)
+![Open on GitHub screenshot](../img/deploy7.png)
 
-Luego haz clic en `Save`. Un mensaje como el que se muestra a continuación aparecerá en la pantalla.
+Then click on `Save`. A message like the one below will appear on the screen.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy8.png)
+![Open on GitHub screenshot](../img/deploy8.png)
 
-Paso 6
+Step 6
 {: .label .label-step}
 
-Espera unos segundos y luego actualiza la página.
+Wait a couple some seconds and the refresh the page.
 
-Una nueva sección aparecerá en la ventana de configuración de `Pages` con los detalles de tu página implementada.
+A new section will appear on the `Pages` settings window with the details of your deployed page.
 
-Haz clic en el botón `Visit site` para abrir el mapa narrativo en una nueva ventana del navegador.
+Click on the `Visit site` button to open the story map on a new browser window.
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy9.png)
+![Open on GitHub screenshot](../img/deploy9.png)
 
-Cada vez que cambies algo en tu archivo `config.js` o agregues algo a tu repositorio, `GitHub Pages` construirá los archivos de renderizado e implementará la nueva versión de tu mapa. Lo único que tienes que hacer es `commit` tus cambios y `push` los cambios a la nube si estás usando `GitHub Desktop`.
+Everytime you change something on your `config.js` file or add anything to your repository, `GitHub pages` will built the rendering files and deploy the new version of your map. The only thing you have to do is `commit` your changes and `push` the changes to the cloud if you are using `GitHub desktop`.
 {: .warn }
 
-![Captura de pantalla de Abrir en GitHub](../img/deploy10.png)
+![Open on GitHub screenshot](../img/deploy10.png)

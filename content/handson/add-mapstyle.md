@@ -1,54 +1,54 @@
 ---
 layout: default
-title: Agregar un Estilo de Mapa a tu mapa
-parent: Práctica
+title: Add a MapStyle to your map
+parent: Hands On
 nav_order: 3
 ---
-# Agregar un Estilo de Mapa
+# Add a Map Style
 
-Los mapas web se muestran utilizando un conjunto de reglas que tratan cada elemento del mapa de una manera específica para renderizarlos usando los colores, iconos y formas que ves en tu pantalla. Estas reglas se almacenan en un archivo que puede estar en tu computadora o puede ser accedido a través de una URL.
+Webmaps are displayed using a set of rules that treat every item on the map in a specific way to render them using the colors, icons and shapes you see in your screen. This rules are stored in a file that can live in your computer or can be accessed via URL.
 
-Utilizaremos los OpenMapStyles de [MapTiler](https://openmaptiles.org/). Si no tienes una cuenta de MapTiler, consulta la sección de prerrequisitos para crear una cuenta gratuita.
+We will be using the OpenMapStyles from [MapTiler](https://openmaptiles.org/). If you do not have a MapTiler account, check the pre-requistes section to create a free one. 
 
-Sigue estos pasos para agregar un estilo de mapa a tu mapa narrativo.
+Follow this steps to add a map style to your story map.
 
-### *1*{: .circle .circle-blue} Inicia sesión en tu cuenta de `MapTiler`.
+### *1*{: .circle .circle-blue} Sign in to you `MapTiler` account.
 
-En tu navegador web, ve a [este enlace](https://cloud.maptiler.com/auth/widget?next=https://cloud.maptiler.com/maps/).
-Ingresa tu nombre de usuario y contraseña.
+On your web browser, go to [this link](https://cloud.maptiler.com/auth/widget?next=https://cloud.maptiler.com/maps/).
+Enter you username and password.
 
-![Captura de pantalla de la página de inicio de sesión de MapTiler](../img/style0.png)  
+![Screenshot of MapTiler sign in page](../img/style0.png)  
 
-### *2*{: .circle .circle-blue} Selecciona el estilo de mapa que quieres usar.
+### *2*{: .circle .circle-blue} Select the map style you want to use.
 
-En la pantalla de MapTiler Maps verás una lista de estilos abiertos predefinidos.
+On the MapTiler Maps screen you will see a list of  pre made open styles.
 
-Haz clic en `DataViz` si quieres seguir este tutorial, o cualquier otro estilo que prefieras.
+Click on `DataViz` if you want to follow this tutorial, or any other style you prefer.
 
-![Captura de pantalla de la página de inicio de sesión de MapTiler](../img/style1.png) 
+![Screenshot of MapTiler sign in page](../img/style1.png) 
 
-Puedes crear tus propios estilos usando MapTiler OpenMapTyles haciendo clic en el botón `New map`. Puedes seleccionar qué capas mostrar y cómo.
+You can create you own styles using MapTiler OpenMapTyles by clicking on the `New map` button. You can select which layers to display and how.
 {: .note }
 
-### *3*{: .circle .circle-blue} Copia la URL del estilo vectorial
+### *3*{: .circle .circle-blue} Copy the vector style URL
 
-Copia la URL del estilo. Puedes usar el botón `Copy link`.
+Copy the style URl. You can use the `Copy link` button.
 
-Asegúrate de usar el `vector style` que se encuentra bajo el título 'Use vector style'.
+Be sure to use the `vector style` that is located under the 'Use vector style' title.
 {: .warn}
 
-![Captura de pantalla de la página de inicio de sesión de MapTiler](../img/style2.png)
+![Screenshot of MapTiler sign in page](../img/style2.png)
 
-### *4*{: .circle .circle-blue} Pega la URL del estilo en el archivo config.js
+### *4*{: .circle .circle-blue} Paste the style url in the config.js file
 
-Regresa al archivo `config.js` que tienes abierto en `Visual Studio Code` y pega la URL que acabas de copiar en la propiedad `style:`.
+Go back to the `config.js` you have open in `Visual Studio Code` and paste the URL you just copied in the `style:` property.
 
 Input
 {: .label .label-green }
 ```
-2  style: 'https://api.maptiler.com/maps/dataviz/style.json?key={tu_propia_clave}'
+2  style: 'https://api.maptiler.com/maps/dataviz/style.json?key={your_own_key}'
 ```
-![captura de pantalla mostrando el copiar y pegar de la URL del estilo](../img/style3.png)
+![screenshot showing the copy and paste of the sytle url](../img/style3.png)
 
-El estilo puede definirse usando una URL, como en esta demostración, o usando un archivo `.json`. Si creas tu propio estilo y quieres usar un archivo json, debes guardar ese archivo en la carpeta `map` en el repositorio y apuntar la propiedad style a él usando `style: '\map\style.json'`. Los estilos personalizados pueden crearse y guardarse como archivos json en aplicaciones como [Maputnik](https://maputnik.github.io/) o [Mapbox Studio](https://www.mapbox.com/mapbox-studio).
+The style can be defined using a URL, like in this demo, or using a `.json` file. If you create your own style and want to use a json file, you have to save that file in the `map` folder on the repository and point the style property to it using `style: '\map\style.json'`. Customized styles can be created and saved as json files in aplications like [Maputnik](https://maputnik.github.io/) or [Mapbox Studio](https://www.mapbox.com/mapbox-studio).
 {: .note }

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Práctica
-nav_order: 4
+title: Hands On
+nav_order: 5
 has_children: true
 has_toc: true
 ---

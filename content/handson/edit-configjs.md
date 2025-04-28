@@ -1,69 +1,69 @@
 ---
 layout: default
-title: Edit Your config.js file
-parent: Hands On
+title: Editar el archivo config.js
+parent: Práctica
 nav_order: 2
 ---
-# Edit Your config.js
-First we're going to make a few quick edits to your new repository's config.js file. This file contains the story main content and the map controls.
+# Editar el archivo config.js
+Primero vamos a hacer algunas ediciones rápidas al archivo config.js de tu nuevo repositorio. Este archivo contiene el contenido principal de la historia y los controles del mapa.
 
-### *1*{: .circle .circle-blue} Open your repository files in `Visual Studio Code`.
+### *1*{: .circle .circle-blue} Abre los archivos de tu repositorio en `Visual Studio Code`.
 
-While on `GitHub Desktop`, click on the option to `Open in Visual Studio Code`
+Mientras estás en `GitHub Desktop`, haz clic en la opción `Open in Visual Studio Code`
 
-![Open on Visual Studio Code](../img/config0.png)  
+![Abrir en Visual Studio Code](../img/config0.png)  
 
-This will open `Visual Studio Code`.
+Esto abrirá `Visual Studio Code`.
 
-### *2*{: .circle .circle-blue} Rename the file.  
+### *2*{: .circle .circle-blue} Renombra el archivo.  
 
-You are going to see a list with all the files and folders on your repository. 
+Verás una lista con todos los archivos y carpetas en tu repositorio. 
 
-![Open on Visual Studio Code](../img/config1.png)  
+![Abrir en Visual Studio Code](../img/config1.png)  
 
-Right click on the file `config.js.template` and select the `Rename` option.
+Haz clic derecho en el archivo `config.js.template` y selecciona la opción `Rename`.
 
-![Open on Visual Studio Code](../img/config2.png)  
+![Abrir en Visual Studio Code](../img/config2.png)  
 
-Change the name of the file to `config.js`, without the word template at the end.
+Cambia el nombre del archivo a `config.js`, sin la palabra template al final.
 
-### *3*{: .circle .circle-blue} Make some edits to your `config.js` file.  
+### *3*{: .circle .circle-blue} Haz algunas ediciones a tu archivo `config.js`.  
 
-Click on the file you just renamed. Its content will be displayed in the central panel on GitHub Desktop.
+Haz clic en el archivo que acabas de renombrar. Su contenido se mostrará en el panel central de GitHub Desktop.
 
-The first 17 lines of this file contain the main configurations for your new sotrymap. 
-We are going to cover some of them to get your story map started. 
+Las primeras 17 líneas de este archivo contienen las configuraciones principales para tu nuevo mapa narrativo. 
+Vamos a cubrir algunas de ellas para iniciar tu mapa de historia. 
 
-![Edit your README](../img/config3.png)
+![Editar tu README](../img/config3.png)
 
-Step 1
+Paso 1
 {: .label .label-step}
 
-Give your map a title by replacing the text after `title:`
+Dale un título a tu mapa reemplazando el texto después de `title:`
 
 Input
 {: .label .label-green }
 ```
-12  title: 'My first StoryMap'
+12  title: 'Mi primer Mapa Narrativo'
 ```
 
-Be aware that al these properties are build by a pair of values. Values other than boolean (true,flase) should be between ``. 
+Ten en cuenta que todas estas propiedades están construidas por un par de valores. Los valores que no sean booleanos (true, false) deben estar entre ``. 
 {: .warn}
 
-Step 2
+Paso 2
 {: .label .label-step}
 
-Insert a `subtitle` for your story map. Type any text you want to be in the subtitle. Remember that it should be between ``.
+Inserta un `subtitle` para tu mapa narrativo. Escribe cualquier texto que quieras que aparezca en el subtítulo. Recuerda que debe estar entre ``.
 
 Input
 {: .label .label-green }
 ```
-14  subtitle: 'This is the most amazing story map ever made!'
+14  subtitle: '¡Este es el mapa narrativo más increíble jamás creado!'
 ```
-Step 3
+Paso 3
 {: .label .label-step}
 
-Put your name as the author of the story map by changing the text of the byline property.
+Pon tu nombre como autor del mapa narrativo cambiando el texto de la propiedad byline.
 
 Input
 {: .label .label-green }
@@ -71,41 +71,41 @@ Input
 15  byline: 'Felipe Valdez'
 ```
 
-Step 4
+Paso 4
 {: .label .label-step}
 
-Add aditional information to your story map in the `footer` property. This is a spot you can use to attribute the data or mention any organizations involved in the making of the map. Also, it is a good practice to keep the MapLibre Storytelling and the link to the project as it is after `<br>`.
+Añade información adicional a tu mapa narrativo en la propiedad `footer`. Este es un lugar que puedes usar para atribuir los datos o mencionar cualquier organización involucrada en la creación del mapa. Además, es una buena práctica mantener el MapLibre Storytelling y el enlace al proyecto tal como está después de `<br>`.
 
 Input
 {: .label .label-green }
 ```
-17  footer: 'Source: Temple Unievrsity Libraries<br> Created using <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> template.',
+17  footer: 'Fuente: Bibliotecas de la Universidad Temple<br> Creado usando la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a>.',
 ```
-Most of this properties allow HTML formated text. This means you can add different styles, links and other features. If you want to learn more about HTML follow this [link](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
+La mayoría de estas propiedades permiten texto con formato HTML. Esto significa que puedes añadir diferentes estilos, enlaces y otras características. Si quieres aprender más sobre HTML sigue este [enlace](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 {: .note}
 
-### *More*{: .circle .circle-blue} Additional properties and their functionality.
+### *+*{: .circle .circle-blue} Propiedades adicionales y su funcionalidad.
 
-The rest of the properties in this section allow you to change some other aspects of the story map. we will cover the `style` property in the next section. The other properties are described below.
+El resto de las propiedades en esta sección te permiten cambiar otros aspectos del mapa narrativo. Cubriremos la propiedad `style` en la siguiente sección. Las otras propiedades se describen a continuación.
 
-| Property | Function
+| Propiedad | Función
 | --- | ---
-| `style:` | This is the MapLibre style to use for the app. You can set this to any MapLibre style hosted online or locally, but by default it is set to look for a style in the map/ directory.
-| `showMarkers:` | This controls whether markers are shown at the centerpoint of each chapter. If true, the map will display a default blue, inverted-teardrop icon.
-| `markerColor:` | If showMarkers is true, this property will override the default light blue marker color.
-| `inset:` | Shows an inset mini-map. Will be disabled is legend is set to true.
-| `legend:` | Shows a box at the bottom right in which you can add HTML content for each chapter, serving as a legend. Will be disabled is inset is set to true.
-| `theme:` | Two basic themes (light and dark) are available.
+| `style:` | Este es el estilo de MapLibre que se utilizará para la aplicación. Puedes configurarlo a cualquier estilo de MapLibre alojado en línea o localmente, pero por defecto está configurado para buscar un estilo en el directorio map/.
+| `showMarkers:` | Esto controla si se muestran marcadores en el punto central de cada capítulo. Si es true, el mapa mostrará un icono azul predeterminado en forma de lágrima invertida.
+| `markerColor:` | Si showMarkers es true, esta propiedad anulará el color azul claro predeterminado del marcador.
+| `inset:` | Muestra un mini-mapa insertado. Se desactivará si legend está configurado como true.
+| `legend:` | Muestra una caja en la parte inferior derecha en la que puedes añadir contenido HTML para cada capítulo, sirviendo como leyenda. Se desactivará si inset está configurado como true.
+| `theme:` | Hay dos temas básicos disponibles (light y dark).
 
-Optional properties
+Propiedades opcionales
 
-| Property | Function
+| Propiedad | Función
 | --- | ---
-| `use3dTerrain` | Enables 3D terrain. You will need to provide your own terrain tiles.
-| `useCustomLayers:` | Enables adding custom sources and layers as defined in `sources.js`.
-| `bookmarks:` | Enables adding bookmark links in the header and footer for each chapter. Bookmarks will be added for any chapter that has a title.
-| `chapterReturn:` | To enable a "Return to Top" link at the bottom of each chapter.
-| `logo:` | Add a logo image to the header of your story.
-| `mobileview:` | Displays a helpful note to rotate the device when viewing the story map on a mobile. This is HTML content and can be modified in `config.js`.
+| `use3dTerrain` | Habilita el terreno 3D. Necesitarás proporcionar tus propios mosaicos de terreno.
+| `useCustomLayers:` | Permite añadir fuentes y capas personalizadas según lo definido en `sources.js`.
+| `bookmarks:` | Permite añadir enlaces de marcadores en el encabezado y pie de página para cada capítulo. Se añadirán marcadores para cualquier capítulo que tenga un título.
+| `chapterReturn:` | Para habilitar un enlace "Volver al principio" al final de cada capítulo.
+| `logo:` | Añade una imagen de logo al encabezado de tu historia.
+| `mobileview:` | Muestra una nota útil para rotar el dispositivo cuando se visualiza el mapa narrativo en un móvil. Este es contenido HTML y puede ser modificado en `config.js`.
 
-_Source: [MapLibre Storytelling - Digital Democracy](https://github.com/digidem/maplibre-storymap)._
+_Fuente: [MapLibre Storytelling - Digital Democracy](https://github.com/digidem/maplibre-storymap)._

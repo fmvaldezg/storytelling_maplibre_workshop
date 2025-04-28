@@ -1,159 +1,159 @@
 ---
 layout: default
-title: Add chapter data
-parent: Hands On
+title: Agregar capítulos
+parent: Práctica
 nav_order: 4
 ---
 
-# Add chapters
+# Agregar capítulos
 
-Now that you have the basic configuration of your storymap, it is time to add data to your chapters.
-Chapters contain the contents of your story. Each of them is a box with text and mutimedia that will scroll on top of your basemap.
+Ahora que tienes la configuración básica de tu mapa narrativo, es hora de agregar datos a tus capítulos.
+Los capítulos contienen el contenido de tu historia. Cada uno es un recuadro con texto y multimedia que se desplazará sobre tu mapa base.
 
-You will need to add and set some details in the `config.js` file to create the chapters of your story.
-Starting on line 18 of the `config.js` file, you will see the chapters and its properties.
+Necesitarás agregar y configurar algunos detalles en el archivo `config.js` para crear los capítulos de tu historia.
+A partir de la línea 18 del archivo `config.js`, verás los capítulos y sus propiedades.
 
-At the bottom of this page you have a detail on the function of each property of the chapters in the `config.js` file.
-We will go through the basic properties in the following steps.
+Al final de esta página tienes un detalle sobre la función de cada propiedad de los capítulos en el archivo `config.js`.
+Repasaremos las propiedades básicas en los siguientes pasos.
 
-### *1*{: .circle .circle-blue} Setting up your first chapter.
+### *1*{: .circle .circle-blue} Configurando tu primer capítulo.
 
-Step 1
+Paso 1
 {: .label .label-step}
 
-Add an `id` to your fist chapter. Just type any text that will identify your firts chapter.
+Agrega un `id` a tu primer capítulo. Simplemente escribe cualquier texto que identifique tu primer capítulo.
 
-Input
+Entrada
 {: .label .label-green }
 ```
-20  id: 'my-first-chapter'
+20  id: 'mi-primer-capitulo'
 ```
-Remember to use dashes to separate words and lowercase letters for the chpater id. 
+Recuerda usar guiones para separar palabras y letras minúsculas para el id del capítulo. 
 {: .warn}
 
-![screenshot of the chapter id](../img/chapters1.png)
+![captura de pantalla del id del capítulo](../img/chapters1.png)
 
-Step 2
+Paso 2
 {: .label .label-step}
 
-Add a `title` to your chapter. On line 23, add a text to be your chapter title.
+Agrega un `title` a tu capítulo. En la línea 23, agrega un texto para que sea el título de tu capítulo.
 
-Input
+Entrada
 {: .label .label-green }
 ```
-23  title: 'Chapter 1'
+23  title: 'Capítulo 1'
 ```
-![screenshot of the chapter title property](../img/chapters2.png)
+![captura de pantalla de la propiedad título del capítulo](../img/chapters2.png)
 
-Step 3
+Paso 3
 {: .label .label-step}
 
-Add a `description` to your chapter. This section will contain the main text of this chapetr. On line 29, add all the text for this chapter.
+Agrega una `description` a tu capítulo. Esta sección contendrá el texto principal de este capítulo. En la línea 29, agrega todo el texto para este capítulo.
 
-Input
+Entrada
 {: .label .label-green }
 ```
-29  description: 'This is the greatest story in the world. It takes place in the city of Philadelphia'
+29  description: 'Esta es la mejor historia del mundo. Tiene lugar en la ciudad de Filadelfia'
 ```
-![screenshot of the chapter title property](../img/chapters3.png)
+![captura de pantalla de la propiedad de título del capítulo](../img/chapters3.png)
 
-### *2*{: .circle .circle-blue} Adding an image to your chapter.
+### *2*{: .circle .circle-blue} Agregando una imagen a tu capítulo.
 
-Step 1
+Paso 1
 {: .label .label-step}
 
-Give the image you are going to use a simple but easy to identify name. For example `img_chapter1.png`.
+Dale a la imagen que vas a usar un nombre simple pero fácil de identificar. Por ejemplo `img_capitulo1.png`.
 
-Step 2
+Paso 2
 {: .label .label-step}
 
-1. On your system browser, navigate to the `maplibre-storymap` repository folder.
+1. En el navegador de tu sistema, navega hasta la carpeta del repositorio `maplibre-storymap`.
 
-2. Inside this folder you will see another folder named `images`.
+2. Dentro de esta carpeta verás otra carpeta llamada `images`.
 
-3. Save your image `img-chapter1.png` into this folder.
+3. Guarda tu imagen `img-capitulo1.png` en esta carpeta.
 
-![screenshot of the repository images folder](../img/chapters4.png)
+![captura de pantalla de la carpeta de imágenes del repositorio](../img/chapters4.png)
 
-Step 3
+Paso 3
 {: .label .label-step}
 
-Go back to the `config.js` file on `Visual Studio Code` and add the following:
+Regresa al archivo `config.js` en `Visual Studio Code` y agrega lo siguiente:
 
-Input
+Entrada
 {: .label .label-green }
 ```
-24  image: './images/img-chapter1.png'
+24  image: './images/img-capitulo1.png'
 ```
-![screenshot of the config.js file](../img/chapters5.png)
+![captura de pantalla del archivo config.js](../img/chapters5.png)
 
-### *3*{: .circle .circle-blue} Setting the location of the chapter in the map.
+### *3*{: .circle .circle-blue} Configurando la ubicación del capítulo en el mapa.
 
-Another feature of storymaps is the ability to center the basemap on a specific point to higlight the story you are telling. In this demo, we are telling a story about the city of Philadelphia, we are going to locate the map so that it displays an overview of the city with the centerpoint on City Hall. 
+Otra característica de los mapas narrativos es la capacidad de centrar el mapa base en un punto específico para destacar la historia que estás contando. En esta demostración, estamos contando una historia sobre la ciudad de Filadelfia, vamos a ubicar el mapa para que muestre una vista general de la ciudad con el punto central en el Ayuntamiento.
 
-The map view is controlled by the properties under `location:` from line 31 to 34 in the `confi.js` file. The first two options, `center` and `zoom` being the most important as the set the coordinates where the map is centered and how far in or out is is zoomed in. To help you decide this properties values we are going to use the [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97) web app.
+La vista del mapa está controlada por las propiedades bajo `location:` desde la línea 31 hasta la 34 en el archivo `config.js`. Las dos primeras opciones, `center` y `zoom` son las más importantes ya que establecen las coordenadas donde se centra el mapa y cuán alejado o acercado está. Para ayudarte a decidir los valores de estas propiedades, vamos a usar la aplicación web [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97).
 
-Step 1
+Paso 1
 {: .label .label-step}
 
-On your internet browser, navigate to the [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97) web app.
+En tu navegador de internet, navega hasta la aplicación web [Location Helper](https://labs.mapbox.com/location-helper/#3/40.78/-73.97).
 
-You are going to see a map and a window with some numeric values for `center (array)`, `center (object)`, `zoom`, `bearing`, `pitch` and others on the left side of the screen. Notice a circle marking the center of the map.
+Verás un mapa y una ventana con algunos valores numéricos para `center (array)`, `center (object)`, `zoom`, `bearing`, `pitch` y otros en el lado izquierdo de la pantalla. Observa un círculo que marca el centro del mapa.
 
-Navigate the map using the `Navigation controls` or the `Search bar` on the top right corner of the screen, untill you see the map as you want it to be displayed in your chapter. 
+Navega por el mapa usando los `Controles de navegación` o la `Barra de búsqueda` en la esquina superior derecha de la pantalla, hasta que veas el mapa como quieres que se muestre en tu capítulo.
 
-![screenshot of the Location Helper web app](../img/chapters6.png)
+![captura de pantalla de la aplicación web Location Helper](../img/chapters6.png)
 
-In this demo, we typed on the search bar `Philadelphia, Pennsylvania` and the resulting map looks good for the purpose of the first chapter.
+En esta demostración, escribimos en la barra de búsqueda `Philadelphia, Pennsylvania` y el mapa resultante se ve bien para el propósito del primer capítulo.
 
-![screenshot of the Location Helper web app](../img/chapters7.png)
+![captura de pantalla de la aplicación web Location Helper](../img/chapters7.png)
 
-Step 2
+Paso 2
 {: .label .label-step}
 
-Copy the values on the `center (array)` peoperty of the `Location Helper` web app and paste it in the `center:` property on line 31 of the `config.js` file you have opened in Visual Studio Code.
+Copia los valores en la propiedad `center (array)` de la aplicación web `Location Helper` y pégalos en la propiedad `center:` en la línea 31 del archivo `config.js` que tienes abierto en Visual Studio Code.
 
-Input
+Entrada
 {: .label .label-green }
 ```
 31  center: [-75.15911, 39.97307],
 ```
-Note that the coordinates are within [ ] symbols and separated by a comma. 
+Ten en cuenta que las coordenadas están dentro de los símbolos [ ] y separadas por una coma. 
 {: .warn}
 
-![screenshot of center coordinates](../img/chapters8.png)
+![captura de pantalla de las coordenadas del centro](../img/chapters8.png)
 
-Step 3
+Paso 3
 {: .label .label-step}
 
-Copy the values on the `zoom` peoperty of the `Location Helper` web app and paste it in the `zoom:` property on line 32 of the `config.js` file you have opened in Visual Studio Code.
+Copia los valores en la propiedad `zoom` de la aplicación web `Location Helper` y pégalos en la propiedad `zoom:` en la línea 32 del archivo `config.js` que tienes abierto en Visual Studio Code.
 
-Input
+Entrada
 {: .label .label-green }
 ```
 32  zoom: 10.89,
 ```
 
-![screenshot of the zoom level](../img/chapters9.png)
+![captura de pantalla del nivel de zoom](../img/chapters9.png)
 
-### *4*{: .circle .circle-blue} Adding more chapters to your story map.
+### *4*{: .circle .circle-blue} Agregando más capítulos a tu mapa narrativo.
 
-The Digital Democracy template has two chapters added to the map. 
+La plantilla de Digital Democracy tiene dos capítulos agregados al mapa.
 
-A chapter has the following structure:
+Un capítulo tiene la siguiente estructura:
 
 ```
 {
-            id: 'chapter-id',
+            id: 'id-del-capitulo',
             alignment: 'left',
             hidden: false,
-            title: 'Chapter title',
-            image: './images/name.png',
-            caption: 'Source image caption',
-            website: '<a href="" target="_blank">Website</a>',
-            author: 'Digital Storyteller',
-            legend: '<span style="font-size: 0.85em;"><em>Legend content</em></span>',
-            description: 'Your chapter content',
+            title: 'Título del capítulo',
+            image: './images/nombre.png',
+            caption: 'Leyenda de la imagen fuente',
+            website: '<a href="" target="_blank">Sitio web</a>',
+            author: 'Narrador Digital',
+            legend: '<span style="font-size: 0.85em;"><em>Contenido de la leyenda</em></span>',
+            description: 'El contenido de tu capítulo',
             location: {
                 center: [-75.15911, 39.97307],
                 zoom: 10.89,
@@ -169,34 +169,34 @@ A chapter has the following structure:
             onChapterExit: []
         },
 ```
-To add new chapters to your storymap, simply `copy` this text and paste it right after the `}` symbol that closes the previous chapter. Be sure to include a `,` after the symbol and paste the text before the `]` that closes the chapters section on the code.
+Para agregar nuevos capítulos a tu mapa narrativo, simplemente `copia` este texto y pégalo justo después del símbolo `}` que cierra el capítulo anterior. Asegúrate de incluir una `,` después del símbolo y pegar el texto antes del `]` que cierra la sección de capítulos en el código.
 
-![screenshot of the place to paste the code](../img/chapters10.png)
+![captura de pantalla del lugar para pegar el código](../img/chapters10.png)
 
-Add as many chapters as you like. 
+Agrega tantos capítulos como quieras.
 
-Don't forget to add th data and specifications needed in each chapter. In the next section of this tutorial you will learn how to preview your storymap.
+No olvides agregar los datos y especificaciones necesarios en cada capítulo. En la siguiente sección de este tutorial aprenderás cómo previsualizar tu mapa narrativo.
 
-Go ahead and play around changing some chapter settings like `aligment` and `rotateAnimantion`.
+Adelante, juega cambiando algunas configuraciones del capítulo como `alignment` y `rotateAnimation`.
 {: .note }
 
 
-| Property | Function
+| Propiedad | Función
 | --- | ---
-| `id:` | A slug-style ID for the chapter. This is read by the JavaScript driving the app and is assigned as an HTML `id` for the `div` element containing the rest of the story. A best-practice format would be to use kebab case, like `my-story-chapter-1`.
-| `alignment:` | This defines where the story text should appear over the map. Options are `center`, `left`, `right`, and `full`.
-| `hidden:` | Sets the visibility of the chapter to hidden when `true`. The chapter will still trigger a map and layer transition.
-| `title:` | The title of the section, displayed in an `h3` element.
-| `image:` | The path to an image to display in this section.
-| `caption:` | Adds a caption for the image.
-| `author:` | Adds an author to display at the bottom of the chapter.
-| `website:` | Adds a website to display at the bottom of the chapter.
-| `legend:` | Adds a HTML legend box for this chapter. `legend` must be enabled in the config settings above as well.
-| `description:` | The main story content for the section. This should be aligned with what the reader is seeing on the map. In the vanilla version, this field will render as HTML. Images, links, and other items can be included as HTML.
-| `location:` | Details about the map display and camera view. `center`: Center coordinates of the map, as longitude, latitude. `zoom`: Zoom level of the map. `pitch`: Angle of the map view. 0 is straight down, and 60 is highly tilted. `bearing`: Degrees of rotation clockwise from North (0). Negative values represent counter-clockwise rotation.
-| `mapAnimation:` | Defines the animation type for transitioning between locations. This property supports `flyTo`, `easeTo`, and `jumpTo` animations. If not specified, defaults to `flyTo`.
-| `rotateAnimation:` | Starts a slow rotation animation at the end of the map transition when set to `true`. The map will rotate 90 degrees over 24 seconds.
-| `mapInteractive:` | When set to `true`, sets this chapter to be interactive, allowing the user to pan and zoom across the map, and adds navigation controls.
-| `callback:` | Accepts the name of a JavaScript function and executes the function. Use this if you have custom code you want to run for a chapter, like turning a legend on or off, adding data from an API request, or displaying an interactive graph.
-| `onChapterEnter:` | Layers to be displayed/hidden/muted when the section becomes active. `layer`: Layer name as assigned in MapLibre style. `opacity`: The opacity to display the layer. `0` is fully transparent, `1` is fully opaque. `duration`: The length of the opacity transition, numeric, in milliseconds. Default is 300. This is an optional parameter and can be omitted.
-| `onChapterExit:` | Same as `onChapterEnter` except it is triggered when the section becomes inactive.
+| `id:` | Un ID en estilo slug para el capítulo. Esto es leído por JavaScript que impulsa la aplicación y se asigna como un `id` HTML para el elemento `div` que contiene el resto de la historia. Un formato de buenas prácticas sería usar kebab case, como `mi-historia-capitulo-1`.
+| `alignment:` | Define dónde debe aparecer el texto de la historia sobre el mapa. Las opciones son `center`, `left`, `right` y `full`.
+| `hidden:` | Establece la visibilidad del capítulo como oculta cuando es `true`. El capítulo seguirá activando una transición de mapa y capa.
+| `title:` | El título de la sección, mostrado en un elemento `h3`.
+| `image:` | La ruta a una imagen para mostrar en esta sección.
+| `caption:` | Agrega un pie de foto para la imagen.
+| `author:` | Agrega un autor para mostrar en la parte inferior del capítulo.
+| `website:` | Agrega un sitio web para mostrar en la parte inferior del capítulo.
+| `legend:` | Agrega un cuadro de leyenda HTML para este capítulo. `legend` también debe estar habilitado en la configuración anterior.
+| `description:` | El contenido principal de la historia para la sección. Esto debe estar alineado con lo que el lector está viendo en el mapa. En la versión básica, este campo se renderizará como HTML. Se pueden incluir imágenes, enlaces y otros elementos como HTML.
+| `location:` | Detalles sobre la visualización del mapa y la vista de la cámara. `center`: Coordenadas centrales del mapa, como longitud, latitud. `zoom`: Nivel de zoom del mapa. `pitch`: Ángulo de la vista del mapa. 0 es recto hacia abajo, y 60 está muy inclinado. `bearing`: Grados de rotación en sentido horario desde el Norte (0). Los valores negativos representan rotación en sentido antihorario.
+| `mapAnimation:` | Define el tipo de animación para la transición entre ubicaciones. Esta propiedad admite animaciones `flyTo`, `easeTo` y `jumpTo`. Si no se especifica, por defecto es `flyTo`.
+| `rotateAnimation:` | Inicia una animación de rotación lenta al final de la transición del mapa cuando se establece en `true`. El mapa rotará 90 grados en 24 segundos.
+| `mapInteractive:` | Cuando se establece en `true`, configura este capítulo para que sea interactivo, permitiendo al usuario desplazarse y hacer zoom en el mapa, y agrega controles de navegación.
+| `callback:` | Acepta el nombre de una función JavaScript y ejecuta la función. Usa esto si tienes código personalizado que quieres ejecutar para un capítulo, como activar o desactivar una leyenda, agregar datos de una solicitud API o mostrar un gráfico interactivo.
+| `onChapterEnter:` | Capas para ser mostradas/ocultadas/silenciadas cuando la sección se vuelve activa. `layer`: Nombre de la capa como se asigna en el estilo MapLibre. `opacity`: La opacidad para mostrar la capa. `0` es completamente transparente, `1` es completamente opaco. `duration`: La duración de la transición de opacidad, numérica, en milisegundos. El valor predeterminado es 300. Este es un parámetro opcional y puede omitirse.
+| `onChapterExit:` | Igual que `onChapterEnter` excepto que se activa cuando la sección se vuelve inactiva.

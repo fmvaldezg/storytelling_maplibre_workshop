@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Hands On
+title: Práctica
 nav_order: 4
 has_children: true
 has_toc: true
 ---
-# Hands On Activities
+# Actividad Práctica

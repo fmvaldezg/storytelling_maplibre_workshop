@@ -1,37 +1,37 @@
 ---
 layout: default
-title: Fork/Clone The Storytelling Template
-parent: Hands On
+title: Clonar La Plantilla de Narración
+parent: Práctica
 nav_order: 1
 ---
-# Fork/Clone the storytelling template
-In this workshop we're going to duplicate the storytelling template created by [Digital Democracy](https://www.digital-democracy.org/) to your own GitHub account, then make some edits together. Can tinker and reuse this template anytime on your own account.
+# Clonar la plantilla de narración
+En este taller vamos a duplicar la plantilla de narración creada por [Digital Democracy](https://www.digital-democracy.org/) a tu propia cuenta de GitHub, y luego haremos algunas ediciones juntos. Puedes modificar y reutilizar esta plantilla en cualquier momento desde tu propia cuenta.
 
-### *1*{: .circle .circle-blue} Go to [Digital Democracy Interactive Storytelling with Maplibre repository](https://github.com/digidem/maplibre-storymap){:target="_blank"}
+### *1*{: .circle .circle-blue} Ve al repositorio [Interactive Storytelling with MapLibre](https://github.com/digidem/maplibre-storymap){:target="_blank"}
 
 
-### *2*{: .circle .circle-blue} Click on the option to open the repository in GitHub Desktop
-Under the `Code` button, you will see an option to `Open with GitHub Desktop`.   
+### *2*{: .circle .circle-blue} Haz clic en la opción para abrir el repositorio en GitHub Desktop
+Bajo el botón `Code`, verás una opción para `Open with GitHub Desktop` (Abrir con GitHub Desktop).   
 
-![Screeshot of the option to open in GitHub Desktop](../img/fork-location.png)
+![Captura de pantalla de la opción para abrir en GitHub Desktop](../img/fork-location.png)
 
-Confirm that you want to open it by clicking on `Open GitHub Desktop.app` in the message that pops up.
+Confirma que deseas abrirlo haciendo clic en `Open GitHub Desktop.app` en el mensaje que aparece.
 
-![Confirmation message](../img/fork-message.png)
+![Mensaje de confirmación](../img/fork-message.png)
 
-Alternatively, if you are using GitHub on the web, simply fork the repository to your account and continue from there.
+Alternativamente, si estás usando GitHub en la web, simplemente bifurca el repositorio a tu cuenta y continúa desde allí.
 {: .note}
 
 
-`GitHub Desktop` should open in your computer and you should see a window with the infromation of the forked repository, including a panel listing the changes (it will be empty since this is the first time you open it) and three options to start working on your reposity:
+`GitHub Desktop` debería abrirse en tu computadora y deberías ver una ventana con la información del repositorio bifurcado, incluyendo un panel que lista los cambios (estará vacío ya que es la primera vez que lo abres) y tres opciones para comenzar a trabajar en tu repositorio:
 
-If you have `Visual Study Code` installed, you should see the text `Open in Visual Studio Code` in the action button. If you don't have it but you have a different editor (like RStudio, XCode or Atom), then you should see that option. If you need to set `Visual Studio Code` as the default editor for your GitHub Desktop, then follo the instructions [here](https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor-in-github-desktop#configuring-a-custom-editor).
+Si tienes `Visual Study Code` instalado, deberías ver el texto `Open in Visual Studio Code` (Abrir en Visual Studio Code) en el botón de acción. Si no lo tienes pero tienes un editor diferente (como RStudio, XCode o Atom), entonces deberías ver esa opción. Si necesitas configurar `Visual Studio Code` como el editor predeterminado para tu GitHub Desktop, entonces sigue las instrucciones [aquí](https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor-in-github-desktop#configuring-a-custom-editor).
 {: .warn}
 
-1. Open the repository in your external editor.
+1. Abrir el repositorio en tu editor externo.
 
-2. View the files of your repository in Finder.
+2. Ver los archivos de tu repositorio en el Finder.
 
-3. Open the repository page on GitHub in your browser.
+3. Abrir la página del repositorio en GitHub en tu navegador.
 
-![Confirmation message](../img/fork-options.png)
+![Mensaje de confirmación](../img/fork-options.png)

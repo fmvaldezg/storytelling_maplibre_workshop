@@ -1,71 +1,71 @@
 ---
 layout: default
-title: Preview the story map
-parent: Hands On
+title: Vista previa del mapa
+parent: Práctica
 nav_order: 5
 ---
-# Preview your storymap
+# Vista previa de tu mapa
 
-Once you have set and added the basics to your story map, it is a good practice to preview it before deploying it as a webpage. 
+Una vez que hayas configurado y agregado los elementos básicos a tu mapa narrativo, es una buena práctica previsualizarlo antes de implementarlo como una página web.
 
-To do so, we are going to use the `Visual Studio Code` live server functionality. This will deploy the story map locally in your computer. 
+Para hacerlo, vamos a utilizar la funcionalidad de servidor en vivo de `Visual Studio Code`. Esto implementará el mapa narrativo localmente en tu computadora.
 
-Follow the steps below to preview your story map.
+Sigue los pasos a continuación para previsualizar tu mapa narrativo.
 
-### *1*{: .circle .circle-blue} Commit your changes to `GitHub`.
+### *1*{: .circle .circle-blue} Confirma tus cambios en `GitHub`.
 
-One of the functions of Git as a version control system is to take snapshots of the changes you make to your files.
+Una de las funciones de Git como sistema de control de versiones es tomar instantáneas de los cambios que haces en tus archivos.
 
-A `commit` is a snapshot of your project at that point in time. 
+Un `commit` es una instantánea de tu proyecto en ese momento.
 
-To `commit` your changes:
+Para hacer `commit` de tus cambios:
 
-Step 1
+Paso 1
 {: .label .label-step}
 
-Go to `GitHub Desktop app`.
+Ve a la aplicación `GitHub Desktop`.
 
-You are going to see all the files you have changed listed in the panel at the left side, and all the changes you have made in those files in the panel at the center. If you added something to the file it will be highlited in green and if you deleted something in red.
+Verás todos los archivos que has cambiado listados en el panel del lado izquierdo, y todos los cambios que has hecho en esos archivos en el panel del centro. Si agregaste algo al archivo, estará resaltado en verde y si eliminaste algo, en rojo.
 
-Review the changes you have made.
+Revisa los cambios que has realizado.
 
-![screenshot of GitHub Desktop](../img/preview1.png)
+![captura de pantalla de GitHub Desktop](../img/preview1.png)
 
-Step 2
+Paso 2
 {: .label .label-step}
 
-On the lower left panel, type a summary for the commit, and optionally a description. It is a good practice to maintain a detailed log of changes made, specially if more than one person is working in the project.
+En el panel inferior izquierdo, escribe un resumen para el commit y, opcionalmente, una descripción. Es una buena práctica mantener un registro detallado de los cambios realizados, especialmente si más de una persona está trabajando en el proyecto.
 
-Then click `Commit to main`.
+Luego haz clic en `Commit to main`.
 
-![screenshot of commit](../img/preview2.png)
+![captura de pantalla del commit](../img/preview2.png)
 
-Step 3
+Paso 3
 {: .label .label-step}
 
-After commiting the changes, `GitHub Dektop` will display the main window of the repository and enable the option to `Publish repository`. A copy of your repository is now abailable in GitHub cloud. 
+Después de confirmar los cambios, `GitHub Desktop` mostrará la ventana principal del repositorio y habilitará la opción para `Publish repository`. Una copia de tu repositorio ahora está disponible en la nube de GitHub.
 
-Go ahead and publish your repository by clicking on `Publish repository`. 
+Adelante, publica tu repositorio haciendo clic en `Publish repository`.
 
-![screenshot of publishing](../img/preview3.png)
+![captura de pantalla de la publicación](../img/preview3.png)
 
-The first time you do this, you will be asked to set a name for your repository and an optional description. Then click `Publish Repository`.
+La primera vez que hagas esto, se te pedirá que establezcas un nombre para tu repositorio y una descripción opcional. Luego haz clic en `Publish Repository`.
 
-![screenshot of publishing](../img/preview4.png)
+![captura de pantalla de la publicación](../img/preview4.png)
 
-### *2*{: .circle .circle-blue} Preview your storymap locally.
+### *2*{: .circle .circle-blue} Vista previa de tu mapa narrativo localmente.
 
-Now that you have published your repository to GitHub cloud, go back to `Visual Studio Code`.
+Ahora que has publicado tu repositorio en la nube de GitHub, regresa a `Visual Studio Code`.
 
-To visualize a preview of your storymap click on the `Go Live` button located in the bar at the lower right corner.
+Para visualizar una vista previa de tu mapa narrativo, haz clic en el botón `Go Live` ubicado en la barra en la esquina inferior derecha.
 
-![screenshot of go live button](../img/preview5.png)
+![captura de pantalla del botón go live](../img/preview5.png)
 
-A new windows will open in your default internet browser. You will see a preview of your storymap.
+Se abrirá una nueva ventana en tu navegador de internet predeterminado. Verás una vista previa de tu mapa narrativo.
 
-Now you can add or modify your `config.js` file and see the changes live on your local computer. To do so, simply save the changes you made in `Visual Studio Code` (press ctrl + s) and refresh the web browser window.
+Ahora puedes agregar o modificar tu archivo `config.js` y ver los cambios en vivo en tu computadora local. Para hacerlo, simplemente guarda los cambios que realizaste en `Visual Studio Code` (presiona ctrl + s) y actualiza la ventana del navegador web.
 
-This map is a preview only. It is still living in your system. To publish it as a webpage to be shared and visualized by anyone, follow the instruction in the next section of this tutorial.
+Este mapa es solo una vista previa. Todavía está viviendo en tu sistema. Para publicarlo como una página web para ser compartida y visualizada por cualquier persona, sigue las instrucciones en la siguiente sección de este tutorial.
 {: .note }
 
-![screenshot of the resulting preview](../img/preview6.png)
+![captura de pantalla de la vista previa resultante](../img/preview6.png)

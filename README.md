@@ -11,3 +11,8 @@ This tutorial was created following the tutorial and template by [Evan Thornberr
 
 Want to use this template? Great! Just fork it and follow these [instructions for activating it via Pages](https://ubc-lib-geo.github.io/gis-workshop-waml-template/content/handson/fork-repo.html).
 
+### How to Cite This Tutorial
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17246650.svg)](https://doi.org/10.5281/zenodo.17246650)
+
+Felipe Valdez. (2024, August 20). Storytelling with MapLibre Workshop v1.0. Zenodo. https://doi.org/10.5281/zenodo.17246650

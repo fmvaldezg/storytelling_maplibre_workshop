@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17246650.svg)](https://doi.org/10.5281/zenodo.17246650)
+
+
 # StoryTelling with Maps - MapLibre Workshop - Fall 2024
 
 This is the repository for the Storytelling with maps using MapLibre Workshop of Fall 2024.

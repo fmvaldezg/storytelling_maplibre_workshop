@@ -15,4 +15,4 @@ Want to use this template? Great! Just fork it and follow these [instructions fo
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17246650.svg)](https://doi.org/10.5281/zenodo.17246650)
 
-Felipe Valdez. (2024, August 20). Storytelling with MapLibre Workshop v1.0. Zenodo. https://doi.org/10.5281/zenodo.17246650
+Valdez, Felipe. (2024, August 20). Storytelling with MapLibre Workshop v1.0. Zenodo. https://doi.org/10.5281/zenodo.17246650

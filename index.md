@@ -46,6 +46,12 @@ If you want to familiarize yourself with the use of code for this type of activi
 | 0:50 | Questions
 | 1:00 | End
 
+### How to Cite This Tutorial
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17246650.svg)](https://doi.org/10.5281/zenodo.17246650)
+
+Valdez, Felipe. (2024, August 20). Storytelling with MapLibre Workshop v1.0. Zenodo. https://doi.org/10.5281/zenodo.17246650
+
 <!-- ### Workshop Slides
 
 <iframe width="625" height="352" frameborder="0" marginheight="0" marginwidth="0" src="content/slides/index.html"></iframe>

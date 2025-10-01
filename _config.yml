@@ -27,6 +27,7 @@ url: "https://fmvaldezg.github.io" # the base hostname & protocol for your site,
 search_enabled: false
 back_to_top: true
 back_to_top_text: "Back to top"
+google_analytics: G-RC52W8J799
 
 # twitter_username: jekyllrb
 # github_username:  jekyll

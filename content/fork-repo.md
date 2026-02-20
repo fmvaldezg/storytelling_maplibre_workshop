@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Fork/Clone The Storytelling Template
-parent: Hands On
-nav_order: 1
+nav_order: 4
 ---
 # Fork/Clone the storytelling template
 In this workshop we're going to duplicate the storytelling template created by [Digital Democracy](https://www.digital-democracy.org/) to your own GitHub account, then make some edits together. Can tinker and reuse this template anytime on your own account.

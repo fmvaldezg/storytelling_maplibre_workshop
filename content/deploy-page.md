@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Deploy story map
-parent: Hands On
-nav_order: 6
+nav_order: 9
 ---
 
 ## Deploy your story map as a web page

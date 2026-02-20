@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Edit Your config.js file
-parent: Hands On
-nav_order: 2
+nav_order: 5
 ---
 # Edit Your config.js
 First we're going to make a few quick edits to your new repository's config.js file. This file contains the story main content and the map controls.

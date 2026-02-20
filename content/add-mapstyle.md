@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Add a MapStyle to your map
-parent: Hands On
-nav_order: 3
+nav_order: 6
 ---
 # Add a Map Style
 

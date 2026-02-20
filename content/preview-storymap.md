@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Preview the story map
-parent: Hands On
-nav_order: 5
+nav_order: 8
 ---
 # Preview your storymap
 

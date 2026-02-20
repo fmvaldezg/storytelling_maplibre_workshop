@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Next Steps
-nav_order: 6
+nav_order: 10
 hidden: true
 ---
 # Next steps

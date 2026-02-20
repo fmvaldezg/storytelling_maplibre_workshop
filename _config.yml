@@ -1,36 +1,13 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Storytelling with MapLibre
 email: felipe.valdez@temple.edu
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   This is a hands-on tutorial on how to build interactive story maps in the web using GitHub pages along with MapLibre and the Digital Democracy storytelling template.
 baseurl: "/storytelling_maplibre_workshop" # the subpath of your site, e.g. /blog
-url: "https://fmvaldezg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fmvaldezg.github.io"
 search_enabled: false
 back_to_top: true
 back_to_top_text: "Back to top"
 google_analytics: G-RC52W8J799
-
-# twitter_username: jekyllrb
-# github_username:  jekyll
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
@@ -38,9 +15,15 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: light
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 footer_content: <a href="https://guides.temple.edu/gis-mapping" target="_blank">Learn more</a>
+
+license_name: "Creative Commons Attribution-ShareAlike 4.0 International"
+license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
+license_image_url: "https://licensebuttons.net/l/by-sa/4.0/88x31.png"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

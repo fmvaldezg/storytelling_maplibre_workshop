@@ -16,7 +16,7 @@ Follow this steps to add a map style to your story map.
 On your web browser, go to [this link](https://cloud.maptiler.com/auth/widget?next=https://cloud.maptiler.com/maps/).
 Enter you username and password.
 
-![Screenshot of MapTiler sign in page](../img/style0.png)  
+![Screenshot of MapTiler sign in page](img/style0.png)  
 
 ### *2*{: .circle .circle-blue} Select the map style you want to use.
 
@@ -24,7 +24,7 @@ On the MapTiler Maps screen you will see a list of  pre made open styles.
 
 Click on `DataViz` if you want to follow this tutorial, or any other style you prefer.
 
-![Screenshot of MapTiler sign in page](../img/style1.png) 
+![Screenshot of MapTiler sign in page](img/style1.png) 
 
 You can create you own styles using MapTiler OpenMapTyles by clicking on the `New map` button. You can select which layers to display and how.
 {: .note }
@@ -36,7 +36,7 @@ Copy the style URl. You can use the `Copy link` button.
 Be sure to use the `vector style` that is located under the 'Use vector style' title.
 {: .warn}
 
-![Screenshot of MapTiler sign in page](../img/style2.png)
+![Screenshot of MapTiler sign in page](img/style2.png)
 
 ### *4*{: .circle .circle-blue} Paste the style url in the config.js file
 
@@ -47,7 +47,7 @@ Input
 ```
 2  style: 'https://api.maptiler.com/maps/dataviz/style.json?key={your_own_key}'
 ```
-![screenshot showing the copy and paste of the sytle url](../img/style3.png)
+![screenshot showing the copy and paste of the sytle url](img/style3.png)
 
 The style can be defined using a URL, like in this demo, or using a `.json` file. If you create your own style and want to use a json file, you have to save that file in the `map` folder on the repository and point the style property to it using `style: '\map\style.json'`. Customized styles can be created and saved as json files in aplications like [Maputnik](https://maputnik.github.io/) or [Mapbox Studio](https://www.mapbox.com/mapbox-studio).
 {: .note }

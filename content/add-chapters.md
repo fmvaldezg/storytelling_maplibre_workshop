@@ -30,7 +30,7 @@ Input
 Remember to use dashes to separate words and lowercase letters for the chpater id. 
 {: .warn}
 
-![screenshot of the chapter id](../img/chapters1.png)
+![screenshot of the chapter id](img/chapters1.png)
 
 Step 2
 {: .label .label-step}
@@ -42,7 +42,7 @@ Input
 ```
 23  title: 'Chapter 1'
 ```
-![screenshot of the chapter title property](../img/chapters2.png)
+![screenshot of the chapter title property](img/chapters2.png)
 
 Step 3
 {: .label .label-step}
@@ -54,7 +54,7 @@ Input
 ```
 29  description: 'This is the greatest story in the world. It takes place in the city of Philadelphia'
 ```
-![screenshot of the chapter title property](../img/chapters3.png)
+![screenshot of the chapter title property](img/chapters3.png)
 
 ### *2*{: .circle .circle-blue} Adding an image to your chapter.
 
@@ -72,7 +72,7 @@ Step 2
 
 3. Save your image `img-chapter1.png` into this folder.
 
-![screenshot of the repository images folder](../img/chapters4.png)
+![screenshot of the repository images folder](img/chapters4.png)
 
 Step 3
 {: .label .label-step}
@@ -84,7 +84,7 @@ Input
 ```
 24  image: './images/img-chapter1.png'
 ```
-![screenshot of the config.js file](../img/chapters5.png)
+![screenshot of the config.js file](img/chapters5.png)
 
 ### *3*{: .circle .circle-blue} Setting the location of the chapter in the map.
 
@@ -101,11 +101,11 @@ You are going to see a map and a window with some numeric values for `center (ar
 
 Navigate the map using the `Navigation controls` or the `Search bar` on the top right corner of the screen, untill you see the map as you want it to be displayed in your chapter. 
 
-![screenshot of the Location Helper web app](../img/chapters6.png)
+![screenshot of the Location Helper web app](img/chapters6.png)
 
 In this demo, we typed on the search bar `Philadelphia, Pennsylvania` and the resulting map looks good for the purpose of the first chapter.
 
-![screenshot of the Location Helper web app](../img/chapters7.png)
+![screenshot of the Location Helper web app](img/chapters7.png)
 
 Step 2
 {: .label .label-step}
@@ -120,7 +120,7 @@ Input
 Note that the coordinates are within [ ] symbols and separated by a comma. 
 {: .warn}
 
-![screenshot of center coordinates](../img/chapters8.png)
+![screenshot of center coordinates](img/chapters8.png)
 
 Step 3
 {: .label .label-step}
@@ -133,7 +133,7 @@ Input
 32  zoom: 10.89,
 ```
 
-![screenshot of the zoom level](../img/chapters9.png)
+![screenshot of the zoom level](img/chapters9.png)
 
 ### *4*{: .circle .circle-blue} Adding more chapters to your story map.
 
@@ -170,7 +170,7 @@ A chapter has the following structure:
 ```
 To add new chapters to your storymap, simply `copy` this text and paste it right after the `}` symbol that closes the previous chapter. Be sure to include a `,` after the symbol and paste the text before the `]` that closes the chapters section on the code.
 
-![screenshot of the place to paste the code](../img/chapters10.png)
+![screenshot of the place to paste the code](img/chapters10.png)
 
 Add as many chapters as you like. 
 

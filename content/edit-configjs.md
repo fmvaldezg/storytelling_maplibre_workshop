@@ -10,7 +10,7 @@ First we're going to make a few quick edits to your new repository's config.js f
 
 While on `GitHub Desktop`, click on the option to `Open in Visual Studio Code`
 
-![Open on Visual Studio Code](../img/config0.png)  
+![Open on Visual Studio Code](img/config0.png)  
 
 This will open `Visual Studio Code`.
 
@@ -18,11 +18,11 @@ This will open `Visual Studio Code`.
 
 You are going to see a list with all the files and folders on your repository. 
 
-![Open on Visual Studio Code](../img/config1.png)  
+![Open on Visual Studio Code](img/config1.png)  
 
 Right click on the file `config.js.template` and select the `Rename` option.
 
-![Open on Visual Studio Code](../img/config2.png)  
+![Open on Visual Studio Code](img/config2.png)  
 
 Change the name of the file to `config.js`, without the word template at the end.
 
@@ -33,7 +33,7 @@ Click on the file you just renamed. Its content will be displayed in the central
 The first 17 lines of this file contain the main configurations for your new sotrymap. 
 We are going to cover some of them to get your story map started. 
 
-![Edit your README](../img/config3.png)
+![Edit your README](img/config3.png)
 
 Step 1
 {: .label .label-step}

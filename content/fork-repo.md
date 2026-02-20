@@ -12,11 +12,11 @@ In this workshop we're going to duplicate the storytelling template created by [
 ### *2*{: .circle .circle-blue} Click on the option to open the repository in GitHub Desktop
 Under the `Code` button, you will see an option to `Open with GitHub Desktop`.   
 
-![Screeshot of the option to open in GitHub Desktop](../img/fork-location.png)
+![Screeshot of the option to open in GitHub Desktop](img/fork-location.png)
 
 Confirm that you want to open it by clicking on `Open GitHub Desktop.app` in the message that pops up.
 
-![Confirmation message](../img/fork-message.png)
+![Confirmation message](img/fork-message.png)
 
 Alternatively, if you are using GitHub on the web, simply fork the repository to your account and continue from there.
 {: .note}
@@ -33,4 +33,4 @@ If you have `Visual Study Code` installed, you should see the text `Open in Visu
 
 3. Open the repository page on GitHub in your browser.
 
-![Confirmation message](../img/fork-options.png)
+![Confirmation message](img/fork-options.png)

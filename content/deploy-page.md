@@ -19,14 +19,14 @@ Go to `GitHub` cloud and sign in to your account.
 
 You can click on the `View on GitHub` button on your `GitHub Desktop app` to open the repository on your browser.
 
-![Open on GitHub screenshot](../img/deploy1.png) 
+![Open on GitHub screenshot](img/deploy1.png) 
 
 Step 2
 {: .label .label-step}
 
 On your repository, click on the `Settings` button on the top menu bar.
 
-![Open on GitHub screenshot](../img/deploy2.png)
+![Open on GitHub screenshot](img/deploy2.png)
 
 Step 3
 {: .label .label-step}
@@ -35,15 +35,15 @@ If you did not before, you will have to make your repository `public` in order t
 
 Simply click on the `General` button on the panel on the left. 
 
-![Open on GitHub screenshot](../img/deploy3.png)
+![Open on GitHub screenshot](img/deploy3.png)
 
 Scroll down to the bottom of the page and click on `Change visibility` and then on `Change to public`.
 
-![Open on GitHub screenshot](../img/deploy4.png)
+![Open on GitHub screenshot](img/deploy4.png)
 
 Confirm that you want to make the repository public.
 
-![Open on GitHub screenshot](../img/deploy5.png)
+![Open on GitHub screenshot](img/deploy5.png)
 
 You might be asked to enter your account password to confirm.
 {: .warn }
@@ -53,18 +53,18 @@ Step 4
 
 On the repository Settings, click on the `Pages` button on the left panel options.
 
-![Open on GitHub screenshot](../img/deploy6.png)
+![Open on GitHub screenshot](img/deploy6.png)
 
 Step 5
 {: .label .label-step}
 
 On the Pages settings, click on the dropdown menu under the title `Branch` and select the `main` bramch option.
 
-![Open on GitHub screenshot](../img/deploy7.png)
+![Open on GitHub screenshot](img/deploy7.png)
 
 Then click on `Save`. A message like the one below will appear on the screen.
 
-![Open on GitHub screenshot](../img/deploy8.png)
+![Open on GitHub screenshot](img/deploy8.png)
 
 Step 6
 {: .label .label-step}
@@ -75,9 +75,9 @@ A new section will appear on the `Pages` settings window with the details of you
 
 Click on the `Visit site` button to open the story map on a new browser window.
 
-![Open on GitHub screenshot](../img/deploy9.png)
+![Open on GitHub screenshot](img/deploy9.png)
 
 Everytime you change something on your `config.js` file or add anything to your repository, `GitHub pages` will built the rendering files and deploy the new version of your map. The only thing you have to do is `commit` your changes and `push` the changes to the cloud if you are using `GitHub desktop`.
 {: .warn }
 
-![Open on GitHub screenshot](../img/deploy10.png)
+![Open on GitHub screenshot](img/deploy10.png)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary
-nav_order: 7
+nav_order: 11
 hidde : true
 ---
 # Glossary
@@ -29,11 +29,6 @@ hidde : true
 **Jekyll** – [Jekyll](https://jekyllrb.com/) is a static site generator used for creating a variety of online content. GitHub Pages relies on Jekyll behind the scenes. The site you're looking at right now was created using Jekyll.
 
 **Markdown** – [Markdown](https://en.wikipedia.org/wiki/Markdown) is a super-simple [markup language](https://en.wikipedia.org/wiki/Markup_language). Markdown is popular for creating documentation and readme files. When used in tandem with Jekyll templates, it can be used to generate static web pages. This page was created in Markdown.
-
-**Ruby** – [Ruby](https://www.ruby-lang.org/en/) is an open-source programming language, and is used as a framework for Jekyll.  
-
-<!-- **Terminal** – -->
-
 
 
 ## Git Commands:
